@@ -241,6 +241,8 @@
   .rec .meta-tag { font-size:12px; font-weight:600; color:var(--text-secondary); }
   .rec .meta-tag::before { content:"·"; margin-right:6px; color:var(--text-tertiary); }
   .rec .meta-tag:first-child::before { display:none; }
+  .rec .rec-link { display:inline-flex; align-items:center; gap:3px; margin-top:6px; padding:4px 10px; border-radius:8px; background:var(--surface-nested); color:var(--accent); font-size:11px; font-weight:600; text-decoration:none; }
+  .rec .rec-link:active { opacity:.7; }
 
   /* ---- layout variants (open-ended: add .rec-layout-xxx in <style> to extend) ---- */
   /* feature: 大图在上 + 标题覆盖 + 正文在下 */
@@ -438,6 +440,19 @@
   .brief-item .bi-title { font-size:13px; font-weight:700; margin-bottom:4px; }
   .brief-item .bi-content { font-size:12px; color:var(--text-secondary); line-height:1.6; }
   .brief-item .bi-source { font-size:10px; color:var(--text-tertiary); margin-top:4px; }
+  .brief-item .bi-link { display:inline-flex; align-items:center; gap:3px; margin-top:6px; padding:4px 10px; border-radius:8px; background:var(--surface-nested); color:var(--accent); font-size:11px; font-weight:600; text-decoration:none; }
+  .brief-item .bi-link:active { opacity:.7; }
+  .brief-diet { font-size:12px; color:var(--text-secondary); line-height:1.6; padding:8px 10px; border-radius:var(--radius-tile); background:var(--surface-nested); margin-bottom:8px; }
+  .brief-kp-grid { display:grid; grid-template-columns:1fr; gap:8px; }
+  .brief-kp { padding:8px 10px; border-radius:var(--radius-tile); background:var(--surface-nested); border-left:3px solid var(--accent); }
+  .brief-kp .bi-title { font-size:12px; }
+  .brief-kp .bi-content { font-size:11px; margin-top:2px; }
+  .brief-kp .bi-link { font-size:10px; padding:3px 8px; margin-top:4px; }
+  .brief-trend { font-size:12px; color:var(--text-secondary); line-height:1.6; padding:8px 10px; border-radius:var(--radius-tile); background:var(--surface-nested); margin-bottom:8px; border-left:3px solid var(--module-4); }
+  .brief-section-label { font-size:11px; font-weight:700; color:var(--text-tertiary); margin:10px 0 4px; letter-spacing:.05em; }
+  .brief-rlinks { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+  .brief-rlinks a { font-size:11px; padding:4px 10px; border-radius:8px; background:var(--surface-nested); color:var(--module-4); text-decoration:none; font-weight:600; }
+  .brief-rlinks a:active { opacity:.7; }
 
   /* 每周运动规划卡片 */
   .weekly-card { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:14px 16px; }
@@ -624,6 +639,20 @@ const CONFIG = {
       ],
     },
     {
+      key: "body", name: "体围记录", icon: "scale", tint: "#eef3ec", color: "var(--module-1)",
+      type: "note", desc: "体重·腰围·臀围·趋势追踪",
+      moods: ["记录", "趋势"],
+      fields: [
+        { key: "weight", label: "体重(kg)", type: "number", placeholder: "52.5" },
+        { key: "waist", label: "腰围(cm)", type: "number", placeholder: "68" },
+        { key: "hip", label: "臀围(cm)", type: "number", placeholder: "88" },
+        { key: "note", label: "备注", type: "text", placeholder: "今日状态" },
+      ],
+      seed: [
+        { id: 201, title: "初始记录", content: "开始记录体围变化，不以减重为目标，关注体型健康。", mood: "记录", date: isoToday(), weight: "", waist: "", hip: "", note: "" },
+      ],
+    },
+    {
       key: "sport", name: "运动计划", icon: "activity", tint: "#f6f0e6", color: "var(--module-3)",
       type: "progress", unit: "分钟", desc: "易筋经·力量·游泳·网球",
       seed: [
@@ -776,6 +805,8 @@ const ICONS = {
   sun:'<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>',
   moon:'<path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5z"/>',
   yinyang:'<circle cx="12" cy="12" r="9"/><path d="M12 3a4.5 4.5 0 0 1 0 9 4.5 4.5 0 0 0 0 9"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="16.5" r="1.3" fill="currentColor" stroke="none"/>',
+  link:'<path d="M9 15l6-6"/><path d="M10.5 6.5l1-1a3.5 3.5 0 0 1 5 5l-1 1"/><path d="M13.5 17.5l-1 1a3.5 3.5 0 0 1-5-5l1-1"/>',
+  scale:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 4v5M16 4v5"/><circle cx="8" cy="14" r="1.5"/><circle cx="16" cy="14" r="1.5"/>',
 };
 function icon(name, size=22, sw=1.7){
   const path = ICONS[name] || ICONS.grid;
@@ -836,17 +867,60 @@ function ringSVG(pct, color){
 function renderBriefing(){
   const b = window.DAILY_BRIEFING;
   if(!b) return "";
-  const sections = ["investment","professional","selfmedia"].map(k=>{
-    const s = b[k]; if(!s) return "";
-    const items = (s.items||[]).map(it=>`<div class="brief-item">
-      <div class="bi-title">${esc(it.title)}</div>
-      <div class="bi-content">${esc(it.content)}</div>
-      ${it.source?`<div class="bi-source">${icon("quote",10)} ${esc(it.source)}</div>`:""}</div>`).join("");
-    return `<div class="brief-card">
-      <div class="bc-head">${icon(s.icon||"grid",15)} ${esc(s.title)}<span class="bc-date">${esc(b.date||"")}</span></div>
-      ${items}</div>`;
-  }).join("");
-  return sections;
+  const linkHtml = (it) => it.link ? ` <a class="bi-link" href="${esc(it.link)}" target="_blank" rel="noopener">${icon("link",10)} ${esc(it.linkText||"打开链接")}</a>` : "";
+  const srcHtml = (it) => it.source ? `<div class="bi-source">${icon("quote",10)} ${esc(it.source)}</div>` : "";
+  const itemHtml = (it) => `<div class="brief-item"><div class="bi-title">${esc(it.title)}</div><div class="bi-content">${esc(it.content)}</div>${srcHtml(it)}${linkHtml(it)}</div>`;
+
+  let html = "";
+
+  // Health
+  if(b.health){
+    const s=b.health;
+    let inner = s.diet ? `<div class="brief-diet">${icon("leaf",11)} ${esc(s.diet)}</div>` : "";
+    inner += (s.items||[]).map(itemHtml).join("");
+    html += `<div class="brief-card"><div class="bc-head">${icon(s.icon||"leaf",15)} ${esc(s.title)}<span class="bc-date">${esc(b.date||"")}</span></div>${inner}</div>`;
+  }
+
+  // Language
+  if(b.language){
+    const s=b.language;
+    html += `<div class="brief-card"><div class="bc-head">${icon(s.icon||"book",15)} ${esc(s.title)}<span class="bc-date">${esc(b.date||"")}</span></div>${(s.items||[]).map(itemHtml).join("")}</div>`;
+  }
+
+  // Professional — knowledge points + industry news
+  if(b.professional){
+    const s=b.professional;
+    let inner = "";
+    if(s.knowledgePoints && s.knowledgePoints.length){
+      inner += `<div class="brief-section-label">LLM基础知识 · 每日5点</div><div class="brief-kp-grid">${s.knowledgePoints.map(kp=>`<div class="brief-kp"><div class="bi-title">${esc(kp.title)}</div><div class="bi-content">${esc(kp.content)}</div>${kp.link?`<a class="bi-link" href="${esc(kp.link)}" target="_blank" rel="noopener">${icon("link",9)} 参考</a>`:""}</div>`).join("")}</div>`;
+    }
+    if(s.industryNews && s.industryNews.length){
+      inner += `<div class="brief-section-label">行业动态 · 资讯论文</div>${s.industryNews.map(itemHtml).join("")}`;
+    }
+    html += `<div class="brief-card"><div class="bc-head">${icon(s.icon||"bolt",15)} ${esc(s.title)}<span class="bc-date">${esc(b.date||"")}</span></div>${inner}</div>`;
+  }
+
+  // Investment — market trend + suggestions + research links
+  if(b.investment){
+    const s=b.investment;
+    let inner = "";
+    if(s.marketTrend) inner += `<div class="brief-trend">${icon("wallet",11)} ${esc(s.marketTrend)}</div>`;
+    if(s.suggestions && s.suggestions.length){
+      inner += `<div class="brief-section-label">投资建议</div>${s.suggestions.map(itemHtml).join("")}`;
+    }
+    if(s.researchLinks && s.researchLinks.length){
+      inner += `<div class="brief-section-label">投研链接</div><div class="brief-rlinks">${s.researchLinks.map(r=>r.link?`<a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.title)}</a>`:"").join("")}</div>`;
+    }
+    html += `<div class="brief-card"><div class="bc-head">${icon(s.icon||"wallet",15)} ${esc(s.title)}<span class="bc-date">${esc(b.date||"")}</span></div>${inner}</div>`;
+  }
+
+  // Selfmedia
+  if(b.selfmedia){
+    const s=b.selfmedia;
+    html += `<div class="brief-card"><div class="bc-head">${icon(s.icon||"flame",15)} ${esc(s.title)}<span class="bc-date">${esc(b.date||"")}</span></div>${(s.items||[]).map(itemHtml).join("")}</div>`;
+  }
+
+  return html;
 }
 function renderWeeklyPlan(){
   const w = window.WEEKLY_PLAN;
@@ -1293,7 +1367,8 @@ function recHTML(m,x){
       ${thumb}
       <div class="body" data-edit="${x.id}"><div class="rname ${x.done?'done':''}">${esc(x.title)}</div>
       <div class="rmeta">${p?`<span class="badge" style="background:${p.color};color:${p.text}"><span class="dot"></span>${p.label}</span>`:''}</div>
-      ${x.note?`<div class="rnote">${esc(x.note)}</div>`:''}${customBlock}</div></div></div>`;
+      ${x.note?`<div class="rnote">${esc(x.note)}</div>`:''}${customBlock}
+      ${x.link?`<a class="rec-link" href="${attr(x.link)}" target="_blank" rel="noopener">${icon("link",11)} 打开链接</a>`:''}</div></div></div>`;
   }
   if(m.type==="checkin"){
     const on=!!(x.log&&x.log[today()]); const st=streak(x.log);
@@ -1355,7 +1430,8 @@ function openEditor(key, item){
   if(m.type==="todo"){
     fields=`<div class="field"><label>任务</label><input id="f-title" value="${attr(d.title)}" placeholder="要做什么？"/></div>
       <div class="field"><label>优先级</label><div class="seg" id="f-prio">${(m.priorities||[]).map(p=>`<div class="opt ${p.key===d.priority?'on':''}" data-v="${p.key}">${p.label}</div>`).join("")}</div></div>
-      <div class="field"><label>备注</label><textarea id="f-note" placeholder="补充说明">${esc(d.note||'')}</textarea></div>`;
+      <div class="field"><label>备注</label><textarea id="f-note" placeholder="补充说明">${esc(d.note||'')}</textarea></div>
+      <div class="field"><label>学习链接（可选）</label><input id="f-link" value="${attr(d.link||'')}" placeholder="https://..."/></div>`;
   } else if(m.type==="checkin"){
     fields=`<div class="field"><label>打卡项</label><input id="f-title" value="${attr(d.title)}" placeholder="例如：喝够 8 杯水"/></div>
       <p class="sub" style="margin:0">保存后可在列表点击左侧方块打卡；连续天数自动统计，每天从零开始。</p>`;
@@ -1415,7 +1491,7 @@ function openEditor(key, item){
     const seg=id=>{ const el=overlay.querySelector(id+" .on"); return el?el.dataset.v:undefined; };
     d.title=(val("#f-title")||"").trim()||"未命名";
     d.layout=seg("#f-layout")||'default';
-    if(m.type==="todo"){ d.priority=seg("#f-prio")||d.priority; d.note=(val("#f-note")||"").trim(); }
+    if(m.type==="todo"){ d.priority=seg("#f-prio")||d.priority; d.note=(val("#f-note")||"").trim(); d.link=(val("#f-link")||"").trim(); }
     else if(m.type==="progress"){ d.current=Math.max(0,+val("#f-cur")||0); d.target=Math.max(1,+val("#f-tgt")||1); d.unit=(val("#f-unit")||"").trim(); d.note=(val("#f-note")||"").trim(); }
     else if(m.type==="finance"){ d.type=seg("#f-ftype")||"expense"; d.amount=Math.max(0,+val("#f-amt")||0); d.category=seg("#f-cat")||(m.categories&&m.categories[0])||"其他"; d.date=val("#f-date"); }
     else if(m.type==="note"){ d.mood=seg("#f-mood")||d.mood||""; d.content=(val("#f-content")||"").trim(); d.date=val("#f-date"); }
@@ -1435,7 +1511,7 @@ function openEditor(key, item){
 function newItem(m){
   const base={ id: Date.now() };
   let item;
-  if(m.type==="todo") item={...base, title:"", priority:(m.priorities&&m.priorities[1]?m.priorities[1].key:"P1"), done:false, note:""};
+  if(m.type==="todo") item={...base, title:"", priority:(m.priorities&&m.priorities[1]?m.priorities[1].key:"P1"), done:false, note:"", link:""};
   else if(m.type==="checkin") item={...base, title:"", log:{}};
   else if(m.type==="progress") item={...base, title:"", current:0, target: (m.unit==="页"?100:20), unit:m.unit||"", note:""};
   else if(m.type==="finance") item={...base, title:"", type:"expense", amount:"", category:(m.categories&&m.categories[0])||"其他", date:isoToday()};
