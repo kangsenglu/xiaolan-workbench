@@ -419,6 +419,8 @@
   .daily-card .dc-body .dc-item { display:flex; gap:8px; margin-bottom:5px; }
   .daily-card .dc-body .dc-item:last-child { margin-bottom:0; }
   .daily-card .dc-body .dc-dot { width:5px; height:5px; border-radius:50%; margin-top:7px; flex:0 0 auto; }
+  .dc-link { display:inline-flex; align-items:center; gap:3px; margin-left:8px; padding:3px 9px; border-radius:8px; background:var(--surface-nested); color:var(--accent); font-size:11px; font-weight:600; text-decoration:none; }
+  .dc-link:active { opacity:.7; }
 
   /* ---------- selfmedia growth tracker ---------- */
   .growth-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-bottom:14px; }
@@ -453,6 +455,8 @@
   .brief-rlinks { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
   .brief-rlinks a { font-size:11px; padding:4px 10px; border-radius:8px; background:var(--surface-nested); color:var(--module-4); text-decoration:none; font-weight:600; }
   .brief-rlinks a:active { opacity:.7; }
+  .bi-img { width:100%; max-height:180px; object-fit:cover; border-radius:var(--radius-tile); margin-bottom:8px; }
+  .bi-img-sm { max-height:100px; }
 
   /* 能量指数卡片 */
   .energy-card { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:16px; }
@@ -660,15 +664,25 @@ const CONFIG = {
       "排卵期": ["网球 70min（看状态）", "田田力量训练 20min", "腰颈护理操 10min"],
       "黄体期": ["文式易筋经 25min", "武式易筋经 25min", "腰颈护理操 10min"],
     },
-    // 英语任务：按星期轮换
+    // 英语任务：按星期轮换（含学习链接）
     englishByDay: [
-      "TED影子跟读12min + 5词打卡",       // 周一
-      "VOA慢速听力15min + 旅游场景5句",   // 周二
-      "BBC 6min English + 5词复习",      // 周三
-      "TED影子跟读12min + 商务口语2句",   // 周四
-      "英文播客20min + 本周词汇测试",     // 周五
-      "美剧片段跟读 + 自由练习",          // 周六
-      "本周英语复盘 + 弱点专项",          // 周日
+      { text: "TED影子跟读12min + 5词打卡", link: "https://www.ted.com/talks" },
+      { text: "VOA慢速听力15min + 旅游场景5句", link: "https://learningenglish.voanews.com" },
+      { text: "BBC 6min English + 5词复习", link: "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" },
+      { text: "TED影子跟读12min + 商务口语2句", link: "https://www.ted.com/talks" },
+      { text: "英文播客20min + 本周词汇测试", link: "https://www.bbc.co.uk/learningenglish" },
+      { text: "美剧片段跟读 + 自由练习", link: "https://www.netflix.com" },
+      { text: "本周英语复盘 + 弱点专项", link: "https://www.bbc.co.uk/learningenglish/english/course/emw" },
+    ],
+    // 粤韩语任务：按星期轮换（含学习链接）
+    dialectByDay: [
+      { text: "粤语情景短剧「茶餐厅点餐」", link: "https://www.youtube.com/results?search_query=粤语情景短剧" },
+      { text: "韩语字母ㄱ-ㅎ复习 + 日常用语5句", link: "https://www.howtostudykorean.com" },
+      { text: "粤语TVB台词跟读10min", link: "https://www.youtube.com/results?search_query=TVB经典台词" },
+      { text: "韩语TOPIK初级词汇20个", link: "https://www.topik.go.kr" },
+      { text: "粤语点餐实战对话练习", link: "https://www.youtube.com/results?search_query=粤语点餐对话" },
+      { text: "韩剧片段跟读 + 自由练习", link: "https://www.viki.com" },
+      { text: "本周粤语韩语复盘", link: "https://www.duolingo.com" },
     ],
     // 自媒体热点：按星期轮换
     hotByDay: [
@@ -680,15 +694,15 @@ const CONFIG = {
       "周末生活方式内容",
       "本周复盘+下周计划",
     ],
-    // 专业学习：按星期轮换
+    // 专业学习：按星期轮换（含参考链接）
     proByDay: [
-      "3分钟读懂：数据回流闭环",
-      "ArXiv前沿：Multi-agent协作",
-      "3分钟读懂：数据质量评估",
-      "行业动态：AI辅助研发工具",
-      "3分钟读懂：SFT/RL概念",
-      "深度阅读：zartbot公众号精选",
-      "本周知识图谱整理",
+      { text: "3分钟读懂：数据回流闭环", link: "https://arxiv.org/list/cs.LG/recent" },
+      { text: "ArXiv前沿：Multi-agent协作", link: "https://arxiv.org/abs/2308.00352" },
+      { text: "3分钟读懂：数据质量评估", link: "https://github.com/huggingface/datatrove" },
+      { text: "行业动态：AI辅助研发工具", link: "https://github.com/features/copilot" },
+      { text: "3分钟读懂：SFT/RL概念", link: "https://arxiv.org/abs/2203.02155" },
+      { text: "深度阅读：zartbot公众号精选", link: "https://mp.weixin.qq.com/s?__biz=zartbot" },
+      { text: "本周知识图谱整理", link: "https://arxiv.org/list/cs.CL/recent" },
     ],
     // 养生茶饮：按经期阶段
     teaByPhase: {
@@ -715,16 +729,19 @@ const CONFIG = {
     },
     {
       key: "body", name: "体围记录", icon: "scale", tint: "#eef3ec", color: "var(--module-1)",
-      type: "note", desc: "体重·腰围·臀围·趋势追踪",
+      type: "note", desc: "每日状态·体重围度·趋势追踪",
       moods: ["记录", "趋势"],
       fields: [
+        { key: "status", label: "今日状态", type: "select", options: ["精力充沛", "状态不错", "一般", "疲惫", "不适"] },
+        { key: "sleep", label: "睡眠质量", type: "select", options: ["优", "良", "一般", "差"] },
+        { key: "skin", label: "皮肤状况", type: "text", placeholder: "干燥/出油/痘痘/良好" },
         { key: "weight", label: "体重(kg)", type: "number", placeholder: "52.5" },
         { key: "waist", label: "腰围(cm)", type: "number", placeholder: "68" },
         { key: "hip", label: "臀围(cm)", type: "number", placeholder: "88" },
-        { key: "note", label: "备注", type: "text", placeholder: "今日状态" },
+        { key: "note", label: "备注", type: "text", placeholder: "其他想记录的" },
       ],
       seed: [
-        { id: 201, title: "初始记录", content: "开始记录体围变化，不以减重为目标，关注体型健康。", mood: "记录", date: isoToday(), weight: "", waist: "", hip: "", note: "" },
+        { id: 201, title: "初始记录", content: "开始记录每日状态和体围变化，不以减重为目标，关注体型健康。", mood: "记录", date: isoToday(), status: "", sleep: "", skin: "", weight: "", waist: "", hip: "", note: "" },
       ],
     },
     {
@@ -795,12 +812,15 @@ const CONFIG = {
     },
     {
       key: "pro", name: "专业赋能", icon: "bolt", tint: "#efeee8", color: "var(--accent)",
-      type: "note", desc: "每日概念·前沿动态·知识库",
-      moods: ["概念", "前沿", "工具", "收藏"],
+      type: "note", desc: "每日概念·前沿动态·观点记录·知识库",
+      moods: ["概念", "前沿", "工具", "观点", "收藏"],
+      fields: [
+        { key: "link", label: "参考链接", type: "text", placeholder: "https://..." },
+      ],
       seed: [
-        { id: 71, title: "3分钟读懂：数据回流闭环", content: "数据回流指将模型推理结果与用户反馈重新纳入训练数据，形成「训练→部署→反馈→再训练」闭环。关键在数据质量过滤和回流延迟控制。⭐与年度目标高度相关。", mood: "概念", date: isoToday() },
-        { id: 72, title: "今日前沿：Multi-agent协作框架", content: "ArXiv论文提出基于角色分工的多智能体协作框架，代码生成任务提升23%。行业动态：OpenAI新API发布 / 开源模型持续逼近闭源。", mood: "前沿", date: isoToday() },
-        { id: 73, title: "工具推荐：DataQual数据质量评估", content: "开源工具DataQual，支持自动化数据质量检测、异常值识别、分布偏移监控，适用于AI辅助研发数据管线。⭐", mood: "工具", date: isoToday() },
+        { id: 71, title: "3分钟读懂：数据回流闭环", content: "数据回流指将模型推理结果与用户反馈重新纳入训练数据，形成「训练→部署→反馈→再训练」闭环。关键在数据质量过滤和回流延迟控制。⭐与年度目标高度相关。", mood: "概念", date: isoToday(), link: "https://arxiv.org/list/cs.LG/recent" },
+        { id: 72, title: "今日前沿：Multi-agent协作框架", content: "ArXiv论文提出基于角色分工的多智能体协作框架，代码生成任务提升23%。行业动态：OpenAI新API发布 / 开源模型持续逼近闭源。", mood: "前沿", date: isoToday(), link: "https://arxiv.org/abs/2308.00352" },
+        { id: 73, title: "工具推荐：DataQual数据质量评估", content: "开源工具DataQual，支持自动化数据质量检测、异常值识别、分布偏移监控，适用于AI辅助研发数据管线。⭐", mood: "工具", date: isoToday(), link: "https://github.com/huggingface/datatrove" },
       ],
     },
     {
@@ -944,7 +964,8 @@ function renderBriefing(){
   if(!b) return "";
   const linkHtml = (it) => it.link ? ` <a class="bi-link" href="${esc(it.link)}" target="_blank" rel="noopener">${icon("link",10)} ${esc(it.linkText||"打开链接")}</a>` : "";
   const srcHtml = (it) => it.source ? `<div class="bi-source">${icon("quote",10)} ${esc(it.source)}</div>` : "";
-  const itemHtml = (it) => `<div class="brief-item"><div class="bi-title">${esc(it.title)}</div><div class="bi-content">${esc(it.content)}</div>${srcHtml(it)}${linkHtml(it)}</div>`;
+  const imgHtml = (it) => it.image ? `<img class="bi-img" src="${esc(it.image)}" alt="" loading="lazy" onerror="this.style.display='none'"/>` : "";
+  const itemHtml = (it) => `<div class="brief-item">${imgHtml(it)}<div class="bi-title">${esc(it.title)}</div><div class="bi-content">${esc(it.content)}</div>${srcHtml(it)}${linkHtml(it)}</div>`;
 
   let html = "";
 
@@ -967,7 +988,7 @@ function renderBriefing(){
     const s=b.professional;
     let inner = "";
     if(s.knowledgePoints && s.knowledgePoints.length){
-      inner += `<div class="brief-section-label">LLM基础知识 · 每日5点</div><div class="brief-kp-grid">${s.knowledgePoints.map(kp=>`<div class="brief-kp"><div class="bi-title">${esc(kp.title)}</div><div class="bi-content">${esc(kp.content)}</div>${kp.link?`<a class="bi-link" href="${esc(kp.link)}" target="_blank" rel="noopener">${icon("link",9)} 参考</a>`:""}</div>`).join("")}</div>`;
+      inner += `<div class="brief-section-label">LLM基础知识 · 每日5点</div><div class="brief-kp-grid">${s.knowledgePoints.map(kp=>`<div class="brief-kp">${kp.image?`<img class="bi-img bi-img-sm" src="${esc(kp.image)}" alt="" loading="lazy" onerror="this.style.display='none'"/>`:""}<div class="bi-title">${esc(kp.title)}</div><div class="bi-content">${esc(kp.content)}</div>${kp.link?`<a class="bi-link" href="${esc(kp.link)}" target="_blank" rel="noopener">${icon("link",9)} 参考</a>`:""}</div>`).join("")}</div>`;
     }
     if(s.industryNews && s.industryNews.length){
       inner += `<div class="brief-section-label">行业动态 · 资讯论文</div>${s.industryNews.map(itemHtml).join("")}`;
@@ -1161,9 +1182,19 @@ function renderDailyDynamic(){
   const tea = CONFIG.dailyTemplates.teaByPhase[phaseName] || "陈皮茶";
   const sports = CONFIG.dailyTemplates.sportByPhase[phaseName] || CONFIG.dailyTemplates.sportByPhase["卵泡期"];
   const eng = CONFIG.dailyTemplates.englishByDay[dow];
+  const dia = CONFIG.dailyTemplates.dialectByDay[dow];
   const hot = CONFIG.dailyTemplates.hotByDay[dow];
   const pro = CONFIG.dailyTemplates.proByDay[dow];
   const intensity = pp ? pp.phase.intensity : 0.9;
+  // 从简报拉取动态饮食推荐，回退到经期阶段配置
+  const briefDiet = (window.DAILY_BRIEFING && window.DAILY_BRIEFING.health && window.DAILY_BRIEFING.health.diet) || ph.diet || '均衡饮食';
+  const linkBtn = (url,label) => url ? ` <a class="dc-link" href="${attr(url)}" target="_blank" rel="noopener">${icon("link",10)} ${label||'打开学习'}</a>` : "";
+  const engText = typeof eng==='object' ? eng.text : eng;
+  const engLink = typeof eng==='object' ? eng.link : "";
+  const diaText = typeof dia==='object' ? dia.text : (dia||"");
+  const diaLink = typeof dia==='object' ? dia.link : "";
+  const proText = typeof pro==='object' ? pro.text : pro;
+  const proLink = typeof pro==='object' ? pro.link : "";
 
   return `<div class="daily-card">
       <div class="dc-head">${icon("activity",15)} 今日运动推荐<span class="dc-tag" style="background:${pp?pp.phase.color:'var(--module-1)'}22;color:${pp?pp.phase.color:'var(--module-1)'}">强度${intensity}</span></div>
@@ -1173,22 +1204,26 @@ function renderDailyDynamic(){
     <div class="daily-card">
       <div class="dc-head">${icon("leaf",15)} 今日饮食·护肤·心情<span class="dc-tag" style="background:${ph.color}22;color:${ph.color}">${phaseName}</span></div>
       <div class="dc-body">
-        <div class="dc-item"><span class="dc-dot" style="background:var(--module-1)"></span><span>🍱 <b>饮食</b>：${esc(ph.diet||'均衡饮食')}</span></div>
+        <div class="dc-item"><span class="dc-dot" style="background:var(--module-1)"></span><span>🍱 <b>饮食</b>：${esc(briefDiet)}</span></div>
         <div class="dc-item"><span class="dc-dot" style="background:var(--module-5)"></span><span> skincare <b>护肤</b>：${esc(ph.skincare||'基础保湿')}</span></div>
         <div class="dc-item"><span class="dc-dot" style="background:var(--accent)"></span><span>💭 <b>心情</b>：${esc(ph.mood||'保持平和')}</span></div>
       </div>
     </div>
     <div class="daily-card">
       <div class="dc-head">${icon("book",15)} 今日英语任务<span class="dc-tag" style="background:var(--module-2)22;color:var(--module-2)">Day ${dow+1}</span></div>
-      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--module-2)"></span><span><b>${eng}</b></span></div></div>
+      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--module-2)"></span><span><b>${esc(engText)}</b>${linkBtn(engLink)}</span></div></div>
+    </div>
+    <div class="daily-card">
+      <div class="dc-head">${icon("quote",15)} 今日粤韩语<span class="dc-tag" style="background:var(--module-5)22;color:var(--module-5)">Day ${dow+1}</span></div>
+      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--module-5)"></span><span><b>${esc(diaText)}</b>${linkBtn(diaLink)}</span></div></div>
     </div>
     <div class="daily-card">
       <div class="dc-head">${icon("bolt",15)} 今日专业学习<span class="dc-tag" style="background:var(--accent)22;color:var(--accent)">概念卡片</span></div>
-      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--accent)"></span><span><b>${pro}</b></span></div></div>
+      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--accent)"></span><span><b>${esc(proText)}</b>${linkBtn(proLink,'参考链接')}</span></div></div>
     </div>
     <div class="daily-card">
       <div class="dc-head">${icon("flame",15)} 今日自媒体热点<span class="dc-tag" style="background:var(--danger)22;color:var(--danger)">推荐</span></div>
-      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--danger)"></span><span><b>${hot}</b></span></div>
+      <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--danger)"></span><span><b>${esc(hot)}</b></span></div>
         <div class="dc-item"><span class="dc-dot" style="background:var(--module-5)"></span><span>最佳发布时间：${dow<5?'晚19:00-21:00':'早10:00-11:00（小红书）/ 全天（抖音）'}</span></div></div>
     </div>`;
 }
@@ -1527,6 +1562,23 @@ function renderInsight(){
 }
 
 /* ---------- MODULE VIEW ---------- */
+/* ---------- FINANCE BRIEFING (investment suggestions in finance module) ---------- */
+function renderFinanceBriefing(){
+  const b = window.DAILY_BRIEFING;
+  if(!b || !b.investment) return "";
+  const inv = b.investment;
+  let html = "";
+  if(inv.marketTrend) html += `<div class="brief-trend">${icon("wallet",11)} ${esc(inv.marketTrend)}</div>`;
+  if(inv.suggestions && inv.suggestions.length){
+    const linkHtml = (it) => it.link ? ` <a class="bi-link" href="${esc(it.link)}" target="_blank" rel="noopener">${icon("link",10)} ${esc(it.linkText||"查看详情")}</a>` : "";
+    html += `<div class="brief-section-label">投资建议</div>${inv.suggestions.map(it=>`<div class="brief-item"><div class="bi-title">${esc(it.title)}</div><div class="bi-content">${esc(it.content)}</div>${linkHtml(it)}</div>`).join("")}`;
+  }
+  if(inv.researchLinks && inv.researchLinks.length){
+    html += `<div class="brief-section-label">投研链接</div><div class="brief-rlinks">${inv.researchLinks.map(r=>r.link?`<a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.title)}</a>`:"").join("")}</div>`;
+  }
+  return html ? `<div class="sec-title">今日投资简报</div><div class="brief-card">${html}</div>` : "";
+}
+
 function renderModule(key){
   const m=modOf(key); const it=data[key]||[];
   const t=today();
@@ -1554,6 +1606,7 @@ function renderModule(key){
   }
   if(m.type==="checkin") extra=renderCalendar(m,it);
   if(m.key==="body") extra=renderBodyChart();
+  if(m.key==="finance") extra=renderFinanceBriefing();
   const body = it.length ? it.map(x=>recHTML(m,x)).join("")
     : `<div class="empty"><span class="e">${icon(m.icon,26)}</span><div>还没有记录，点上方「新建」添加第一条吧</div></div>`;
   $("#screen").innerHTML = `<div class="greet"><div><h1>${m.name}</h1><p>${m.desc}</p></div>
@@ -1578,7 +1631,8 @@ function recHTML(m,x){
   const acts=`<div class="acts">${pin}${del}</div>`;
   const chkMark=icon("check",14,2.4);
   const thumb=x.image?`<img class="thumb" src="${attr(x.image)}" alt="">`:'';
-  const customMeta=(m.fields||[]).filter(f=>x[f.key]).map(f=>`<span class="meta-tag">${esc(x[f.key])}</span>`).join("");
+  const customMeta=(m.fields||[]).filter(f=>x[f.key]&&f.key!=="link").map(f=>`<span class="meta-tag">${esc(x[f.key])}</span>`).join("");
+  const linkField=(m.fields||[]).find(f=>f.key==="link"&&x[f.key]);
   const customBlock=customMeta?`<div class="meta-line">${customMeta}</div>`:'';
   const layout=x.layout||'default';
   const layoutCls=`rec-layout-${layout}`;
@@ -1636,10 +1690,12 @@ function recHTML(m,x){
       <div class="amt ${inc?'inc':'exp'}" style="margin-left:auto">${inc?'+':'-'}¥${x.amount}</div></div></div>`;
   }
   // note
+  const noteLinkUrl = linkField ? x[linkField.key] : x.link;
+  const noteLink = noteLinkUrl ? `<a class="rec-link" href="${attr(noteLinkUrl)}" target="_blank" rel="noopener">${icon("link",11)} 打开链接</a>` : "";
   return `<div class="rec ${layoutCls}">${acts}<div class="top">${thumb}<div class="body" data-edit="${x.id}">
     <div class="rname">${esc(x.title||'无标题')}</div>
     <div class="rmeta">${x.mood?`<span class="badge" style="background:var(--accent-muted);color:var(--accent)">${esc(x.mood)}</span>`:''}<span style="color:var(--text-secondary);font-size:12px">${x.date||''}</span></div>
-    ${x.content?`<div class="rnote">${esc(x.content)}</div>`:''}${customBlock}</div></div></div>`;
+    ${x.content?`<div class="rnote">${esc(x.content)}</div>`:''}${customBlock}${noteLink}</div></div></div>`;
 }
 
 function streak(log){
