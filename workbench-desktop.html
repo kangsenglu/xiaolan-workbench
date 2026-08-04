@@ -99,6 +99,11 @@
   .navi.active svg { color: var(--drawer-text); }
   .nav-sep { font-size: 10.5px; opacity: .42; padding: 15px 14px 6px; letter-spacing: .1em; }
   .sidebar .foot { padding: 15px 20px; font-size: 11px; opacity: .42; border-top: 1px solid var(--drawer-hover); }
+  .sidebar .foot .dsync { display: flex; gap: 8px; margin-bottom: 8px; opacity: 1; }
+  .sidebar .foot .dsync-btn { flex: 1; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--drawer-hover);
+    background: transparent; color: var(--drawer-text); font-size: 12px; font-weight: 600; cursor: pointer; transition: background .15s; }
+  .sidebar .foot .dsync-btn:hover { background: var(--drawer-hover); }
+  .sidebar .foot .foot-text { font-size: 11px; opacity: .42; }
 
   /* ---------- main ---------- */
   .main { margin-left: var(--sidebar-w); padding: 26px 34px 48px; }
@@ -602,7 +607,14 @@
       <div><h1 id="brandName">我的工作台</h1><p id="brandSlogan">Personal Workbench</p></div>
     </div>
     <nav class="nav" id="nav"></nav>
-    <div class="foot" id="foot">数据仅存在本机 · 每日更新</div>
+    <div class="foot" id="foot">
+      <div class="dsync">
+        <button class="dsync-btn" id="btnExport">导出数据</button>
+        <button class="dsync-btn" id="btnImport">导入数据</button>
+        <input type="file" id="importInput" accept=".json" hidden/>
+      </div>
+      <div class="foot-text">数据仅存在本机 · 可导出/导入同步</div>
+    </div>
   </aside>
   <!-- main -->
   <main class="main"><div id="screen"></div></main>
@@ -1626,6 +1638,38 @@ $("#avatarInput").onchange = e => {
   const reader = new FileReader();
   reader.onload = () => { data.__avatar = reader.result; $("#avaImg").src = reader.result; $("#avaImg").style.display="block"; $("#brandDefault").style.display="none"; store.save(); };
   reader.readAsDataURL(f);
+  e.target.value = "";
+};
+
+/* ---------- data sync (export / import) ---------- */
+$("#btnExport").onclick = () => {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  const d = new Date();
+  a.href = url;
+  a.download = `xiaolan-backup-${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+};
+$("#btnImport").onclick = () => $("#importInput").click();
+$("#importInput").onchange = e => {
+  const f = e.target.files && e.target.files[0];
+  if(!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const imported = JSON.parse(reader.result);
+      if(!imported || typeof imported !== "object") throw new Error("format");
+      data = imported;
+      store.save();
+      render();
+      alert("导入成功！数据已更新。");
+    } catch(err) {
+      alert("导入失败：文件格式不正确。");
+    }
+  };
+  reader.readAsText(f);
   e.target.value = "";
 };
 
