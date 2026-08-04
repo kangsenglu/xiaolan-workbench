@@ -599,6 +599,44 @@
   .brief-rlinks a { font-size:11px; padding:4px 10px; border-radius:8px; background:var(--surface-nested); color:var(--module-4); text-decoration:none; font-weight:600; }
   .brief-rlinks a:hover { opacity:.7; }
 
+  .energy-card { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:16px; }
+  .energy-card .ec-head { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
+  .energy-card .ec-dial { position:relative; width:56px; height:56px; flex:0 0 auto; }
+  .energy-card .ec-dial .gauge { width:56px; height:56px; }
+  .energy-card .ec-mid { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+  .energy-card .ec-score { font-size:28px; font-weight:800; line-height:1; }
+  .energy-card .ec-score small { font-size:13px; font-weight:500; opacity:.5; }
+  .energy-card .ec-level { font-size:12px; color:var(--text-secondary); margin-top:4px; }
+  .energy-card .ec-factors { display:grid; gap:6px; }
+  .energy-card .ef-row { display:flex; align-items:center; gap:8px; }
+  .energy-card .ef-ic { flex:0 0 auto; display:grid; place-items:center; width:18px; }
+  .energy-card .ef-lb { font-size:11px; color:var(--text-secondary); flex:0 0 64px; }
+  .energy-card .ef-bar { flex:1; height:6px; border-radius:3px; background:var(--surface-nested); overflow:hidden; }
+  .energy-card .ef-bar i { display:block; height:100%; border-radius:3px; transition:width .4s; }
+  .energy-card .ef-val { font-size:10px; color:var(--text-tertiary); flex:0 0 36px; text-align:right; }
+  .energy-card .ec-suggest { font-size:12px; color:var(--text-secondary); margin-top:10px; padding:8px 10px; border-radius:var(--radius-tile); background:var(--surface-nested); line-height:1.5; }
+  .budget-card { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:14px 16px; }
+  .budget-card.budget-warn { border-color:var(--module-3); }
+  .budget-card.budget-danger { border-color:var(--danger); }
+  .budget-card .bc-head { display:flex; align-items:center; gap:8px; font-size:13px; font-weight:700; margin-bottom:8px; }
+  .budget-card .bc-bar { height:8px; border-radius:4px; background:var(--surface-nested); overflow:hidden; margin-bottom:6px; }
+  .budget-card .bc-bar i { display:block; height:100%; border-radius:4px; transition:width .4s; }
+  .budget-card .bc-info { display:flex; justify-content:space-between; font-size:11px; color:var(--text-secondary); }
+  .budget-card .bc-tip { font-size:11px; margin-top:6px; padding:6px 8px; border-radius:var(--radius-tile); background:var(--surface-nested); }
+  .budget-card.budget-warn .bc-tip { color:var(--module-3); }
+  .budget-card.budget-danger .bc-tip { color:var(--danger); }
+  .body-chart { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:14px 16px; margin-top:12px; }
+  .body-chart .bc-title { font-size:13px; font-weight:700; margin-bottom:8px; }
+  .body-chart svg { width:100%; height:auto; }
+  .achieve-toast { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%) scale(.8); z-index:100; background:var(--surface-card); border-radius:20px; padding:28px 32px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,.3); opacity:0; transition:all .4s cubic-bezier(.2,.8,.25,1); pointer-events:none; }
+  .achieve-toast.show { opacity:1; transform:translate(-50%,-50%) scale(1); pointer-events:auto; }
+  .achieve-toast .at-icon { font-size:48px; margin-bottom:8px; }
+  .achieve-toast .at-title { font-size:18px; font-weight:800; margin-bottom:4px; }
+  .achieve-toast .at-desc { font-size:13px; color:var(--text-secondary); margin-bottom:16px; }
+  .achieve-toast .at-btn { padding:8px 24px; border:none; border-radius:12px; background:var(--accent); color:#fff; font-size:14px; font-weight:600; cursor:pointer; }
+  .ach-row { display:flex; gap:4px; flex-wrap:wrap; align-items:center; }
+  .ach-badge { font-size:18px; line-height:1; cursor:default; }
+
   /* 每周运动规划卡片 */
   .weekly-card { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:16px 20px; }
   .weekly-card .wc-head { display:flex; align-items:center; gap:8px; font-size:14px; font-weight:700; margin-bottom:12px; }
@@ -693,15 +731,41 @@ const CONFIG = {
     periodLength: 5,       // 经期持续天数
     phases: [
       { name: "经期", start: 1, end: 5, intensity: 0.4, color: "var(--danger)",
-        tips: "保暖忌生冷，仅做文式易筋经（减量）+护理操。避免高强度运动。红枣姜茶。" },
+        tips: "保暖忌生冷，仅做文式易筋经（减量）+护理操。避免高强度运动。红枣姜茶。",
+        diet: "红枣姜茶、当归鸡蛋汤、山药排骨汤。忌冰饮生冷。补铁：动物肝脏、菠菜。",
+        skincare: "减少护肤步骤，注重保湿。避免去角质和酸类产品。面膜以补水为主。",
+        mood: "情绪敏感期，允许自己慢下来。冥想5分钟，减少社交压力。" },
       { name: "卵泡期", start: 6, end: 13, intensity: 0.9, color: "var(--module-1)",
-        tips: "精力恢复期，可恢复 full 强度训练。力量训练+游泳最佳。玫瑰花茶。" },
+        tips: "精力恢复期，可恢复 full 强度训练。力量训练+游泳最佳。玫瑰花茶。",
+        diet: "玫瑰花茶、枸杞菊花茶。高蛋白饮食：鸡胸肉、鱼虾。补充维生素B族。",
+        skincare: "皮肤吸收力最佳期，适合功效型护肤品。可做去角质、刷酸。",
+        mood: "精力充沛，适合处理高难度任务和学习新知识。社交能量满。" },
       { name: "排卵期", start: 14, end: 16, intensity: 0.85, color: "var(--module-3)",
-        tips: "体能高峰，适合网球/舞蹈等高强度。注意运动后防受凉。" },
+        tips: "体能高峰，适合网球/舞蹈等高强度。注意运动后防受凉。",
+        diet: "枸杞菊花茶。均衡饮食，适量碳水支撑高强度运动。补充镁：坚果、黑巧。",
+        skincare: "皮脂分泌增多，注意清洁。控油+保湿平衡。",
+        mood: "自信外向，适合拍照、发自媒体内容、社交活动。" },
       { name: "黄体期", start: 17, end: 28, intensity: 0.6, color: "var(--module-5)",
-        tips: "逐步降强度，关注情绪波动。易上火时切换清润食谱。陈皮茶。" },
+        tips: "逐步降强度，关注情绪波动。易上火时切换清润食谱。陈皮茶。",
+        diet: "陈皮茶、冬瓜荷叶茶（消水肿）。减少盐分摄入。补充钙镁缓解PMS。",
+        skincare: "易出油长痘，加强清洁。避免尝试新产品。茶树精油点痘。",
+        mood: "情绪波动期，易烦躁。减少咖啡因。瑜伽散步替代高强度运动。" },
     ],
   },
+
+  budget: {
+    monthly: 8000,
+    warnAt: 0.7,
+    dangerAt: 0.9,
+  },
+  achievements: [
+    { key: "streak7", icon: "🔥", title: "坚持7天", desc: "连续打卡7天", check: () => { const h=data.health||[]; return h.some(x=>streak(x.log)>=7); } },
+    { key: "streak30", icon: "🏆", title: "坚持30天", desc: "连续打卡30天", check: () => { const h=data.health||[]; return h.some(x=>streak(x.log)>=30); } },
+    { key: "streak100", icon: "💎", title: "百日筑基", desc: "连续打卡100天", check: () => { const h=data.health||[]; return h.some(x=>streak(x.log)>=100); } },
+    { key: "sportFull", icon: "💪", title: "运动达标", desc: "所有运动项目完成100%", check: () => { const s=data.sport||[]; return s.length>0 && s.every(x=>x.current>=x.target); } },
+    { key: "english7", icon: "📚", title: "英语全勤", desc: "英语任务全部完成", check: () => { const e=data.english||[]; return e.length>0 && e.every(x=>x.done); } },
+    { key: "bodyTrack", icon: "📏", title: "体型追踪", desc: "记录体围数据5次以上", check: () => { const b=data.body||[]; return b.filter(x=>x.weight||x.waist||x.hip).length>=5; } },
+  ],
 
   // ============ 每日动态生成模板 ============
   dailyTemplates: {
@@ -1156,10 +1220,22 @@ function getPeriodData(){
   if(!data.__period) data.__period = { lastStart: null, history: [] };
   return data.__period;
 }
+function getAvgCycle(){
+  const pd = getPeriodData();
+  const hist = (pd.history||[]).filter(h=>h.date);
+  if(hist.length < 2) return CONFIG.period.cycleLength;
+  const intervals = [];
+  for(let i=1; i<hist.length; i++){
+    const d1 = new Date(hist[i-1].date), d2 = new Date(hist[i].date);
+    intervals.push(Math.round((d2-d1)/86400000));
+  }
+  const avg = Math.round(intervals.reduce((a,b)=>a+b,0)/intervals.length);
+  return (avg>=21 && avg<=45) ? avg : CONFIG.period.cycleLength;
+}
 function calcPeriodPhase(){
   const pd = getPeriodData();
   if(!pd.lastStart) return null;
-  const cycle = CONFIG.period.cycleLength;
+  const cycle = getAvgCycle();
   const last = new Date(pd.lastStart);
   const todayD = new Date(isoToday());
   const diffDays = Math.floor((todayD - last) / 86400000) + 1;
@@ -1168,7 +1244,7 @@ function calcPeriodPhase(){
   const nextStart = new Date(last);
   nextStart.setDate(nextStart.getDate() + cycle * Math.ceil(diffDays / cycle));
   const daysToNext = Math.ceil((nextStart - todayD) / 86400000);
-  return { cycleDay, phase, daysToNext, nextStart: nextStart.toISOString().slice(0,10), diffDays };
+  return { cycleDay, phase, daysToNext, nextStart: nextStart.toISOString().slice(0,10), diffDays, avgCycle: cycle };
 }
 function markPeriodStart(){
   const pd = getPeriodData();
@@ -1201,7 +1277,8 @@ function renderPeriodCard(){
     </div>`;
   }
   const ph = pp.phase;
-  const cycle = CONFIG.period.cycleLength;
+  const cycle = pp.avgCycle || CONFIG.period.cycleLength;
+  const histCount = (getPeriodData().history||[]).length; const cycleLabel = histCount>=2 ? '自学习'+cycle+'天' : '默认'+cycle+'天';
   const pct = Math.round(pp.cycleDay / cycle * 100);
   const phases = CONFIG.period.phases;
   const phaseRow = phases.map(p=>{
@@ -1220,6 +1297,7 @@ function renderPeriodCard(){
       <span>当前阶段：<b>${ph.name}</b></span>
       <span>强度系数：<b>${ph.intensity}</b></span>
       <span>下次预计：<b>${pp.nextStart}</b></span>
+      <span>周期模式：<b>${cycleLabel}</b></span>
     </div>
     <div class="pc-tips">${icon("quote",12)} <b>${ph.name}建议：</b>${ph.tips}</div>
     <div class="pc-actions">
@@ -1234,6 +1312,7 @@ function renderDailyDynamic(){
   const dow = (new Date().getDay()+6)%7;
   const pp = calcPeriodPhase();
   const phaseName = pp ? pp.phase.name : "卵泡期";
+  const ph = pp ? pp.phase : CONFIG.period.phases[1];
   const tea = CONFIG.dailyTemplates.teaByPhase[phaseName] || "陈皮茶";
   const sports = CONFIG.dailyTemplates.sportByPhase[phaseName] || CONFIG.dailyTemplates.sportByPhase["卵泡期"];
   const eng = CONFIG.dailyTemplates.englishByDay[dow];
@@ -1245,6 +1324,14 @@ function renderDailyDynamic(){
       <div class="dc-head">${icon("activity",15)} 今日运动推荐<span class="dc-tag" style="background:${pp?pp.phase.color:'var(--module-1)'}22;color:${pp?pp.phase.color:'var(--module-1)'}">强度${intensity}</span></div>
       <div class="dc-body">${sports.map((s,i)=>`<div class="dc-item"><span class="dc-dot" style="background:var(--module-3)"></span><span><b>${s}</b></span></div>`).join("")}
         <div class="dc-item"><span class="dc-dot" style="background:var(--module-1)"></span><span>今日养生茶饮：<b>${tea}</b></span></div></div>
+    </div>
+    <div class="daily-card">
+      <div class="dc-head">${icon("leaf",15)} 今日饮食·护肤·心情<span class="dc-tag" style="background:${ph.color}22;color:${ph.color}">${phaseName}</span></div>
+      <div class="dc-body">
+        <div class="dc-item"><span class="dc-dot" style="background:var(--module-1)"></span><span>🍱 <b>饮食</b>：${esc(ph.diet||'均衡饮食')}</span></div>
+        <div class="dc-item"><span class="dc-dot" style="background:var(--module-5)"></span><span> skincare <b>护肤</b>：${esc(ph.skincare||'基础保湿')}</span></div>
+        <div class="dc-item"><span class="dc-dot" style="background:var(--accent)"></span><span>💭 <b>心情</b>：${esc(ph.mood||'保持平和')}</span></div>
+      </div>
     </div>
     <div class="daily-card">
       <div class="dc-head">${icon("book",15)} 今日英语任务<span class="dc-tag" style="background:var(--module-2)22;color:var(--module-2)">Day ${dow+1}</span></div>
@@ -1259,6 +1346,72 @@ function renderDailyDynamic(){
       <div class="dc-body"><div class="dc-item"><span class="dc-dot" style="background:var(--danger)"></span><span><b>${hot}</b></span></div>
         <div class="dc-item"><span class="dc-dot" style="background:var(--module-5)"></span><span>最佳发布时间：${dow<5?'晚19:00-21:00':'早10:00-11:00（小红书）/ 全天（抖音）'}</span></div></div>
     </div>`;
+}
+
+function calcEnergyScore(){
+  const pp = calcPeriodPhase();
+  let score = 50; let factors = [];
+  if(pp){ const phaseScore = Math.round(pp.phase.intensity * 30); score += phaseScore; factors.push({label:"经期阶段", value:phaseScore, max:30, icon:"sun"}); }
+  else { score += 25; factors.push({label:"默认", value:25, max:30, icon:"sun"}); }
+  const sleepItem = (data.health||[]).find(x=>x.title && x.title.includes("23:30"));
+  if(sleepItem && sleepItem.log && sleepItem.log[today()]){ score += 20; factors.push({label:"早睡打卡", value:20, max:20, icon:"moon"}); }
+  else { factors.push({label:"早睡未打卡", value:0, max:20, icon:"moon"}); }
+  const sportProgress = avgProgress(data.sport); const sportScore = Math.round(sportProgress.value * 0.3); score += sportScore; factors.push({label:"运动进度", value:sportScore, max:30, icon:"activity"});
+  const healthItems = data.health||[]; const t = today(); const healthDone = healthItems.filter(x=>x.log&&x.log[t]).length;
+  const healthScore = healthItems.length ? Math.round(healthDone/healthItems.length*20) : 0; score += healthScore; factors.push({label:"习惯打卡", value:healthScore, max:20, icon:"leaf"});
+  score = Math.min(100, Math.max(0, score));
+  const level = score>=80?"高能日":score>=60?"状态不错":score>=40?"一般般":score>=20?"低能量":"需要休息";
+  const color = score>=80?"var(--module-1)":score>=60?"var(--module-3)":score>=40?"var(--accent)":score>=20?"var(--module-5)":"var(--danger)";
+  return { score, level, color, factors };
+}
+function renderEnergyCard(){
+  const e = calcEnergyScore();
+  const factorRows = e.factors.map(f=>`<div class="ef-row"><span class="ef-ic" style="color:${e.color}">${icon(f.icon,13)}</span><span class="ef-lb">${esc(f.label)}</span><div class="ef-bar"><i style="width:${f.max>0?Math.round(f.value/f.max*100):0}%;background:${e.color}"></i></div><span class="ef-val">${f.value}/${f.max}</span></div>`).join("");
+  const suggest = e.score>=80?"今日适合挑战高难度任务和学习新知识！":e.score>=60?"保持节奏，完成今日核心任务。":e.score>=40?"降低预期，专注最重要的1-2件事。":"允许自己休息，做最轻松的打卡就好。";
+  return `<div class="energy-card"><div class="ec-head"><div class="ec-dial">${ringSVG(e.score,e.color)}<span class="ec-mid" style="color:${e.color}">${icon("bolt",22)}</span></div><div class="ec-info"><div class="ec-score" style="color:${e.color}">${e.score}<small>/100</small></div><div class="ec-level">${e.level}</div></div></div><div class="ec-factors">${factorRows}</div><div class="ec-suggest">${icon("quote",12)} ${suggest}</div></div>`;
+}
+function renderBudgetCard(){
+  const fin = data.finance||[]; const now = new Date(); const ym = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  const monthExp = fin.filter(x=>x.type==="expense" && (x.date||"").startsWith(ym)).reduce((s,x)=>s+(+x.amount||0),0);
+  const budget = CONFIG.budget.monthly; const pct = Math.round(monthExp/budget*100);
+  const isWarn = pct >= CONFIG.budget.warnAt*100 && pct < CONFIG.budget.dangerAt*100; const isDanger = pct >= CONFIG.budget.dangerAt*100;
+  const cls = isDanger?"budget-danger":isWarn?"budget-warn":""; const color = isDanger?"var(--danger)":isWarn?"var(--module-3)":"var(--module-1)";
+  const tip = isDanger?`⚠️ 已用${pct}%，超出预算预警线！剩余¥${Math.max(0,budget-monthExp)}，建议控制支出。`:isWarn?`💡 已用${pct}%，接近预算预警线。剩余¥${Math.max(0,budget-monthExp)}，注意控制节奏。`:`✅ 预算使用${pct}%，剩余¥${Math.max(0,budget-monthExp)}，节奏良好。`;
+  return `<div class="budget-card ${cls}"><div class="bc-head">${icon("wallet",15)} 本月预算<span style="margin-left:auto;font-size:11px;color:var(--text-tertiary)">¥${monthExp} / ¥${budget}</span></div><div class="bc-bar"><i style="width:${Math.min(100,pct)}%;background:${color}"></i></div><div class="bc-info"><span>${pct}% 已使用</span><span>¥${Math.max(0,budget-monthExp)} 剩余</span></div><div class="bc-tip">${tip}</div></div>`;
+}
+function checkAchievements(){
+  if(!data.__achievements) data.__achievements = []; const unlocked = data.__achievements;
+  const newly = CONFIG.achievements.filter(a => !unlocked.includes(a.key) && a.check());
+  if(newly.length){ newly.forEach(a=>unlocked.push(a.key)); store.save(); showAchievementToast(newly[0]); }
+}
+function showAchievementToast(a){
+  const toast = document.createElement("div"); toast.className = "achieve-toast";
+  toast.innerHTML = `<div class="at-icon">${a.icon}</div><div class="at-title">${esc(a.title)}</div><div class="at-desc">${esc(a.desc)}</div><button class="at-btn">太棒了！</button>`;
+  document.body.appendChild(toast); setTimeout(()=>toast.classList.add("show"),50);
+  toast.querySelector(".at-btn").onclick=()=>{ toast.classList.remove("show"); setTimeout(()=>toast.remove(),400); };
+  setTimeout(()=>{ if(toast.parentNode){ toast.classList.remove("show"); setTimeout(()=>toast.remove(),400); } },5000);
+}
+function renderAchievementBadges(){
+  if(!data.__achievements || !data.__achievements.length) return "";
+  const badges = CONFIG.achievements.filter(a=>data.__achievements.includes(a.key)).map(a=>`<span class="ach-badge" title="${esc(a.title)}: ${esc(a.desc)}">${a.icon}</span>`).join("");
+  return `<div class="ach-row">${badges}</div>`;
+}
+function renderBodyChart(){
+  const records = (data.body||[]).filter(x=>x.weight||x.waist||x.hip).slice(-10).reverse();
+  if(records.length < 2) return "";
+  const w=300, h=140, padX=30, padTop=16, padBot=24; const innerW=w-2*padX, innerH=h-padTop-padBot;
+  const metrics = [{key:"weight",label:"体重",color:"var(--module-1)"},{key:"waist",label:"腰围",color:"var(--module-3)"},{key:"hip",label:"臀围",color:"var(--module-5)"}];
+  let lines = "";
+  metrics.forEach(m=>{
+    const pts = records.map((r,i)=>{ const v=+r[m.key]; if(!v) return null; return {x:padX+innerW*i/(records.length-1), v}; }).filter(p=>p);
+    if(pts.length<2) return; const vals=pts.map(p=>p.v); const min=Math.min(...vals), max=Math.max(...vals); const rng=(max-min)||1;
+    const path = pts.map((p,i)=>{ const y=padTop+innerH*(1-(p.v-min)/rng); return `${i===0?'M':'L'}${p.x},${y}`; }).join(" ");
+    const dots = pts.map(p=>{ const y=padTop+innerH*(1-(p.v-min)/rng); return `<circle cx="${p.x}" cy="${y}" r="3" fill="${m.color}"/>`; }).join("");
+    lines += `<path d="${path}" fill="none" stroke="${m.color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>${dots}`;
+  });
+  const xLabels = records.map((r,i)=>`<text x="${padX+innerW*i/(records.length-1)}" y="${h-6}" text-anchor="middle" font-size="9" fill="var(--text-tertiary)">${(r.date||"").slice(5)}</text>`).join("");
+  const legend = metrics.map(m=>`<span style="display:inline-flex;align-items:center;gap:3px;margin-right:10px;font-size:10px;color:var(--text-tertiary)"><span style="width:8px;height:8px;border-radius:50%;background:${m.color};display:inline-block"></span>${m.label}</span>`).join("");
+  return `<div class="body-chart"><div class="bc-title">${icon("scale",14)} 体围趋势（最近${records.length}次）</div><svg viewBox="0 0 ${w} ${h}">${lines}${xLabels}</svg><div style="margin-top:6px">${legend}</div></div>`;
 }
 
 function renderHome(){
@@ -1282,6 +1435,8 @@ function renderHome(){
       ${quickTileHTML()}
       ${overviewTileHTML()}
     </div>
+    ${renderAchievementBadges()}
+    <div class="sec-title">每日能量指数</div>${renderEnergyCard()}
 
     ${grp("经期与今日动态","PERIOD&nbsp;&nbsp;&&nbsp;&nbsp;DAILY")}
     <div class="bento">
@@ -1291,6 +1446,7 @@ function renderHome(){
 
     ${renderBriefing() ? `${grp("今日简报 · 自动更新","DAILY&nbsp;&nbsp;BRIEFING")}<div class="brief-grid">${renderBriefing()}</div>` : ""}
     ${renderWeeklyPlan() ? `${grp("本周运动规划 · 自动生成","WEEKLY&nbsp;&nbsp;PLAN")}<div class="bento"><div class="b12">${renderWeeklyPlan()}</div></div>` : ""}
+    <div class="sec-title">本月预算</div>${renderBudgetCard()}
 
     ${grp("习惯与待办","HABITS&nbsp;&nbsp;&&nbsp;&nbsp;TASKS")}
     <div class="bento">${habitTileHTML()}${todoTileHTML()}</div>
@@ -1303,6 +1459,7 @@ function renderHome(){
   wireHome();
   wirePeriod();
   startClock();
+  checkAchievements();
 }
 
 function wireHome(){
@@ -1359,7 +1516,7 @@ function renderModule(key){
   const q=searchQ.trim().toLowerCase();
   if(q) it=all.filter(x=>(x.title||"").toLowerCase().includes(q)||(x.note||x.content||"").toLowerCase().includes(q));
 
-  let head="";
+  let head="", extra="";
   if(m.type==="finance"){
     const inc=all.filter(x=>x.type==="income").reduce((a,x)=>a+ +x.amount,0);
     const exp=all.filter(x=>x.type==="expense").reduce((a,x)=>a+ +x.amount,0);
@@ -1382,6 +1539,7 @@ function renderModule(key){
     const todayN=all.filter(x=>x.date===t).length;
     head=headHero(m, `${all.length}`, `条记录 · 今日 ${todayN} 条`, null);
   }
+  if(m.key==="body") extra=renderBodyChart();
 
   const body = it.length ? it.map(x=>recHTML(m,x)).join("")
     : `<div class="empty"><span class="e">${icon(m.icon,28)}</span><div>${q?'没有匹配的记录':'还没有记录，点右上角「新建」添加第一条吧'}</div></div>`;
@@ -1390,7 +1548,7 @@ function renderModule(key){
     <div class="toolbar">
       <div class="search-box">${icon("search",15,2.2)}<input id="search" placeholder="搜索…" value="${attr(searchQ)}"/></div>
       <div class="spacer"></div><button class="btn" id="btn-new">${icon("plus",16,2.2)}新建</button></div>
-    ${head}
+    ${head}${extra}
     <div class="mod-layout">
       <div class="mod-main">
         <div class="sec-title">全部记录 <span id="rec-count" style="margin-left:auto;font-weight:500;color:var(--text-secondary);font-size:12px">${it.length} 条</span></div>
