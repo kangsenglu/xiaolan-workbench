@@ -2327,6 +2327,10 @@ function confirmCalUncheck(item, ds){
 }
 
 function wireHome(){
+  // 模式切换（浏览模式下也需要绑定，否则点击"今日模式"无反应）
+  const mt = $("#modeToday"), mb = $("#modeBrowse");
+  if(mt) mt.onclick = ()=>{ data.__viewMode = "today"; store.save(); renderHome(); };
+  if(mb) mb.onclick = ()=>{ data.__viewMode = "browse"; store.save(); renderHome(); };
   $("#screen").querySelectorAll("[data-open]").forEach(el=>el.onclick=()=>go(el.dataset.open));
   $("#screen").querySelectorAll("[data-quick]").forEach(el=>el.onclick=()=>{ go(el.dataset.quick); openEditor(el.dataset.quick,null); });
   const find=el=>(data[el.dataset.mkey]||[]).find(i=>i.id==el.dataset.id);
