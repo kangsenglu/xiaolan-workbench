@@ -430,8 +430,12 @@
 
   /* 动态问候语 */
   .v6-greet { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius-card); padding:16px; margin-bottom:14px; }
-  .v6-greet .g1 { display:flex; align-items:center; gap:10px; font-size:15px; font-weight:800; }
+  .v6-greet .g1 { display:flex; align-items:center; gap:10px; font-size:15px; font-weight:800; flex-wrap:wrap; }
   .v6-greet .g1 .phase-tag { font-size:10px; font-weight:600; padding:3px 8px; border-radius:999px; margin-left:auto; }
+  .v6-greet .g1 .phase-mark-btn { font-size:10px; font-weight:600; padding:3px 9px; border-radius:999px; border:1px solid var(--danger); background:var(--danger-muted); color:var(--danger); cursor:pointer; display:inline-flex; align-items:center; gap:3px; }
+  .brief-more-bar { text-align:center; margin-top:10px; }
+  .brief-more-btn { font-size:12px; font-weight:600; padding:8px 16px; border-radius:999px; border:1px solid var(--border-input); background:var(--surface-card); color:var(--accent); cursor:pointer; display:inline-flex; align-items:center; gap:5px; }
+  .brief-more-btn:active { background:var(--accent-muted); }
   .v6-greet .g2 { font-size:13px; color:var(--text-secondary); margin-top:8px; line-height:1.6; }
   .v6-greet .g3 { display:flex; align-items:center; gap:6px; margin-top:10px; font-size:11px; color:var(--text-tertiary); }
   .v6-greet .g3 .e-bar { flex:1; height:5px; border-radius:3px; background:var(--surface-nested); overflow:hidden; }
@@ -1901,7 +1905,8 @@ function renderV6Greeting(){
 
   return `<div class="v6-greet">
     <div class="g1">${icon("sun",18)} ${hi}小蓝
-      <span class="phase-tag" style="background:${phaseColor}22;color:${phaseColor}">${phaseName}${phaseDay>0?` · D${phaseDay}`:''}</span></div>
+      <span class="phase-tag" style="background:${phaseColor}22;color:${phaseColor}">${phaseName}${phaseDay>0?` · D${phaseDay}`:''}</span>
+      <button class="phase-mark-btn" id="greetPeriodMark">${icon("sun",12)} 标记经期</button></div>
     <div class="g2">${esc(msg)}</div>
     <div class="g3">${icon("zap",12)} 今日能量 ${energy}%
       <div class="e-bar"><i style="width:${energy}%;background:${energyColor}"></i></div></div>
@@ -2024,6 +2029,9 @@ function renderInteractiveBriefing(){
 
   return `<div class="sec-title">今日简报 · 可交互</div>
     <div class="brief-interactive">${html}</div>
+    <div class="brief-more-bar">
+      <button class="brief-more-btn" id="btnFullBrief">${icon("list",12)} 查看完整简报（饮食/学习/专业/投资/自媒体）</button>
+    </div>
     <div class="low-mode-bar">
       <button class="low-mode-btn" id="lowModeBtn">😓 今天状态不好 → 切换最低可行模式</button>
     </div>`;
@@ -2118,6 +2126,20 @@ function wireToday(){
   if(mt) mt.onclick = ()=>{ data.__viewMode = "today"; store.save(); renderHome(); };
   if(mb) mb.onclick = ()=>{ data.__viewMode = "browse"; store.save(); renderHome(); };
 
+  // 经期标记（今日模式顶部快捷入口）
+  const pm = $("#greetPeriodMark");
+  if(pm) pm.onclick = ()=>{
+    const pp = calcPeriodPhase();
+    if(pp){
+      // 已有经期记录，弹出选择
+      const choice = confirm("当前经期状态：" + pp.phase.name + " D" + pp.diffDays + "\\n\\n确定 = 标记今日为经期开始\\n取消 = 不操作");
+      if(choice) markPeriodStart();
+    } else {
+      markPeriodStart();
+    }
+  };
+  wirePeriod();
+
   // 时间轴开始按钮
   $$("[data-tl-action]").forEach(btn => {
     btn.onclick = () => {
@@ -2169,6 +2191,10 @@ function wireToday(){
     store.save();
     renderHome();
   };
+
+  // 查看完整简报 → 切换到浏览模式
+  const fb = $("#btnFullBrief");
+  if(fb) fb.onclick = () => { data.__viewMode = "browse"; store.save(); renderHome(); window.scrollTo({top:0}); };
 
   // 快速记录按钮
   $$("[data-quick]").forEach(el=>el.onclick=()=>{ go(el.dataset.quick); openEditor(el.dataset.quick,null); });
