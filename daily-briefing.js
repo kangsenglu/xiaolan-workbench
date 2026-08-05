@@ -1,28 +1,15 @@
-/**
- * 每日简报 - 由自动化任务每日生成
- * 工作台会自动加载此文件并展示在首页"今日简报"区域
- * 格式已扩展：支持链接跳转、知识点、行业资讯（含图文）、投资建议等
- *
- * 数据结构说明：
- * - health.diet: 动态饮食推荐，首页今日动态卡片会优先读取此值
- * - language.items[].link: 语言学习卡片附带的跳转链接
- * - professional.knowledgePoints: LLM基础知识每日5点，每点可附参考链接
- * - professional.industryNews: 行业动态资讯/论文，支持 image（图文）、source、link
- * - investment.marketTrend: 今日市场导向
- * - investment.suggestions: 基金/股票建议，支持 link 跳转
- * - investment.researchLinks: 投研报告链接
- * - 所有 items 均支持可选 image 字段用于图文展示
- */
 window.DAILY_BRIEFING = {
-  date: "2026-08-04",
-  generatedAt: "初始化占位 - 等待首次自动化任务运行",
+  date: "2026-08-05",
+  generatedAt: "2026-08-05 08:00 由TRAE自动化生成",
   health: {
     title: "健康饮食",
     icon: "leaf",
     color: "var(--module-1)",
-    diet: "今日推荐：早餐红枣小米粥+水煮蛋，午餐山药排骨汤+糙米饭，晚餐银耳羹+清蒸鲈鱼。经期间补充红枣姜茶，忌冰饮生冷。消水肿：玉米须水。",
+    diet: "经期宜食温补易消化之物。早餐推荐桂圆红枣银耳羹润肤养颜；午餐可吃清蒸鱼配软米饭；下午茶来杯黄芪红枣枸杞茶补气；晚餐清淡冬瓜薏仁汤助消水肿。忌生冷寒凉，避开豆类燕麦。",
     items: [
-      { title: "经期饮食调理", content: "当前处于经期阶段，建议温补饮食：红枣姜茶、当归鸡蛋汤、山药排骨汤。忌冰饮生冷、玉米红薯豆类燕麦（脾胃虚弱）。", source: "系统推荐" }
+      { title: "消水肿：冬瓜薏仁汤", content: "冬瓜含水量96%，天然利尿剂，搭配薏仁煮汤，补水又促代谢。避开你忌口的豆类，用薏米即可。", source: "博禾医生" },
+      { title: "补气养血：当归红糖鸡蛋水", content: "经期后黄金7天首选，活血调经、暖宫驱寒，早餐煮一碗温和进补。", source: "健康食谱推荐" },
+      { title: "胶原蛋白：桂圆红枣银耳羹", content: "养血安神、润肤养颜，银耳富含胶质，搭配桂圆红枣，用电饭煲预约功能即可。", source: "食补养生" }
     ]
   },
   language: {
@@ -30,9 +17,10 @@ window.DAILY_BRIEFING = {
     icon: "book",
     color: "var(--module-2)",
     items: [
-      { title: "TED影子跟读", content: "The Power of Introverts 影子跟读12分钟 + 5词打卡：articulate/collaborate/diverse/generate/implement", link: "https://www.ted.com/talks/susan_cain_the_power_of_introverts", linkText: "去TED学习" },
-      { title: "粤语情景对话", content: "茶餐厅点餐场景对话练习：唔該，我要一個菠萝油 / 飲咩嘢？", link: "https://www.youtube.com/results?search_query=粤语茶餐厅点餐", linkText: "去跟读" },
-      { title: "韩语字母复习", content: "今日复习ㄱ-ㅎ + 新学日常用语5句：오늘 날씨가 좋아요", link: "https://www.howtostudykorean.com", linkText: "去学习" }
+      { title: "英语：TED影子跟读训练", content: "选择TED演讲材料，延迟1-2秒跟读，强迫大脑同步处理语音与语义，听力口语双提升。", link: "https://news.sohu.com/a/984215882_121124011", linkText: "去练习" },
+      { title: "英语：怎样学好英语口语（TED双语字幕）", content: "腾讯视频TED官方双语字幕演讲，适合作为影子跟读的入门材料，每天跟读10分钟。", link: "https://m.v.qq.com/play.html?resid=70001002&vid=z0854uxjulg", linkText: "去看视频" },
+      { title: "粤语：B站情景对话合集", content: "搜索粤语情景短剧，从日常问候、点餐购物等场景入手，模仿语调和用词。", link: "https://search.bilibili.com/all?keyword=%E7%B2%A4%E8%AF%AD%E6%83%85%E6%99%AF%E5%AF%B9%E8%AF%9D", linkText: "去找视频" },
+      { title: "韩语：韩语入门日常用语", content: "从字母复习开始，掌握问候、自我介绍、数字等基础日常用语，配合音频反复听读。", link: "https://www.bilibili.com/video/BV1Eb411g7xV", linkText: "去学习" }
     ]
   },
   professional: {
@@ -40,30 +28,31 @@ window.DAILY_BRIEFING = {
     icon: "bolt",
     color: "var(--accent)",
     knowledgePoints: [
-      { title: "GPU显存管理", content: "训练大模型时，显存瓶颈常出现在激活值和优化器状态。使用梯度检查点（Gradient Checkpointing）可节省30-50%显存，代价是约20%计算时间。", link: "https://arxiv.org/abs/1604.06174" },
-      { title: "分布式训练-数据并行", content: "DataParallel vs DistributedDataParallel：DDP使用多进程，避免了GIL开销，是PyTorch推荐方式。梯度同步使用AllReduce实现高效通信。", link: "https://pytorch.org/tutorials/intermediate/ddp_tutorial.html" },
-      { title: "混合精度训练", content: "AMP（自动混合精度）使用FP16+FP32混合，通过GradScaler防止梯度下溢。可提升训练速度1.5-2倍，减少显存使用。", link: "https://arxiv.org/abs/1710.03740" },
-      { title: "RLHF对齐-PPO", content: "PPO通过裁剪目标函数限制策略更新幅度，避免奖励黑客问题。需要Actor、Critic、Reward Model、Reference Model四个模型协同。", link: "https://arxiv.org/abs/1707.06347" },
-      { title: "DPO简化对齐", content: "DPO跳过奖励模型，直接从偏好数据优化策略。相比PPO更简单稳定，但可能牺牲部分性能。公式基于Bradley-Terry模型推导。", link: "https://arxiv.org/abs/2305.18290" }
+      { title: "LLM预训练核心原理", content: "预训练是LLM的基石，通过海量无标注数据学习通用知识，使用Transformer架构自回归预测下一个token。", link: "https://developer.aliyun.com/article/1706952" },
+      { title: "分布式训练与混合精度", content: "数据并行、模型并行、流水线并行解决算力瓶颈，FP16/BF16混合精度训练大幅降低显存占用并加速计算。", link: "https://blog.csdn.net/weixin_44673517/article/details/157435815" },
+      { title: "RLHF三大算法对比", content: "PPO（精准但昂贵）、DPO（简化流程依赖高质量数据）、GRPO（DeepSeek创新小组竞赛制，无价值模型降低GPU占用）。", link: "https://blog.csdn.net/qq_22866291/article/details/154855010" },
+      { title: "GRPO：DeepSeek的强化学习创新", content: "GRPO通过组内采样对比替代传统Critic模型，显著降低训练资源消耗，成为2026年大模型对齐的热门方向。", link: "https://developer.aliyun.com/article/1709956" },
+      { title: "涌现能力与模型规模", content: "当模型参数量和训练数据量超过特定阈值，模型会突然具备未专门训练的新能力，这是LLM质变的关键。", link: "https://blog.csdn.net/weixin_44673517/article/details/157435815" }
     ],
     industryNews: [
-      { title: "AI辅助研发工具趋势", content: "GitHub Copilot企业版渗透率持续提升，多Agent协作开发框架成为新热点。Cursor、Windsurf等AI IDE竞争加剧。", source: "行业观察", link: "https://github.com/features/copilot", image: "" },
-      { title: "LLM模型训练前沿", content: "开源模型持续逼近闭源，Llama系列新版本在推理能力上显著提升。SFT+DPO成为轻量对齐主流方案。", source: "ArXiv", link: "https://arxiv.org/list/cs.CL/recent", image: "" }
+      { title: "2026年LLM生态全面成熟", content: "工具链、开源模型与工程化方案全面升级，从入门到精通的系统化学习路径已成为从业者标配。", source: "CSDN技术社区", link: "https://blog.csdn.net/CSDN_430422/article/details/160371830" },
+      { title: "大模型对齐进入'内卷'时代", content: "RLHF框架下PPO、DPO、GRPO三大算法神仙打架，训练效率、性能上限与落地成本成为核心竞争点。", source: "CSDN技术社区", link: "https://blog.csdn.net/qq_22866291/article/details/154855010" }
     ]
   },
   investment: {
     title: "投资理财",
     icon: "wallet",
     color: "var(--module-4)",
-    marketTrend: "市场震荡偏强，关注政策端导向。建议维持稳健配置，关注成都本地房产政策和低风险理财机会。",
+    marketTrend: "2026年下半场理财三大特征：利率长期维持低位、不存在稳赚保障、市场不确定性依旧较高。A股7月固收+基金大幅回撤，稳健型投资者需降低收益预期，以债券基金打底、黄金ETF对冲、指数基金定投布局长期。",
     suggestions: [
-      { title: "基金定投建议", content: "建议继续定投宽基指数基金（沪深300），月定投2000元。当前估值处于合理区间，适合长期布局。", link: "https://fund.eastmoney.com", linkText: "查看基金详情" },
-      { title: "低风险理财", content: "存款20万中建议10万配置货币基金/短债基金，年化预期2.5-3.5%。保持5万流动资金备用。", link: "https://www.chinaamc.com", linkText: "查看理财产品" }
+      { title: "稳健型四象限配置", content: "建议将40%资金配置债券基金稳健打底，30%黄金ETF对冲风险，20%指数基金定投长期布局，10%活期存款应急。", link: "http://m.toutiao.com/group/7629352317078274595/" },
+      { title: "沪深300定投策略", content: "作为A股核心宽基指数，沪深300代表中国最优质蓝筹股，是穿越市场周期、分享经济增长的稳健工具。", link: "http://m.toutiao.com/group/7581016249837044251/" },
+      { title: "月入1.5万的理财节奏", content: "每月可拿出3000-4500元定投，优先债券基金和宽基指数，避免高波动个股，复利积累长期财富。", link: "https://m.sohu.com/a/1054965965_122635771/" }
     ],
     researchLinks: [
-      { title: "东方财富-研报中心", link: "https://data.eastmoney.com/report/" },
-      { title: "天天基金网", link: "https://fund.eastmoney.com/" },
-      { title: "成都房产资讯", link: "https://cd.fang.com" }
+      { title: "2026年稳健理财全攻略", link: "http://m.toutiao.com/group/7596361609405121087/" },
+      { title: "2026基金定投最佳方案（小额资金适用）", link: "https://m.sohu.com/a/1054965965_122635771/" },
+      { title: "普通人如何定投沪深300", link: "http://m.toutiao.com/group/7581016249837044251/" }
     ]
   },
   selfmedia: {
@@ -71,8 +60,9 @@ window.DAILY_BRIEFING = {
     icon: "flame",
     color: "var(--danger)",
     items: [
-      { title: "小红书热点", content: "#胶片感日常 热度78.9万，适合你的生动照片风格。#独居女孩日常 持续走高。", source: "平台热榜" },
-      { title: "抖音热门", content: "#一周健身打卡 热度89.2万，配合经期友好运动方向。说唱挑战类内容持续火爆。", source: "抖音热榜" }
+      { title: "立秋将至：养生与胶片感日常", content: "8月7日立秋，提前布局'夏末秋初'主题，胶片滤镜记录夏日尾声，搭配养生茶饮内容，契合女性受众。", source: "节气热点" },
+      { title: "运动打卡：避开经期高强度", content: "经期疼痛明显时建议瑜伽拉伸或散步，制作'经期友好运动'内容，真实记录身体状态更易引发共鸣。", source: "健康博主方向" },
+      { title: "独居女孩日常：立Flag+生动照片", content: "8月下半年开启，适合发布'8月Flag挑战'，用Rap式文案+生活碎片照片，强化个人IP辨识度。", source: "小红书趋势" }
     ]
   }
 };
