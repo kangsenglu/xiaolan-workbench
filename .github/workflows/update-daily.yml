@@ -1,0 +1,38 @@
+# 每日自动更新简报与运动计划
+# 每天 UTC 0:00 (北京时间 8:00) 自动运行
+name: 更新每日简报
+
+on:
+  schedule:
+    # UTC 0:00 = 北京时间 8:00
+    - cron: '0 0 * * *'
+  # 支持手动触发
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 生成每日简报与运动计划
+        run: node scripts/generate-daily.mjs
+
+      - name: 提交并推送更新
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add daily-briefing.js weekly-plan.js
+          git diff --staged --quiet && echo "无更新内容，跳过提交" && exit 0
+          git commit -m "chore: 自动更新每日简报与运动计划 $(date -u -d'+8 hours' '+%Y-%m-%d')"
+          git push

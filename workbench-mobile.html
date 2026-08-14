@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="小蓝UP UP">
+<meta name="theme-color" content="#1a73e8">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>小蓝UP UP · WorkBuddy</title>
+<style>
+/* ========== CSS Variables ========== */
+:root {
+  --bg: #f0f4f8; --bg2: #ffffff; --surface: #ffffff;
+  --ink: #1a2332; --muted: #6b7d99; --rule: #e2e8f0;
+  --accent: #1a73e8; --accent-light: #4a9af5; --accent-dark: #1557b0;
+  --accent2: #00d4aa;
+  --health: #e8555a; --health-light: #ff8a8e;
+  --learning: #2ecc71; --learning-light: #58d98d;
+  --pro: #9b59b6; --pro-light: #b67dd0;
+  --music: #f39c12; --music-light: #f7c350;
+  --warning: #e74c3c; --success: #27ae60;
+  --shadow: 0 2px 12px rgba(26,115,232,0.08);
+  --shadow-lg: 0 8px 32px rgba(26,115,232,0.12);
+  --radius: 16px; --radius-sm: 10px; --radius-xs: 6px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg); color: var(--ink); line-height: 1.6;
+  overflow-x: hidden; padding-top: var(--safe-top);
+  padding-bottom: calc(72px + var(--safe-bottom)); transition: background 0.3s;
+}
+body.dark-mode { --bg: #0f172a; --bg2: #1e293b; --surface: #1e293b; --ink: #e2e8f0; --muted: #94a3b8; --rule: #334155; --shadow: 0 2px 12px rgba(0,0,0,0.3); --shadow-lg: 0 8px 32px rgba(0,0,0,0.4); }
+
+/* ========== Yin-Yang Logo ========== */
+.yinyang { display: inline-block; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(to right, var(--ink) 50%, var(--bg2) 50%); border: 2px solid var(--ink); position: relative; animation: yyspin 8s linear infinite; flex-shrink: 0; }
+.yinyang::before, .yinyang::after { content: ''; position: absolute; left: 50%; width: 50%; height: 50%; border-radius: 50%; transform: translateX(-50%); }
+.yinyang::before { top: 0; background: var(--bg2); }
+.yinyang::after { bottom: 0; background: var(--ink); }
+.yinyang-lg { width: 64px; height: 64px; border-width: 3px; }
+@keyframes yyspin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ========== Top Bar ========== */
+.topbar { position: sticky; top: 0; z-index: 100; background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: #fff; padding: 12px 16px; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 12px rgba(26,115,232,0.25); }
+.topbar .yinyang { border-color: rgba(255,255,255,0.8); background: linear-gradient(to right, #fff 50%, var(--accent-dark) 50%); }
+.topbar .yinyang::before { background: var(--accent-dark); }
+.topbar .yinyang::after { background: #fff; }
+.topbar-title { font-size: 1.05rem; font-weight: 700; flex: 1; }
+.topbar-sub { font-size: 0.78rem; opacity: 0.85; font-weight: 400; }
+.topbar-actions { display: flex; gap: 8px; }
+.topbar-btn { background: rgba(255,255,255,0.15); border: none; color: #fff; width: 36px; height: 36px; border-radius: 50%; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s; }
+.topbar-btn:active { background: rgba(255,255,255,0.3); }
+
+/* ========== Views ========== */
+.view { display: none; padding: 16px; max-width: 600px; margin: 0 auto; }
+.view.active { display: block; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ========== Greeting Card ========== */
+.greeting-card { background: linear-gradient(135deg, var(--accent), var(--accent-light)); border-radius: var(--radius); padding: 20px; color: #fff; margin-bottom: 16px; box-shadow: var(--shadow); position: relative; overflow: hidden; }
+.greeting-card::after { content: ''; position: absolute; right: -20px; top: -20px; width: 100px; height: 100px; border-radius: 50%; background: rgba(255,255,255,0.1); }
+.greeting-card .greeting-text { font-size: 1.3rem; font-weight: 700; margin-bottom: 4px; }
+.greeting-card .greeting-sub { font-size: 0.88rem; opacity: 0.9; }
+.greeting-card .phase-badge { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; margin-top: 10px; }
+
+/* ========== Cards ========== */
+.card { background: var(--surface); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; box-shadow: var(--shadow); transition: transform 0.15s; }
+.card:active { transform: scale(0.98); }
+.card-title { font-size: 1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.card-title .icon { font-size: 1.2rem; }
+.card-title .badge { margin-left: auto; font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; color: #fff; }
+.badge-health { background: var(--health); } .badge-learning { background: var(--learning); }
+.badge-pro { background: var(--pro); } .badge-music { background: var(--music); }
+
+/* ========== Task Items ========== */
+.task-list { list-style: none; }
+.task-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.task-item:last-child { border-bottom: none; }
+.task-check { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--rule); flex-shrink: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; font-size: 0.8rem; color: transparent; }
+.task-check.done { background: var(--success); border-color: var(--success); color: #fff; }
+.task-check.cancelled { background: var(--rule); border-color: var(--rule); }
+.task-content { flex: 1; }
+.task-name { font-size: 0.9rem; font-weight: 500; }
+.task-name.done { text-decoration: line-through; color: var(--muted); }
+.task-name.cancelled { color: var(--muted); }
+.task-reason { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
+.task-time { font-size: 0.76rem; color: var(--accent); font-weight: 600; white-space: nowrap; }
+
+/* ========== Module Grid ========== */
+.module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.module-card { border-radius: var(--radius); padding: 16px; text-align: center; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; position: relative; overflow: hidden; color: #fff; }
+.module-card:active { transform: scale(0.96); }
+.module-card .mod-icon { font-size: 2rem; margin-bottom: 8px; }
+.module-card .mod-name { font-size: 0.95rem; font-weight: 700; }
+.module-card .mod-sub { font-size: 0.72rem; opacity: 0.85; margin-top: 4px; }
+.module-card .mod-progress { margin-top: 10px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.3); overflow: hidden; }
+.module-card .mod-progress-bar { height: 100%; border-radius: 2px; background: #fff; transition: width 0.5s; }
+.mod-health { background: linear-gradient(135deg, var(--health), var(--health-light)); }
+.mod-learning { background: linear-gradient(135deg, var(--learning), var(--learning-light)); }
+.mod-pro { background: linear-gradient(135deg, var(--pro), var(--pro-light)); }
+.mod-music { background: linear-gradient(135deg, var(--music), var(--music-light)); }
+
+/* ========== Timeline ========== */
+.timeline { position: relative; padding-left: 24px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--rule); }
+.timeline-item { position: relative; padding-bottom: 16px; }
+.timeline-item::before { content: ''; position: absolute; left: -20px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--surface); }
+.timeline-item.done::before { background: var(--success); }
+.timeline-item.cancelled::before { background: var(--rule); }
+.timeline-time { font-size: 0.78rem; color: var(--accent); font-weight: 600; }
+.timeline-content { font-size: 0.88rem; margin-top: 2px; }
+
+/* ========== Bottom Nav ========== */
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: var(--surface); border-top: 1px solid var(--rule); display: flex; justify-content: space-around; align-items: center; padding: 8px 4px calc(8px + var(--safe-bottom)); box-shadow: 0 -2px 12px rgba(0,0,0,0.06); max-width: 600px; margin: 0 auto; }
+.nav-item { display: flex; flex-direction: column; align-items: center; gap: 2px; background: none; border: none; cursor: pointer; padding: 4px 12px; border-radius: 10px; transition: all 0.2s; color: var(--muted); font-size: 0.68rem; font-family: inherit; }
+.nav-item.active { color: var(--accent); background: rgba(26,115,232,0.08); }
+.nav-item .nav-icon { font-size: 1.4rem; line-height: 1; }
+.nav-item .nav-label { font-weight: 600; }
+
+/* ========== Section Headers ========== */
+.section-header { display: flex; align-items: center; gap: 8px; margin: 20px 0 12px; font-size: 1.1rem; font-weight: 700; }
+.section-header .icon { font-size: 1.3rem; }
+.section-header .line { flex: 1; height: 2px; background: var(--rule); border-radius: 1px; }
+
+/* ========== Tags & Labels ========== */
+.tag { display: inline-flex; align-items: center; gap: 3px; padding: 3px 10px; border-radius: 12px; font-size: 0.74rem; font-weight: 600; margin: 2px; }
+.tag-warn { background: rgba(231,76,60,0.1); color: var(--warning); }
+.tag-info { background: rgba(26,115,232,0.1); color: var(--accent); }
+.tag-success { background: rgba(39,174,96,0.1); color: var(--success); }
+.tag-danger { background: rgba(231,76,60,0.15); color: var(--warning); border: 1px solid rgba(231,76,60,0.3); }
+.tag-health { background: rgba(232,85,90,0.1); color: var(--health); }
+.tag-learning { background: rgba(46,204,113,0.1); color: var(--learning); }
+.tag-pro { background: rgba(155,89,182,0.1); color: var(--pro); }
+.tag-music { background: rgba(243,156,18,0.1); color: var(--music); }
+
+/* ========== Dynamic Indicator ========== */
+.dyn-indicator { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--accent2); font-weight: 600; }
+.dyn-indicator::before { content: '🔁'; font-size: 0.8rem; }
+
+/* ========== Buttons ========== */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 20px; border-radius: var(--radius-sm); border: none; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:active { background: var(--accent-dark); }
+.btn-secondary { background: var(--bg); color: var(--ink); }
+.btn-outline { background: transparent; border: 1.5px solid var(--accent); color: var(--accent); }
+.btn-sm { padding: 6px 14px; font-size: 0.8rem; }
+.btn-block { width: 100%; }
+.btn-danger { background: var(--warning); color: #fff; }
+
+/* ========== Progress Ring ========== */
+.progress-ring { display: inline-flex; align-items: center; justify-content: center; position: relative; width: 56px; height: 56px; }
+.progress-ring svg { transform: rotate(-90deg); }
+.progress-ring circle { fill: none; stroke-width: 4; }
+.progress-ring .bg { stroke: var(--rule); }
+.progress-ring .fg { stroke: var(--accent); stroke-linecap: round; transition: stroke-dashoffset 0.5s; }
+.progress-ring .pct { position: absolute; font-size: 0.78rem; font-weight: 700; color: var(--accent); }
+
+/* ========== Tabs ========== */
+.tabs { display: flex; gap: 4px; background: var(--bg); border-radius: var(--radius-sm); padding: 4px; margin-bottom: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tab { flex: 1; min-width: max-content; padding: 8px 14px; border-radius: var(--radius-xs); border: none; background: none; font-size: 0.82rem; font-weight: 600; color: var(--muted); cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: center; }
+.tab.active { background: var(--surface); color: var(--accent); box-shadow: var(--shadow); }
+
+/* ========== Resource Cards ========== */
+.resource-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border-radius: var(--radius-sm); margin-bottom: 8px; background: var(--bg); transition: background 0.2s; }
+.resource-item:active { background: var(--rule); }
+.resource-icon { font-size: 1.4rem; flex-shrink: 0; }
+.resource-body { flex: 1; min-width: 0; }
+.resource-title { font-size: 0.88rem; font-weight: 600; }
+.resource-desc { font-size: 0.76rem; color: var(--muted); margin-top: 2px; word-break: break-all; }
+.resource-link { color: var(--accent); text-decoration: none; font-size: 0.76rem; word-break: break-all; }
+.resource-actions { display: flex; gap: 6px; margin-top: 6px; }
+
+/* ========== Notes ========== */
+.note-item { padding: 12px; border-radius: var(--radius-sm); margin-bottom: 8px; background: var(--bg); border-left: 3px solid var(--accent); }
+.note-meta { font-size: 0.72rem; color: var(--muted); margin-bottom: 4px; }
+.note-text { font-size: 0.86rem; }
+.note-link { display: block; color: var(--accent); font-size: 0.78rem; margin-top: 4px; text-decoration: none; word-break: break-all; }
+
+/* ========== Modal ========== */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; display: none; align-items: flex-end; justify-content: center; animation: fadeIn 0.2s; }
+.modal-overlay.show { display: flex; }
+.modal { background: var(--surface); border-radius: var(--radius) var(--radius) 0 0; width: 100%; max-width: 600px; max-height: 85vh; overflow-y: auto; padding: 20px 16px calc(20px + var(--safe-bottom)); animation: slideUp 0.3s ease; }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-header { display: flex; align-items: center; margin-bottom: 16px; }
+.modal-title { font-size: 1.1rem; font-weight: 700; flex: 1; }
+.modal-close { background: var(--bg); border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; color: var(--muted); }
+
+/* ========== Form ========== */
+.form-group { margin-bottom: 14px; }
+.form-label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 6px; color: var(--muted); }
+.form-input, .form-select, .form-textarea { width: 100%; padding: 10px 14px; border-radius: var(--radius-sm); border: 1.5px solid var(--rule); font-size: 0.9rem; background: var(--bg); color: var(--ink); font-family: inherit; transition: border-color 0.2s; }
+.form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--accent); }
+.form-textarea { min-height: 80px; resize: vertical; }
+.form-row { display: flex; gap: 10px; }
+.form-row .form-group { flex: 1; }
+.radio-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.radio-label { display: flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: var(--radius-sm); border: 1.5px solid var(--rule); font-size: 0.84rem; cursor: pointer; transition: all 0.2s; }
+.radio-label input { display: none; }
+.radio-label.selected { border-color: var(--accent); background: rgba(26,115,232,0.05); color: var(--accent); }
+
+/* ========== Toast ========== */
+.toast { position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--ink); color: #fff; padding: 10px 24px; border-radius: 24px; font-size: 0.86rem; z-index: 300; opacity: 0; transition: all 0.3s; white-space: nowrap; box-shadow: var(--shadow-lg); }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ========== Star Rating ========== */
+.star-rating { display: flex; gap: 2px; }
+.star { font-size: 1.2rem; color: var(--rule); cursor: pointer; transition: color 0.1s; }
+.star.active { color: var(--music); }
+
+/* ========== Misc ========== */
+.empty-state { text-align: center; padding: 32px 16px; color: var(--muted); }
+.empty-state .icon { font-size: 2.5rem; margin-bottom: 8px; }
+.text-muted { color: var(--muted); }
+.text-sm { font-size: 0.8rem; }
+.text-xs { font-size: 0.72rem; }
+.text-center { text-align: center; }
+.mt-2 { margin-top: 8px; } .mt-4 { margin-top: 16px; }
+.mb-2 { margin-bottom: 8px; } .mb-4 { margin-bottom: 16px; }
+.flex { display: flex; } .items-center { align-items: center; }
+.gap-2 { gap: 8px; } .gap-4 { gap: 16px; }
+.flex-1 { flex: 1; }
+.rounded { border-radius: var(--radius-sm); }
+.w-full { width: 100%; }
+.cursor-pointer { cursor: pointer; }
+.relative { position: relative; }
+.fade-in { animation: fadeIn 0.3s; }
+.diet-item { padding: 8px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; }
+.diet-item:last-child { border-bottom: none; }
+.diet-meal { font-weight: 600; font-size: 0.86rem; }
+.diet-food { font-size: 0.8rem; color: var(--muted); }
+.concept-card { background: linear-gradient(135deg, rgba(155,89,182,0.08), rgba(155,89,182,0.02)); border: 1px solid rgba(155,89,182,0.15); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 10px; }
+.concept-card .cc-title { font-weight: 700; color: var(--pro); font-size: 0.9rem; margin-bottom: 4px; }
+.concept-card .cc-body { font-size: 0.82rem; line-height: 1.5; }
+.frontier-item { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.frontier-item:last-child { border-bottom: none; }
+.frontier-title { font-size: 0.86rem; font-weight: 600; }
+.frontier-desc { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.frontier-star { color: var(--music); }
+.face-exercise { padding: 12px; border-radius: var(--radius-sm); margin-bottom: 8px; background: var(--bg); border-left: 3px solid var(--health); }
+.face-exercise .fe-name { font-weight: 600; font-size: 0.86rem; }
+.face-exercise .fe-desc { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.face-exercise .fe-count { font-size: 0.74rem; color: var(--health); font-weight: 600; margin-top: 4px; }
+.expandable { cursor: pointer; }
+.expandable-content { display: none; margin-top: 8px; }
+.expandable.open .expandable-content { display: block; }
+.expandable .chevron { transition: transform 0.2s; }
+.expandable.open .chevron { transform: rotate(90deg); }
+.divider { height: 1px; background: var(--rule); margin: 12px 0; }
+.link-card { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--bg); margin-bottom: 6px; text-decoration: none; color: var(--ink); transition: background 0.2s; }
+.link-card:active { background: var(--rule); }
+.link-card .lc-icon { font-size: 1.1rem; }
+.link-card .lc-title { font-size: 0.84rem; font-weight: 600; flex: 1; }
+.link-card .lc-arrow { color: var(--muted); }
+.stat-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.84rem; }
+.stat-row .stat-label { color: var(--muted); }
+.stat-row .stat-value { font-weight: 600; }
+.briefing-section { padding: 4px 0; }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="yinyang" id="logo"></div>
+  <div style="flex:1">
+    <div class="topbar-title">小蓝UP UP</div>
+    <div class="topbar-sub" id="topbarSub">加载中...</div>
+  </div>
+  <div class="topbar-actions">
+    <button class="topbar-btn" onclick="UI.toggleDarkMode()" title="深色模式">🌙</button>
+    <button class="topbar-btn" onclick="UI.navigate('settings')" title="设置">⚙️</button>
+  </div>
+</div>
+
+<!-- ========== Home View ========== -->
+<div class="view active" id="view-home">
+  <div class="greeting-card">
+    <div class="greeting-text" id="greetingText">早安小蓝</div>
+    <div class="greeting-sub" id="greetingSub">新的一天，继续UP UP</div>
+    <div class="phase-badge" id="phaseBadge">📅 未设置 · 强度1.0</div>
+  </div>
+
+  <div class="module-grid">
+    <div class="module-card mod-health" onclick="UI.navigate('health')">
+      <div class="mod-icon">🌿</div>
+      <div class="mod-name">健康管家</div>
+      <div class="mod-sub" id="modHealthSub">0%</div>
+      <div class="mod-progress"><div class="mod-progress-bar" id="modHealthBar" style="width:0%"></div></div>
+    </div>
+    <div class="module-card mod-learning" onclick="UI.navigate('learning')">
+      <div class="mod-icon">📚</div>
+      <div class="mod-name">学习成长</div>
+      <div class="mod-sub" id="modLearningSub">0%</div>
+      <div class="mod-progress"><div class="mod-progress-bar" id="modLearningBar" style="width:0%"></div></div>
+    </div>
+    <div class="module-card mod-pro" onclick="UI.navigate('professional')">
+      <div class="mod-icon">🤖</div>
+      <div class="mod-name">专业赋能</div>
+      <div class="mod-sub" id="modProSub">0%</div>
+      <div class="mod-progress"><div class="mod-progress-bar" id="modProBar" style="width:0%"></div></div>
+    </div>
+    <div class="module-card mod-music" onclick="UI.navigate('music')">
+      <div class="mod-icon">🎵</div>
+      <div class="mod-name">音乐工坊</div>
+      <div class="mod-sub" id="modMusicSub">0%</div>
+      <div class="mod-progress"><div class="mod-progress-bar" id="modMusicBar" style="width:0%"></div></div>
+    </div>
+  </div>
+
+  <!-- 每日简报（动态加载） -->
+  <div class="card" id="dailyBriefing" style="display:none">
+    <div class="card-title"><span class="icon">📰</span> 今日简报 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+    <div id="dailyBriefingContent"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">✅</span> 今日必做 <span class="dyn-indicator" style="margin-left:auto">动态生成</span></div>
+    <ul class="task-list" id="todayTasks"></ul>
+  </div>
+
+  <!-- 每周运动计划（动态加载） -->
+  <div class="card" id="weeklyPlanCard" style="display:none">
+    <div class="card-title"><span class="icon">📋</span> 本周运动规划 <span class="dyn-indicator" style="margin-left:auto">每周自动更新</span></div>
+    <div id="weeklyPlanContent"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🕐</span> 今日时间轴</div>
+    <div class="timeline" id="todayTimeline"></div>
+  </div>
+
+  <div class="card" id="smartReminder" style="display:none">
+    <div class="card-title"><span class="icon">💡</span> 智能提醒</div>
+    <div id="reminderContent" style="font-size:0.86rem;color:var(--muted)"></div>
+  </div>
+
+  <!-- 饮水追踪 -->
+  <div class="card" id="waterTrackerCard">
+    <div class="card-title"><span class="icon">💧</span> 饮水追踪</div>
+    <div id="waterTracker"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">⚡</span> 快捷操作</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <button class="btn btn-outline btn-sm" onclick="UI.markOvertime()">📋 标记加班</button>
+      <button class="btn btn-outline btn-sm" onclick="UI.markBodyState()">💪 身体状态</button>
+      <button class="btn btn-outline btn-sm" onclick="UI.markPeriod()">📅 经期标记</button>
+      <button class="btn btn-outline btn-sm" onclick="UI.addResource()">➕ 添加资源</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Health View ========== -->
+<div class="view" id="view-health">
+  <div class="section-header"><span class="icon">🌿</span> 健康管家 <span class="line"></span></div>
+  <div class="tabs">
+    <button class="tab active" onclick="UI.switchTab(event,'health-dashboard')">总览</button>
+    <button class="tab" onclick="UI.switchTab(event,'health-exercise')">运动规划</button>
+    <button class="tab" onclick="UI.switchTab(event,'health-diet')">饮食养生</button>
+    <button class="tab" onclick="UI.switchTab(event,'health-face')">面部改善</button>
+  </div>
+
+  <div id="health-dashboard">
+    <div class="card">
+      <div class="card-title"><span class="icon">📊</span> 身体基线</div>
+      <div id="bodyBaseline">
+        <div class="stat-row"><span class="stat-label">年龄/身高/体重</span><span class="stat-value">27岁 / 165cm / 62.5kg</span></div>
+        <div class="stat-row"><span class="stat-label">体型</span><span class="stat-value">修长 / 腹部偏软 / 视觉偏瘦</span></div>
+        <div class="stat-row"><span class="stat-label">体脂状态</span><span class="stat-value">整体偏高（肉质软）</span></div>
+        <div class="stat-row"><span class="stat-label">月收入/存款</span><span class="stat-value">1.5万 / 20万</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🏷️</span> 体质标签 <span class="dyn-indicator" style="margin-left:auto">硬约束</span></div>
+      <div id="constitutionTags"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📅</span> 经期追踪 <span class="dyn-indicator" style="margin-left:auto">动态</span></div>
+      <div id="menstrualInfo"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">⚡</span> 今日状态</div>
+      <div id="todayStatus"></div>
+    </div>
+  </div>
+
+  <div id="health-exercise" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">🏃</span> 今日运动推荐 <span class="dyn-indicator" style="margin-left:auto">每12h刷新</span></div>
+      <div id="exercisePlan"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📋</span> 运动偏好画像</div>
+      <div id="exercisePrefs"></div>
+    </div>
+  </div>
+
+  <div id="health-diet" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">🍽️</span> 今日餐食建议 <span class="dyn-indicator" style="margin-left:auto">每日5:00</span></div>
+      <div id="dietPlan"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🍵</span> 今日养生茶饮</div>
+      <div id="teaPlan"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🚫</span> 饮食黑名单</div>
+      <div class="text-sm text-muted" id="dietBlacklist"></div>
+    </div>
+  </div>
+
+  <div id="health-face" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">💆</span> 面部改善方案 <span class="badge badge-health">个人参考</span></div>
+      <div class="text-sm text-muted mb-2">结合全角度实拍深度分析，涵盖面部矫正锻炼、妆容方案、食疗内调</div>
+      <div id="faceProgram"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Learning View ========== -->
+<div class="view" id="view-learning">
+  <div class="section-header"><span class="icon">📚</span> 学习成长 <span class="line"></span></div>
+  <div class="tabs">
+    <button class="tab active" onclick="UI.switchTab(event,'learn-en')">英语</button>
+    <button class="tab" onclick="UI.switchTab(event,'learn-yue')">粤语</button>
+    <button class="tab" onclick="UI.switchTab(event,'learn-ko')">韩语</button>
+    <button class="tab" onclick="UI.switchTab(event,'learn-finance')">理财</button>
+    <button class="tab" onclick="UI.switchTab(event,'learn-media')">自媒体</button>
+  </div>
+
+  <div id="learn-en">
+    <div class="card">
+      <div class="card-title"><span class="icon">🇬🇧</span> 今日英语 <span class="dyn-indicator" style="margin-left:auto">动态生成</span></div>
+      <div id="enTask"></div>
+    </div>
+    <div class="card" id="enBriefingCard" style="display:none">
+      <div class="card-title"><span class="icon">🔥</span> 今日推荐学习 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="enBriefingContent"></div>
+    </div>
+    <div class="card" id="dailyWordsCard" style="display:none">
+      <div class="card-title"><span class="icon">🔤</span> 今日单词 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="dailyWordsContent"></div>
+    </div>
+    <div class="card" id="dailySentencesCard" style="display:none">
+      <div class="card-title"><span class="icon">💬</span> 每日多语情景句 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="dailySentencesContent"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📂</span> 资源库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addResource('en')">➕ 添加</button></div>
+      <div id="enResources"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📝</span> 学习笔记 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addNote('en')">➕ 添加</button></div>
+      <div id="enNotes"></div>
+    </div>
+  </div>
+
+  <div id="learn-yue" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">🇭🇰</span> 今日粤语 <span class="dyn-indicator" style="margin-left:auto">动态生成</span></div>
+      <div id="yueTask"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📂</span> 资源库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addResource('yue')">➕ 添加</button></div>
+      <div id="yueResources"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📝</span> 学习笔记 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addNote('yue')">➕ 添加</button></div>
+      <div id="yueNotes"></div>
+    </div>
+  </div>
+
+  <div id="learn-ko" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">🇰🇷</span> 今日韩语 <span class="dyn-indicator" style="margin-left:auto">动态生成</span></div>
+      <div id="koTask"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📂</span> 资源库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addResource('ko')">➕ 添加</button></div>
+      <div id="koResources"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📝</span> 学习笔记 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addNote('ko')">➕ 添加</button></div>
+      <div id="koNotes"></div>
+    </div>
+  </div>
+
+  <div id="learn-finance" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">💰</span> 投资理财 <span class="dyn-indicator" style="margin-left:auto">每周一推送</span></div>
+      <div id="financeOverview">
+        <div class="stat-row"><span class="stat-label">月收入</span><span class="stat-value">1.5万</span></div>
+        <div class="stat-row"><span class="stat-label">坐标</span><span class="stat-value">成都</span></div>
+        <div class="stat-row"><span class="stat-label">存款</span><span class="stat-value">约20万</span></div>
+        <div class="stat-row"><span class="stat-label">理财经验</span><span class="stat-value">无</span></div>
+      </div>
+    </div>
+    <div class="card" id="financeBriefingCard" style="display:none">
+      <div class="card-title"><span class="icon">📈</span> 今日市场动态 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="financeBriefingContent"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📖</span> 本周概念卡片</div>
+      <div id="financeCard"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">✅</span> 本周实操行动</div>
+      <div id="financeAction"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📊</span> 财务健康体检</div>
+      <div id="financeHealth"></div>
+    </div>
+  </div>
+
+  <div id="learn-media" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">📱</span> 自媒体副业 <span class="dyn-indicator" style="margin-left:auto">每月更新</span></div>
+      <div class="text-sm text-muted mb-2">个人风格：立Flag挑战 · 生动照片 · 唱Rap · 真实有温度带点酷</div>
+    </div>
+    <div class="card" id="mediaBriefingCard" style="display:none">
+      <div class="card-title"><span class="icon">🔥</span> 今日热点选题 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="mediaBriefingContent"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🚩</span> 本月Flag主题</div>
+      <div id="mediaFlag"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📅</span> 内容发布日历</div>
+      <div id="mediaCalendar"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🎤</span> Rap练习进度</div>
+      <div id="mediaRap"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Professional View ========== -->
+<div class="view" id="view-professional">
+  <div class="section-header"><span class="icon">🤖</span> 专业赋能 <span class="line"></span></div>
+  <div class="card" id="proBriefingCard" style="display:none">
+    <div class="card-title"><span class="icon">🤖</span> 今日AI前沿 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+    <div id="proBriefingContent"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">📖</span> 3分钟知识点 <span class="dyn-indicator" style="margin-left:auto">每日推送</span></div>
+    <div id="proTheory"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">🔬</span> 行业前沿</div>
+    <div id="proFrontier"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">📚</span> 知识库</div>
+    <div id="proKnowledge"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">📝</span> 专业笔记 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addNote('pro')">➕ 添加</button></div>
+    <div id="proNotes"></div>
+  </div>
+</div>
+
+<!-- ========== Music View ========== -->
+<div class="view" id="view-music">
+  <div class="section-header"><span class="icon">🎵</span> 音乐工坊 <span class="line"></span></div>
+  <div class="tabs">
+    <button class="tab active" onclick="UI.switchTab(event,'music-vocal')">声乐</button>
+    <button class="tab" onclick="UI.switchTab(event,'music-drum')">架子鼓</button>
+  </div>
+
+  <div id="music-vocal">
+    <div class="card">
+      <div class="card-title"><span class="icon">🎤</span> 今日声乐练习 <span class="dyn-indicator" style="margin-left:auto">动态生成</span></div>
+      <div id="vocalTask"></div>
+      <div class="mt-2"><button class="btn btn-sm btn-outline" onclick="UI.addNote('vocal')">📝 添加练习记录</button></div>
+    </div>
+    <div class="card" id="vocalBriefingCard" style="display:none">
+      <div class="card-title"><span class="icon">🎵</span> 今日声乐练习计划 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="vocalBriefingContent"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🎵</span> 曲目库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addRepertoire('vocal')">➕ 添加</button></div>
+      <div id="vocalRepertoire"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📂</span> 资源库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addResource('vocal')">➕ 添加</button></div>
+      <div id="vocalResources"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📝</span> 练习笔记</div>
+      <div id="vocalNotes"></div>
+    </div>
+  </div>
+
+  <div id="music-drum" style="display:none">
+    <div class="card">
+      <div class="card-title"><span class="icon">🥁</span> 今日架子鼓练习 <span class="dyn-indicator" style="margin-left:auto">动态生成</span></div>
+      <div id="drumTask"></div>
+      <div class="mt-2"><button class="btn btn-sm btn-outline" onclick="UI.addNote('drum')">📝 添加练习记录</button></div>
+    </div>
+    <div class="card" id="drumBriefingCard" style="display:none">
+      <div class="card-title"><span class="icon">🥁</span> 今日架子鼓练习计划 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
+      <div id="drumBriefingContent"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🎵</span> 曲目库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addRepertoire('drum')">➕ 添加</button></div>
+      <div id="drumRepertoire"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📂</span> 资源库 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.addResource('drum')">➕ 添加</button></div>
+      <div id="drumResources"></div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📝</span> 练习笔记</div>
+      <div id="drumNotes"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Settings View ========== -->
+<div class="view" id="view-settings">
+  <div class="section-header"><span class="icon">⚙️</span> 设置 <span class="line"></span></div>
+  <div class="card">
+    <div class="card-title"><span class="icon">👤</span> 个人画像</div>
+    <div id="profileSettings"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">📅</span> 经期设置</div>
+    <div id="periodSettings"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">💾</span> 数据管理</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn-outline btn-sm" onclick="Store.exportData()">📤 导出数据</button>
+      <button class="btn btn-outline btn-sm" onclick="Store.importData()">📥 导入数据</button>
+      <button class="btn btn-danger btn-sm" onclick="UI.resetData()">🗑️ 重置数据</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="icon">ℹ️</span> 关于</div>
+    <div class="text-sm text-muted">
+      <div class="stat-row"><span class="stat-label">应用名称</span><span class="stat-value">小蓝UP UP · WorkBuddy</span></div>
+      <div class="stat-row"><span class="stat-label">版本</span><span class="stat-value">2.0 GitHub Edition</span></div>
+      <div class="stat-row"><span class="stat-label">数据存储</span><span class="stat-value">浏览器本地 (localStorage)</span></div>
+      <div class="stat-row"><span class="stat-label">动态内容</span><span class="stat-value">GitHub Actions 自动更新</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Bottom Nav ========== -->
+<div class="bottom-nav">
+  <button class="nav-item active" onclick="UI.navigate('home')"><span class="nav-icon">🏠</span><span class="nav-label">首页</span></button>
+  <button class="nav-item" onclick="UI.navigate('health')"><span class="nav-icon">🌿</span><span class="nav-label">健康</span></button>
+  <button class="nav-item" onclick="UI.navigate('learning')"><span class="nav-icon">📚</span><span class="nav-label">学习</span></button>
+  <button class="nav-item" onclick="UI.navigate('professional')"><span class="nav-icon">🤖</span><span class="nav-label">专业</span></button>
+  <button class="nav-item" onclick="UI.navigate('music')"><span class="nav-icon">🎵</span><span class="nav-label">音乐</span></button>
+</div>
+
+<!-- ========== Modal ========== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent"></div>
+</div>
+
+<!-- ========== Toast ========== -->
+<div class="toast" id="toast"></div>
+
+<!-- ========== Scripts ========== -->
+<!-- 动态内容文件（由GitHub Actions每日自动更新） -->
+<script src="daily-briefing.js"></script>
+<script src="weekly-plan.js"></script>
+<!-- 应用核心文件 -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/engine.js"></script>
+<script src="assets/js/modules.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
