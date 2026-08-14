@@ -64,6 +64,48 @@ const UI = {
     if (target) target.style.display = 'block';
   },
 
+  // ---- 理财隐私与编辑 ----
+  toggleFinancePrivacy() {
+    const current = Store.get('financePrivacy', true);
+    Store.set('financePrivacy', !current);
+    Modules._renderFinance();
+  },
+
+  editFinance() {
+    const profile = Store.get('financeProfile', { income: 15000, savings: 200000, city: '成都', experience: '无' });
+    document.getElementById('editIncome').value = profile.income || '';
+    document.getElementById('editSavings').value = profile.savings || '';
+    document.getElementById('editCity').value = profile.city || '';
+    document.getElementById('editExp').value = profile.experience || '无';
+    document.getElementById('financeEditPanel').style.display = 'block';
+  },
+
+  saveFinance() {
+    const income = parseInt(document.getElementById('editIncome').value) || 15000;
+    const savings = parseInt(document.getElementById('editSavings').value) || 200000;
+    const city = document.getElementById('editCity').value || '成都';
+    const experience = document.getElementById('editExp').value || '无';
+    Store.set('financeProfile', { income, savings, city, experience });
+    document.getElementById('financeEditPanel').style.display = 'none';
+    Modules._renderFinance();
+  },
+
+  cancelEditFinance() {
+    document.getElementById('financeEditPanel').style.display = 'none';
+  },
+
+  toggleFinanceChart() {
+    const chart = document.getElementById('financeChart');
+    const placeholder = document.getElementById('financeChartPlaceholder');
+    if (chart.style.display === 'none') {
+      chart.style.display = 'block';
+      placeholder.style.display = 'none';
+    } else {
+      chart.style.display = 'none';
+      placeholder.style.display = 'block';
+    }
+  },
+
   // ---- 任务切换 ----
   toggleTask(taskId) {
     const taskLog = Store.get('taskLog', {});

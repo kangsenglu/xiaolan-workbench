@@ -380,7 +380,31 @@ const Modules = {
 
   _renderFinance() {
     const data = Store.get('financeData', SEED.financeData);
+    const profile = Store.get('financeProfile', { income: 15000, savings: 200000, city: '成都', experience: '无' });
     const dayIdx = (new Date().getDate() - 1) % data.concepts.length;
+
+    // Render overview with privacy
+    const overview = document.getElementById('financeOverview');
+    if (overview) {
+      const isHidden = Store.get('financePrivacy', true);
+      overview.innerHTML = `
+        <div class="stat-row">
+          <span class="stat-label">月收入</span>
+          <span class="stat-value finance-sensitive" onclick="UI.toggleFinancePrivacy()" style="cursor:pointer">
+            ${isHidden ? '🔒 点击查看' : '¥' + profile.income.toLocaleString()}
+          </span>
+        </div>
+        <div class="stat-row"><span class="stat-label">坐标</span><span class="stat-value">${profile.city}</span></div>
+        <div class="stat-row">
+          <span class="stat-label">存款</span>
+          <span class="stat-value finance-sensitive" onclick="UI.toggleFinancePrivacy()" style="cursor:pointer">
+            ${isHidden ? '🔒 点击查看' : '¥' + profile.savings.toLocaleString()}
+          </span>
+        </div>
+        <div class="stat-row"><span class="stat-label">理财经验</span><span class="stat-value">${profile.experience}</span></div>
+        <div class="text-xs text-muted mt-1">💡 点击收入/存款可显示/隐藏</div>
+      `;
+    }
 
     document.getElementById('financeCard').innerHTML = `
       <div class="concept-card">
@@ -401,12 +425,89 @@ const Modules = {
     const b = data.monthlyBudget;
     const totalExpense = b.rent + b.food + b.transport + b.shopping + b.entertainment;
     const savingsRate = ((b.savings / b.income) * 100).toFixed(0);
+    const isHidden = Store.get('financePrivacy', true);
     document.getElementById('financeHealth').innerHTML = `
-      <div class="stat-row"><span class="stat-label">月收入</span><span class="stat-value">¥${b.income.toLocaleString()}</span></div>
+      <div class="stat-row"><span class="stat-label">月收入</span><span class="stat-value">${isHidden ? '🔒' : '¥' + b.income.toLocaleString()}</span></div>
       <div class="stat-row"><span class="stat-label">必要支出</span><span class="stat-value">¥${(b.rent + b.food + b.transport).toLocaleString()}</span></div>
       <div class="stat-row"><span class="stat-label">弹性支出</span><span class="stat-value">¥${(b.shopping + b.entertainment).toLocaleString()}</span></div>
-      <div class="stat-row"><span class="stat-label">储蓄</span><span class="stat-value" style="color:var(--success)">¥${b.savings.toLocaleString()}（${savingsRate}%）</span></div>
+      <div class="stat-row"><span class="stat-label">储蓄</span><span class="stat-value" style="color:var(--success)">${isHidden ? '🔒' : '¥' + b.savings.toLocaleString() + '（' + savingsRate + '%）'}</span></div>
       <div class="mt-2 text-xs text-muted">💡 储蓄率${savingsRate}%${savingsRate >= 40 ? '，非常健康！' : '，建议提升至40%以上'}</div>
+    `;
+
+    // Render chart
+    this._renderFinanceChart(profile, b);
+  },
+
+  _renderFinanceChart(profile, budget) {
+    const el = document.getElementById('financeChart');
+    if (!el) return;
+
+    // Asset distribution data
+    const savings = profile.savings || 200000;
+    const monthlyExpenses = (budget.rent + budget.food + budget.transport + budget.shopping + budget.entertainment);
+    const annualExpenses = monthlyExpenses * 12;
+    const annualIncome = (profile.income || 15000) * 12;
+    const annualSavings = annualIncome - annualExpenses;
+
+    // Donut chart data
+    const segments = [
+      { label: '存款', value: savings, color: '#1a73e8' },
+      { label: '年支出', value: annualExpenses, color: '#e74c3c' },
+      { label: '年结余', value: Math.max(annualSavings, 0), color: '#2ecc71' }
+    ];
+    const total = segments.reduce((s, c) => s + c.value, 0);
+
+    // Generate SVG donut chart
+    const cx = 90, cy = 90, r = 70, sw = 24;
+    let cumAngle = -90;
+    const arcs = segments.map(seg => {
+      const pct = total > 0 ? seg.value / total : 0;
+      const angle = pct * 360;
+      const startAngle = cumAngle;
+      const endAngle = cumAngle + angle;
+      cumAngle = endAngle;
+
+      const x1 = cx + r * Math.cos(startAngle * Math.PI / 180);
+      const y1 = cy + r * Math.sin(startAngle * Math.PI / 180);
+      const x2 = cx + r * Math.cos(endAngle * Math.PI / 180);
+      const y2 = cy + r * Math.sin(endAngle * Math.PI / 180);
+      const largeArc = angle > 180 ? 1 : 0;
+
+      return {
+        path: `M${x1},${y1} A${r},${r} 0 ${largeArc} 1 ${x2},${y2}`,
+        color: seg.color,
+        label: seg.label,
+        value: seg.value,
+        pct: (pct * 100).toFixed(1)
+      };
+    }).filter(a => a.value > 0);
+
+    el.innerHTML = `
+      <div class="text-xs text-muted mb-2">📅 ${Engine.today()} · 资产分布概览</div>
+      <div style="display:flex;align-items:center;gap:16px">
+        <svg width="180" height="180" viewBox="0 0 180 180" style="flex-shrink:0">
+          ${arcs.map(a => `<path d="${a.path}" fill="none" stroke="${a.color}" stroke-width="${sw}" stroke-linecap="round"/>`).join('')}
+          <text x="90" y="85" text-anchor="middle" style="font-size:11px;fill:var(--text-muted)">总资产</text>
+          <text x="90" y="102" text-anchor="middle" style="font-size:14px;font-weight:700;fill:var(--text)">¥${(total / 10000).toFixed(1)}万</text>
+        </svg>
+        <div style="flex:1">
+          ${arcs.map(a => `
+            <div style="margin-bottom:10px">
+              <div style="display:flex;align-items:center;gap:6px">
+                <div style="width:10px;height:10px;border-radius:3px;background:${a.color}"></div>
+                <span style="font-size:0.82rem;font-weight:600">${a.label}</span>
+                <span style="font-size:0.76rem;color:var(--text-muted);margin-left:auto">${a.pct}%</span>
+              </div>
+              <div style="font-size:0.8rem;color:var(--text-muted);margin-left:16px">¥${a.value.toLocaleString()}</div>
+            </div>
+          `).join('')}
+          <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border)">
+            <div class="text-xs text-muted">月支出: ¥${monthlyExpenses.toLocaleString()}</div>
+            <div class="text-xs text-muted">月结余: ¥${Math.max((profile.income || 15000) - monthlyExpenses, 0).toLocaleString()}</div>
+            <div class="text-xs text-muted">存款月数: ${((profile.savings || 200000) / monthlyExpenses).toFixed(1)}个月</div>
+          </div>
+        </div>
+      </div>
     `;
   },
 

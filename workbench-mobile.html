@@ -498,13 +498,48 @@ body.dark-mode { --bg: #0f172a; --bg2: #1e293b; --surface: #1e293b; --ink: #e2e8
 
   <div id="learn-finance" style="display:none">
     <div class="card">
-      <div class="card-title"><span class="icon">💰</span> 投资理财 <span class="dyn-indicator" style="margin-left:auto">每周一推送</span></div>
-      <div id="financeOverview">
-        <div class="stat-row"><span class="stat-label">月收入</span><span class="stat-value">1.5万</span></div>
-        <div class="stat-row"><span class="stat-label">坐标</span><span class="stat-value">成都</span></div>
-        <div class="stat-row"><span class="stat-label">存款</span><span class="stat-value">约20万</span></div>
-        <div class="stat-row"><span class="stat-label">理财经验</span><span class="stat-value">无</span></div>
+      <div class="card-title"><span class="icon">💰</span> 投资理财 <button class="btn btn-sm btn-outline" style="margin-left:auto" onclick="UI.editFinance()">✏️ 更新</button></div>
+      <div id="financeOverview"></div>
+      <div id="financeEditPanel" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)">
+        <div class="text-xs text-muted mb-2">编辑财务信息（仅保存在本地）</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+          <div>
+            <label class="text-xs text-muted">月收入(元)</label>
+            <input type="number" id="editIncome" class="finance-input" placeholder="15000" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:0.88rem;background:var(--bg)">
+          </div>
+          <div>
+            <label class="text-xs text-muted">存款(元)</label>
+            <input type="number" id="editSavings" class="finance-input" placeholder="200000" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:0.88rem;background:var(--bg)">
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+          <div>
+            <label class="text-xs text-muted">城市</label>
+            <input type="text" id="editCity" class="finance-input" placeholder="成都" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:0.88rem;background:var(--bg)">
+          </div>
+          <div>
+            <label class="text-xs text-muted">理财经验</label>
+            <select id="editExp" class="finance-input" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:0.88rem;background:var(--bg)">
+              <option value="无">无</option>
+              <option value="初级">初级</option>
+              <option value="中级">中级</option>
+              <option value="高级">高级</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-sm" style="flex:1" onclick="UI.saveFinance()">💾 保存</button>
+          <button class="btn btn-sm btn-outline" style="flex:1" onclick="UI.cancelEditFinance()">取消</button>
+        </div>
       </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📊</span> 资产分布图 <span class="dyn-indicator" style="margin-left:auto;cursor:pointer" onclick="UI.toggleFinanceChart()">点击查看</span></div>
+      <div id="financeChartPlaceholder" onclick="UI.toggleFinanceChart()" style="text-align:center;padding:20px;cursor:pointer">
+        <div style="font-size:2rem;opacity:0.5">📊</div>
+        <div class="text-sm text-muted mt-1">点击查看资产分布图</div>
+      </div>
+      <div id="financeChart" style="display:none"></div>
     </div>
     <div class="card" id="financeBriefingCard" style="display:none">
       <div class="card-title"><span class="icon">📈</span> 今日市场动态 <span class="dyn-indicator" style="margin-left:auto">每日自动更新</span></div>
