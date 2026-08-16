@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-08-15
+ * 日期: 2026-08-16
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-08-15",
-  "generatedAt": "2026-08-15 08:00 自动生成",
+  "date": "2026-08-16",
+  "generatedAt": "2026-08-16 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
+    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
     "items": [
-      {
-        "title": "改善睡眠质量的科学方法",
-        "content": "优质睡眠是健康的基石。建议：1) 固定作息时间，周末偏差不超过1小时；2) 睡前1小时远离手机蓝光；3) 卧室温度18-22度最佳；4) 下午3点后避免咖啡因；5) 睡前可饮温牛奶或酸枣仁茶安神。若入睡困难超过30分钟，可尝试4-7-8呼吸法：吸气4秒、屏息7秒、呼气8秒，循环4次。",
-        "source": "睡眠医学研究"
-      },
       {
         "title": "肠胃调理：益生菌与膳食纤维",
         "content": "肠道健康关乎免疫力和情绪。每日摄入25-30克膳食纤维（燕麦、红薯、绿叶菜），配合发酵食品（酸奶、泡菜、纳豆）补充益生菌。避免长期使用抗生素破坏肠道菌群。出现腹胀消化不良时，可按摩中脘穴、足三里穴各3分钟。建议每周安排一天「轻断食」，只摄入流质食物让肠胃休息。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "运动后恢复与营养补充",
         "content": "运动后30分钟是营养补充黄金窗口期。力量训练后应补充蛋白质（每公斤体重0.3克，如鸡蛋、鸡胸肉、蛋白粉）+ 快速碳水（香蕉、白米饭）。有氧运动后以补充碳水为主。运动后拉伸10-15分钟防止肌肉僵硬，使用泡沫轴放松筋膜效果更佳。保证7-8小时睡眠是肌肉恢复的关键，睡眠不足会显著降低训练效果。",
         "source": "运动营养学指南"
+      },
+      {
+        "title": "初秋护肺：银耳百合莲子羹",
+        "content": "立秋后空气湿度下降，肺部最易受伤。银耳富含植物胶质，能滋阴润肺；百合清心安神、润肺止咳；莲子补脾止泻。三者同煮成羹，每日一小碗，连续食用两周，可有效缓解秋燥引起的干咳、咽干。做法：银耳泡发撕碎，与百合、莲子小火慢炖40分钟，加少许冰糖调味。",
+        "source": "中国中医药报"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "粤语影视沉浸学习",
-        "content": "通过港剧沉浸式学习粤语。推荐入门剧：《男亲女爱》（职场对白丰富）、《溏心风暴》（家庭日常用语）。学习方法：第一遍中文字幕看剧情，第二遍粤配中字逐句暂停跟读，第三遍纯粤语音轨测试理解。重点记录高频口语表达如「搞掂」「唔该」「犀利」。每周精看1集，三个月粤语听力显著提升。",
-        "link": "https://www.bilibili.com",
-        "linkText": "B站搜索港剧资源"
-      },
       {
         "title": "英语影子跟读法 (Shadowing)",
         "content": "Shadowing 是最高效的口语训练法之一：播放原声同时延迟1-2秒跟读，尽量模仿语音语调和节奏。推荐材料：BBC Learning English 6 Minute English、VOA Special News。从慢速材料开始，逐步过渡到正常语速。每日15分钟，重点训练连读（linking）、弱读（reduction）和语调（intonation）。录音对比原声找出差距。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "今日推荐跟读：TED Talk「The power of believing that you can improve」by Carol Dweck。重点学习 growth mindset（成长型思维）的表达方式。跟读方法：第一遍听全文理解大意，第二遍逐句暂停跟读并录音，第三遍对照原文纠正发音，重点练习连读和语调。建议每日投入20分钟，坚持21天形成习惯。",
         "link": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
         "linkText": "观看 TED 演讲"
+      },
+      {
+        "title": "英语 AI 对话练习",
+        "content": "利用 ChatGPT 或 Claude 进行英语口语场景模拟。推荐 Prompt：「Let's have a 5-minute conversation about [topic], please correct my grammar and suggest better expressions.」今日场景主题：在科技会议上做自我介绍并讨论 AI 行业趋势。练习目标：掌握 10 个以上科技领域高频词汇，能够流利表达个人观点。",
+        "link": "https://chat.openai.com",
+        "linkText": "开始 AI 对话练习"
       }
     ],
     "dailyWords": [
       {
-        "word": "peer review",
-        "meaning": "同行评审",
-        "phonetic": "/pɪr rɪˈvjuː/",
-        "example": "The paper passed rigorous peer review before publication."
+        "word": "adequate",
+        "meaning": "充足的，适当的",
+        "phonetic": "/ˈædɪkwət/",
+        "example": "We have adequate resources to complete the project."
       },
       {
-        "word": "abstract",
-        "meaning": "摘要",
-        "phonetic": "/ˈæbstrækt/",
-        "example": "The abstract summarizes the key findings of the study."
+        "word": "comprehensive",
+        "meaning": "全面的，综合的",
+        "phonetic": "/ˌkɑːmprɪˈhensɪv/",
+        "example": "The report provides a comprehensive analysis."
       },
       {
-        "word": "variable",
-        "meaning": "变量",
-        "phonetic": "/ˈveriəbl/",
-        "example": "We controlled for several variables in the experiment."
+        "word": "diligent",
+        "meaning": "勤奋的",
+        "phonetic": "/ˈdɪlɪdʒənt/",
+        "example": "She is a diligent student who always does her homework."
       },
       {
-        "word": "correlation",
-        "meaning": "相关性",
-        "phonetic": "/ˌkɔːrəˈleɪʃn/",
-        "example": "There is a strong correlation between the two factors."
+        "word": "eloquent",
+        "meaning": "雄辩的，有口才的",
+        "phonetic": "/ˈeləkwənt/",
+        "example": "He gave an eloquent speech at the conference."
       },
       {
-        "word": "paradigm",
-        "meaning": "范式",
-        "phonetic": "/ˈpærədaɪm/",
-        "example": "This discovery represents a paradigm shift in the field."
+        "word": "feasible",
+        "meaning": "可行的",
+        "phonetic": "/ˈfiːzəbl/",
+        "example": "We need to assess whether the plan is feasible."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "I'm allergic to seafood, so please avoid it in my order.",
-        "translation": "我对海鲜过敏，点餐时请避免。",
-        "focus": "饮食禁忌：allergic to"
+        "text": "Excuse me, how do I get to the nearest subway station?",
+        "translation": "请问，最近的地铁站怎么走？",
+        "focus": "问路表达：how do I get to"
       },
       "yue": {
-        "text": "我对海鲜敏感，落单嗰阵麻烦避开。",
-        "jyutping": "ngo5 deoi3 hoi2 sin1 man4 bei2, lok6 daan1 go2 zan6 ma4 faan4 bei2 hoi1.",
-        "translation": "我对海鲜过敏，下单时请避开。"
+        "text": "唔该，最近嘅地铁站点样行去啊？",
+        "jyutping": "m4 goi1, zeoi3 gan6 ge3 dei6 tit2 zaam6 dim2 joeng2 haang4 heoi3 aa3?",
+        "translation": "请问，最近的地铁站怎么走？"
       },
       "ko": {
-        "text": "해산물 알레르기가 있어서 주문할 때 피해 주세요.",
-        "roman": "haesanmul alleleugiga is-eoseo jumunhal tae pihae juseyo.",
-        "translation": "我有海鲜过敏，点餐时请避开。"
+        "text": "실례합니다, 가장 가까운 지하철역은 어떻게 가나요?",
+        "roman": "sillyehamnida, gajang gakkawun jihacheol-yeog-eun eotteoge ganayo?",
+        "translation": "打扰一下，最近的地铁站怎么去？"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "强化学习对齐：RLHF 与 DPO",
-        "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
-        "link": "https://arxiv.org/abs/2305.18290"
-      },
       {
         "title": "向量数据库选型与性能对比",
         "content": "主流向量数据库对比：Milvus（分布式架构，亿级数据，适合生产环境）、Chroma（轻量易用，适合原型开发）、Qdrant（Rust 实现，高性能过滤）、Pinecone（全托管云服务）。选型维度：数据规模、查询延迟要求、是否需要混合检索、运维成本。Embedding 模型选择同样关键：BGE-zh 适合中文，OpenAI text-embedding-3 综合性能强。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "LoRA 微调技术详解",
         "content": "LoRA (Low-Rank Adaptation) 通过在预训练权重旁注入可训练的低秩矩阵 A 和 B，其中 W' = W + BA，仅训练 A 和 B（秩 r 远小于原始维度），可将训练参数量降低 90% 以上。适用于在消费级 GPU 上微调大语言模型。关键超参数：秩 r（推荐8-64）、alpha（缩放因子，通常设为 r 的2倍）、dropout（0.05-0.1）。",
         "link": "https://arxiv.org/abs/2106.09685"
+      },
+      {
+        "title": "RAG 检索增强生成最佳实践",
+        "content": "RAG 系统的核心流程：文档分块(Chunking) → 向量化(Embedding) → 存入向量数据库 → 检索(Retrieval) → 拼接上下文生成(Generation)。最佳实践：分块大小 512-1024 tokens 并保留 overlap；使用混合检索（向量 + BM25 关键词）；引入重排序模型（Reranker）提升相关性；设置相似度阈值过滤低质量结果。推荐技术栈：LangChain + Chroma + BGE Embedding。",
+        "link": "https://python.langchain.com/docs/use_cases/question_answering/"
       }
     ],
     "industryNews": [
-      {
-        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
-        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
-        "source": "CrewAI 文档",
-        "link": "https://docs.crewai.com/"
-      },
       {
         "title": "Microsoft AutoGen v0.4：多Agent对话框架支持分布式执行",
         "content": "AutoGen v0.4采用Actor模型重构，支持Agent跨进程、跨机器分布式部署，可水平扩展处理高并发任务。核心特性：异步消息传递、事件驱动架构、可插拔的模型客户端与工具运行时。新增AgentChat高层API，简化多Agent对话编排。与Semantic Kernel深度集成，方便企业接入Azure OpenAI生态。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "RLHF（人类反馈强化学习）三阶段：1) SFT监督微调；2) 训练奖励模型（Reward Model）拟合偏好排序；3) 用PPO优化策略模型最大化奖励。工程要点：偏好数据需覆盖多样场景与边界case；奖励模型易过拟合需控制容量；PPO训练不稳定，建议配合KL散度约束防止策略漂移过大。开源方案推荐TRL库。",
         "source": "HuggingFace Blog",
         "link": "https://huggingface.co/blog/rlhf"
+      },
+      {
+        "title": "DPO直接偏好优化：RLHF的简化替代方案",
+        "content": "DPO（Direct Preference Optimization）跳过显式奖励模型和RL训练，直接从偏好对数据通过二元交叉熵损失优化策略模型，公式简洁、训练稳定、工程成本低。实践显示DPO在指令跟随、安全对齐任务上效果接近甚至超过RLHF，且调参更简单。后续改进如IPO、KTO、ORPO进一步解决DPO的过拟合与分布偏移问题。",
+        "source": "arXiv",
+        "link": "https://arxiv.org/abs/2305.18290"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "港股市场估值优势明显，恒生指数市盈率处于全球主要市场最低水平。南向资金持续流入，重点布局互联网科技、高股息和医药生物板块。美联储降息预期升温，有利于港股流动性改善。A/H股溢价指数处于高位，港股相对A股折价显著，配置性价比突出。建议通过港股通或QDII基金参与，关注腾讯、美团、中海油等龙头标的。",
+    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
     "suggestions": [
-      {
-        "title": "消费复苏主线：关注估值修复机会",
-        "content": "消费板块经过长期调整，部分优质标的估值已处于历史低位。建议关注：白酒龙头（茅台、五粮液）估值回归合理区间；家电出海龙头（美的、海尔）受益于海外需求回暖；餐饮连锁（海底捞、瑞幸）同店销售改善。投资消费股核心看品牌力和渠道力，选择行业集中度提升趋势中的龙头。建仓建议分批进行，不急于一把梭。",
-        "link": "https://xueqiu.com/"
-      },
       {
         "title": "债券基金：低风险偏好者的压舱石",
         "content": "在利率下行环境中，债券基金是投资组合的稳定器。建议配置策略：70%中短债基金（流动性好、波动小）+ 30%中长期纯债基金（收益更高）。选择基金时关注：最大回撤（应<2%）、夏普比率（>1为优）、基金经理任职年限（>3年）和规模（10-100亿为宜）。避免重仓单一信用债的基金，防范信用风险。",
@@ -173,6 +168,11 @@ window.DAILY_BRIEFING = {
       {
         "title": "新能车产业链：左侧布局机会",
         "content": "新能源汽车产业链经过深度调整，部分环节估值已具备吸引力。关注方向：电池龙头（宁德时代、比亚迪）成本优势和全球化布局；智能化方向（激光雷达、域控制器）渗透率快速提升；充电桩、储能等基础设施。注意行业仍在洗牌期，尾部企业有出清风险，建议通过ETF或龙头个股参与，控制仓位不超过15%。",
+        "link": "https://www.eastmoney.com/"
+      },
+      {
+        "title": "红利低波策略：稳健配置首选",
+        "content": "在低利率环境下，股息率4%以上的红利低波组合具显著配置价值。建议关注煤炭、银行、公用事业板块中连续5年分红稳定、ROE>10%的标的。可通过红利ETF（515080）一键配置，每月定投平滑成本。注意分散行业集中度，单一行业占比不超过30%。",
         "link": "https://www.eastmoney.com/"
       }
     ],
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "「草台班子」精神 + 立Flag第一弹",
-        "content": "「草台就是最好的班子」小红书话题热度8700万+，余华视频获赞47万+。核心：先搭起来再说，别等完美。小蓝创作建议：拍一条「草台班子版Flag启动仪式」，真实记录不完美的开始，配Rap freestyle讲述「为什么这次一定能坚持」。生动照片拍开工仪式感。标签：#草台班子 #立Flag #先开始再说 #个人成长",
-        "source": "小红书趋势榜"
-      },
-      {
         "title": "手搓颜料转场 + 成长对比记录",
         "content": "#手搓颜料转场 话题热度破亿，10万+、100万+点赞爆文频现。双手搓颜料融合瞬间完成变装/转场。小蓝创作建议：用颜料转场展示「30天前vs30天后」的健身/学习成果对比，配Rap BGM强化节奏感。照片版做九宫格前后对比。标签：#手搓颜料转场 #成长对比 #变装转场 #打卡记录",
         "source": "小红书爆款话题"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "#好好运动记录大赛# 运动Vlog",
         "content": "抖音#好好运动记录大赛#持续发酵，#100天运动打卡挑战# 互动量极高。小蓝创作建议：拍一条3分钟运动Vlog，记录从不想动到练完的完整心路历程，中间穿插Rap段「今天也不想练但练了」。生动照片拍运动中的真实表情和汗水。标签：#好好运动记录大赛 #100天运动打卡挑战 #运动Vlog #真实记录",
         "source": "抖音运动话题热榜"
+      },
+      {
+        "title": "中文说唱WMX《猛》Studio Remix 卡点挑战",
+        "content": "中文说唱《猛》Studio Remix 8月13日发布即登DJ热榜，BPM150适合卡点剪辑。小蓝创作建议：用这首歌做生活高光时刻卡点视频——健身突破、学习完成、Flag达成的瞬间。Rap节奏搭配生动照片快闪。标签：#中文说唱 #卡点视频 #生活高光 #猛",
+        "source": "SpaceDJ音乐热榜"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "面部放松操 5分钟：揉搓面部肌肉、转动下巴、做夸张表情放松咬肌和下颌关节",
-      "technique": "高音拓展：用「母音变体」法，从高音u滑向i，感受声音「靠前」和「聚焦」",
-      "song": "《光年之外》- 练习副歌高音区的混声技巧和爆发力",
-      "duration": "40min"
+      "warmup": "颈部拉伸 3分钟：左右侧倾、前后点头、缓慢旋转，每个方向保持15秒，放松颈部肌肉",
+      "technique": "颤音练习：先练气息颤音（腹部规律起伏），再练喉部颤音，最后融合自然颤音",
+      "song": "《后来》- 练习长音结尾的颤音收束和情感处理",
+      "duration": "30min"
     },
     "drum": {
-      "rudiment": "五连音练习：RLRRL RLLRL，60bpm起步，重点练均匀度和重音移位",
-      "groove": "流行Ballad节拍：底鼓1、3拍，军鼓2、4拍，踩镲4分音符，70bpm配合click练习5分钟",
-      "tempo": "60→90bpm",
-      "duration": "25min"
+      "rudiment": "装饰音练习 Flam：rL lR，慢速练习确保主音和装饰音分离干净，80bpm 5分钟",
+      "groove": "Flam应用groove：在军鼓2、4拍加入flam装饰，底鼓1、3拍，90bpm练习5分钟",
+      "tempo": "80→100bpm",
+      "duration": "30min"
     }
   }
 };
