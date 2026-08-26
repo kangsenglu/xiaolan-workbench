@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-08-25
+ * 日期: 2026-08-26
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-08-25",
-  "generatedAt": "2026-08-25 08:00 自动生成",
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
+    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
     "items": [
-      {
-        "title": "改善睡眠质量的科学方法",
-        "content": "优质睡眠是健康的基石。建议：1) 固定作息时间，周末偏差不超过1小时；2) 睡前1小时远离手机蓝光；3) 卧室温度18-22度最佳；4) 下午3点后避免咖啡因；5) 睡前可饮温牛奶或酸枣仁茶安神。若入睡困难超过30分钟，可尝试4-7-8呼吸法：吸气4秒、屏息7秒、呼气8秒，循环4次。",
-        "source": "睡眠医学研究"
-      },
       {
         "title": "肠胃调理：益生菌与膳食纤维",
         "content": "肠道健康关乎免疫力和情绪。每日摄入25-30克膳食纤维（燕麦、红薯、绿叶菜），配合发酵食品（酸奶、泡菜、纳豆）补充益生菌。避免长期使用抗生素破坏肠道菌群。出现腹胀消化不良时，可按摩中脘穴、足三里穴各3分钟。建议每周安排一天「轻断食」，只摄入流质食物让肠胃休息。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "运动后恢复与营养补充",
         "content": "运动后30分钟是营养补充黄金窗口期。力量训练后应补充蛋白质（每公斤体重0.3克，如鸡蛋、鸡胸肉、蛋白粉）+ 快速碳水（香蕉、白米饭）。有氧运动后以补充碳水为主。运动后拉伸10-15分钟防止肌肉僵硬，使用泡沫轴放松筋膜效果更佳。保证7-8小时睡眠是肌肉恢复的关键，睡眠不足会显著降低训练效果。",
         "source": "运动营养学指南"
+      },
+      {
+        "title": "初秋护肺：银耳百合莲子羹",
+        "content": "立秋后空气湿度下降，肺部最易受伤。银耳富含植物胶质，能滋阴润肺；百合清心安神、润肺止咳；莲子补脾止泻。三者同煮成羹，每日一小碗，连续食用两周，可有效缓解秋燥引起的干咳、咽干。做法：银耳泡发撕碎，与百合、莲子小火慢炖40分钟，加少许冰糖调味。",
+        "source": "中国中医药报"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "粤语影视沉浸学习",
-        "content": "通过港剧沉浸式学习粤语。推荐入门剧：《男亲女爱》（职场对白丰富）、《溏心风暴》（家庭日常用语）。学习方法：第一遍中文字幕看剧情，第二遍粤配中字逐句暂停跟读，第三遍纯粤语音轨测试理解。重点记录高频口语表达如「搞掂」「唔该」「犀利」。每周精看1集，三个月粤语听力显著提升。",
-        "link": "https://www.bilibili.com",
-        "linkText": "B站搜索港剧资源"
-      },
       {
         "title": "英语影子跟读法 (Shadowing)",
         "content": "Shadowing 是最高效的口语训练法之一：播放原声同时延迟1-2秒跟读，尽量模仿语音语调和节奏。推荐材料：BBC Learning English 6 Minute English、VOA Special News。从慢速材料开始，逐步过渡到正常语速。每日15分钟，重点训练连读（linking）、弱读（reduction）和语调（intonation）。录音对比原声找出差距。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "今日推荐跟读：TED Talk「The power of believing that you can improve」by Carol Dweck。重点学习 growth mindset（成长型思维）的表达方式。跟读方法：第一遍听全文理解大意，第二遍逐句暂停跟读并录音，第三遍对照原文纠正发音，重点练习连读和语调。建议每日投入20分钟，坚持21天形成习惯。",
         "link": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
         "linkText": "观看 TED 演讲"
+      },
+      {
+        "title": "英语 AI 对话练习",
+        "content": "利用 ChatGPT 或 Claude 进行英语口语场景模拟。推荐 Prompt：「Let's have a 5-minute conversation about [topic], please correct my grammar and suggest better expressions.」今日场景主题：在科技会议上做自我介绍并讨论 AI 行业趋势。练习目标：掌握 10 个以上科技领域高频词汇，能够流利表达个人观点。",
+        "link": "https://chat.openai.com",
+        "linkText": "开始 AI 对话练习"
       }
     ],
     "dailyWords": [
       {
-        "word": "hypothesis",
-        "meaning": "假设",
-        "phonetic": "/haɪˈpɑːθəsɪs/",
-        "example": "The experiment confirmed our initial hypothesis."
+        "word": "peer review",
+        "meaning": "同行评审",
+        "phonetic": "/pɪr rɪˈvjuː/",
+        "example": "The paper passed rigorous peer review before publication."
       },
       {
-        "word": "methodology",
-        "meaning": "方法论",
-        "phonetic": "/ˌmeθəˈdɑːlədʒi/",
-        "example": "The research methodology was carefully designed."
+        "word": "abstract",
+        "meaning": "摘要",
+        "phonetic": "/ˈæbstrækt/",
+        "example": "The abstract summarizes the key findings of the study."
       },
       {
-        "word": "empirical",
-        "meaning": "经验的，实证的",
-        "phonetic": "/ɪmˈpɪrɪkl/",
-        "example": "The conclusion is supported by empirical evidence."
+        "word": "variable",
+        "meaning": "变量",
+        "phonetic": "/ˈveriəbl/",
+        "example": "We controlled for several variables in the experiment."
       },
       {
-        "word": "thesis",
-        "meaning": "论文，论点",
-        "phonetic": "/ˈθiːsɪs/",
-        "example": "She defended her thesis brilliantly at the defense."
+        "word": "correlation",
+        "meaning": "相关性",
+        "phonetic": "/ˌkɔːrəˈleɪʃn/",
+        "example": "There is a strong correlation between the two factors."
       },
       {
-        "word": "citation",
-        "meaning": "引用，引文",
-        "phonetic": "/saɪˈteɪʃn/",
-        "example": "Make sure to include proper citations in your paper."
+        "word": "paradigm",
+        "meaning": "范式",
+        "phonetic": "/ˈpærədaɪm/",
+        "example": "This discovery represents a paradigm shift in the field."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "The presentation went really well. The clients seemed impressed.",
-        "translation": "演示进行得很顺利，客户看起来很满意。",
-        "focus": "工作汇报：presentation / impressed"
+        "text": "I need to book a flight to Tokyo for next Wednesday.",
+        "translation": "我需要订一张下周三飞东京的机票。",
+        "focus": "旅行订票：book a flight"
       },
       "yue": {
-        "text": "个presentation做得好顺，个客好似好满意。",
-        "jyutping": "go3 presentation zou6 dak1 hou2 seon6, go3 haak3 hou4 ci5 hou2 mun5 ji3.",
-        "translation": "演示做得很顺，客户好像很满意。"
+        "text": "我要book张下个礼拜三飞东京嘅机票。",
+        "jyutping": "ngo5 jiu3 book zoeng1 haa5 go3 lai5 baai3 saam1 fei1 dung1 ging1 ge3 gei2 piu3.",
+        "translation": "我要订一张下个星期三飞东京的机票。"
       },
       "ko": {
-        "text": "발표가 아주 잘 됐어요. 고객들이 만족해 보였어요.",
-        "roman": "balpyo-ga aju jal dwaet-eoyo. gogaegdeul-i manjokhae boyeot-eoyo.",
-        "translation": "发表进行得很顺利，客户们看起来很满意。"
+        "text": "다음 주 수요일 도쿄행 항공권을 예약해야 합니다.",
+        "roman": "daeum ju suyo-il dongkyo-haeng hanggonggwon-eul yeyakhaeya hamnida.",
+        "translation": "需要预订下周三飞往东京的机票。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "强化学习对齐：RLHF 与 DPO",
-        "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
-        "link": "https://arxiv.org/abs/2305.18290"
-      },
       {
         "title": "向量数据库选型与性能对比",
         "content": "主流向量数据库对比：Milvus（分布式架构，亿级数据，适合生产环境）、Chroma（轻量易用，适合原型开发）、Qdrant（Rust 实现，高性能过滤）、Pinecone（全托管云服务）。选型维度：数据规模、查询延迟要求、是否需要混合检索、运维成本。Embedding 模型选择同样关键：BGE-zh 适合中文，OpenAI text-embedding-3 综合性能强。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "LoRA 微调技术详解",
         "content": "LoRA (Low-Rank Adaptation) 通过在预训练权重旁注入可训练的低秩矩阵 A 和 B，其中 W' = W + BA，仅训练 A 和 B（秩 r 远小于原始维度），可将训练参数量降低 90% 以上。适用于在消费级 GPU 上微调大语言模型。关键超参数：秩 r（推荐8-64）、alpha（缩放因子，通常设为 r 的2倍）、dropout（0.05-0.1）。",
         "link": "https://arxiv.org/abs/2106.09685"
+      },
+      {
+        "title": "RAG 检索增强生成最佳实践",
+        "content": "RAG 系统的核心流程：文档分块(Chunking) → 向量化(Embedding) → 存入向量数据库 → 检索(Retrieval) → 拼接上下文生成(Generation)。最佳实践：分块大小 512-1024 tokens 并保留 overlap；使用混合检索（向量 + BM25 关键词）；引入重排序模型（Reranker）提升相关性；设置相似度阈值过滤低质量结果。推荐技术栈：LangChain + Chroma + BGE Embedding。",
+        "link": "https://python.langchain.com/docs/use_cases/question_answering/"
       }
     ],
     "industryNews": [
-      {
-        "title": "Agent评测体系：SWE-bench与AgentBench推动能力基准化",
-        "content": "SWE-bench基于真实GitHub Issue评测Agent自主修复代码能力，要求Agent理解仓库、定位文件、生成补丁并通过测试，是目前最接近真实研发的Agent基准。AgentBench覆盖操作系统、数据库、知识图谱、家务、卡片游戏等多场景评估Agent综合能力。评测驱动迭代，主流Agent框架均以这些基准作为能力背书，推动Agent从玩具走向实用。",
-        "source": "SWE-bench 官网",
-        "link": "https://www.swebench.com/"
-      },
       {
         "title": "AI辅助编程工具对比：Cursor vs GitHub Copilot vs Codeium",
         "content": "最新测评显示，Cursor在多文件理解和重构方面领先，Copilot在代码补全速度上占优，Codeium在免费方案中性价比最高。AI辅助研发已从代码补全进化到架构设计、测试生成、文档自动化全流程。企业落地关键在于结合私有代码库做检索增强，避免通用模型生成不符合内部规范的代码。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "AutoGPT发布v0.5版本，新增多Agent协作模式，允许多个专业化Agent分工完成复杂任务。框架内置了规划、记忆、工具调用三大核心模块，支持自定义Agent角色和能力。配合Forge评测基准，开发者可量化Agent的任务完成率与工具调用准确率，推动Agent从Demo走向生产可用。",
         "source": "GitHub Trending",
         "link": "https://github.com/Significant-Gravitas/AutoGPT"
+      },
+      {
+        "title": "LangChain推出LangGraph：构建可靠的有状态Agent工作流",
+        "content": "LangGraph将Agent抽象为有向图，节点表示计算单元（LLM调用/工具调用），边表示状态流转，支持循环、分支、人工介入（human-in-the-loop）。相比传统Chain线性执行，LangGraph可构建需要反复修正、多步推理的复杂Agent，已广泛用于客服、数据分析、代码审查等场景。持久化检查点机制使Agent可中断恢复。",
+        "source": "LangChain 官方博客",
+        "link": "https://langchain-ai.github.io/langgraph/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "REITs市场持续扩容，已上市产品涵盖产业园、仓储物流、保障房、消费基础设施等多个领域。部分REITs产品分红收益率达5%-7%，显著高于十年期国债收益率。作为介于股票和债券之间的新品种，REITs具有抗通胀、现金流稳定的特点，适合追求稳定收益的长期投资者。建议关注底层资产质量优良、分派率较高的产品，分散配置2-3只不同类型REITs。",
+    "marketTrend": "当前A股市场整体估值处于历史中低位区间，沪深300市盈率约11.5倍，低于近十年均值。新「国九条」政策持续发力，资本市场改革深化，IPO节奏收紧利好存量市场。银行理财方面，存款利率经历多轮下调后，大额存单年化收益已降至2%以下，资金搬家趋势明显，低波稳健型理财产品和红利策略受青睐。债券市场方面，长端利率低位运行，信用债利差收窄，建议关注中短债基金配置价值。整体策略建议：保持权益资产定投节奏，关注高股息、AI科技、出口链三条主线，控制仓位不追高。",
     "suggestions": [
-      {
-        "title": "消费复苏主线：关注估值修复机会",
-        "content": "消费板块经过长期调整，部分优质标的估值已处于历史低位。建议关注：白酒龙头（茅台、五粮液）估值回归合理区间；家电出海龙头（美的、海尔）受益于海外需求回暖；餐饮连锁（海底捞、瑞幸）同店销售改善。投资消费股核心看品牌力和渠道力，选择行业集中度提升趋势中的龙头。建仓建议分批进行，不急于一把梭。",
-        "link": "https://xueqiu.com/"
-      },
       {
         "title": "债券基金：低风险偏好者的压舱石",
         "content": "在利率下行环境中，债券基金是投资组合的稳定器。建议配置策略：70%中短债基金（流动性好、波动小）+ 30%中长期纯债基金（收益更高）。选择基金时关注：最大回撤（应<2%）、夏普比率（>1为优）、基金经理任职年限（>3年）和规模（10-100亿为宜）。避免重仓单一信用债的基金，防范信用风险。",
@@ -173,6 +168,11 @@ window.DAILY_BRIEFING = {
       {
         "title": "新能车产业链：左侧布局机会",
         "content": "新能源汽车产业链经过深度调整，部分环节估值已具备吸引力。关注方向：电池龙头（宁德时代、比亚迪）成本优势和全球化布局；智能化方向（激光雷达、域控制器）渗透率快速提升；充电桩、储能等基础设施。注意行业仍在洗牌期，尾部企业有出清风险，建议通过ETF或龙头个股参与，控制仓位不超过15%。",
+        "link": "https://www.eastmoney.com/"
+      },
+      {
+        "title": "红利低波策略：稳健配置首选",
+        "content": "在低利率环境下，股息率4%以上的红利低波组合具显著配置价值。建议关注煤炭、银行、公用事业板块中连续5年分红稳定、ROE>10%的标的。可通过红利ETF（515080）一键配置，每月定投平滑成本。注意分散行业集中度，单一行业占比不超过30%。",
         "link": "https://www.eastmoney.com/"
       }
     ],
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "闭环挑战：从Flag立下到目标达成全记录",
-        "content": "「闭环挑战」成为双平台新热点，要求完整记录从立Flag到最终达成的全过程，完播率极高。小蓝创作建议：选一个具体可量化的Flag（如「30天练出马甲线」），从Day 1到Day 30每天记录，最终做成3分钟Rap叙事长视频，用hook贯穿全片。标签：#闭环挑战 #Flag达成 #完整记录 #Rap叙事",
-        "source": "抖音+小红书内容趋势"
-      },
-      {
         "title": "多巴胺穿搭2.0 + 30天Flag色彩挑战",
         "content": "小红书「多巴胺穿搭」话题持续破圈，8月衍生出「多巴胺运动穿搭」新玩法，单篇互动量50万+。小蓝创作建议：立「30天多巴胺运动穿搭Flag」，每天一种高饱和色运动服去健身/跑步，拍生动照片记录。视频版用快节奏Rap BGM做颜色切换卡点，结尾用freestyle总结当日运动感受。标签：#多巴胺穿搭 #30天挑战 #运动穿搭 #Rap卡点",
         "source": "小红书穿搭热榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "「早起战神」Flag挑战 + 晨间Vlog",
         "content": "抖音「早起战神」话题8月播放量破30亿，年轻人用极端自律内容对抗焦虑。小蓝创作建议：拍「5:30早起战神」系列Vlog，记录从挣扎起床到完成晨跑/晨读的完整过程。用Rap歌词做内心OS配音，生动照片捕捉睡眼惺忪的真实状态。标签：#早起战神 #晨间Vlog #自律挑战 #Flag打卡",
         "source": "抖音自律话题榜"
+      },
+      {
+        "title": "CityRun城市漫跑 + Rap BGM歌单",
+        "content": "「CityRun」替代CityWalk成为8月新趋势，小红书话题曝光3亿+，强调用跑步重新认识城市。小蓝创作建议：立「每周3次CityRun Flag」，跑不同路线并拍摄沿途街景，配原创Rap BGM或跟唱热门说唱。每跑完一条路线出一期「说唱城市漫游」视频。标签：#CityRun #城市漫跑 #跑步打卡 #说唱BGM",
+        "source": "小红书运动趋势"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "全身抖动 2分钟：站立全身放松抖动，从手指到肩膀到躯干，释放全身紧张",
-      "technique": "情感表达：闭眼想象歌词画面，用说话的方式先朗诵歌词再唱，对比情感差异",
-      "song": "《漂洋过海来看你》- 练习叙事性演唱的情感层次和语气变化",
-      "duration": "35min"
+      "warmup": "吹纸片练习 3分钟：拿一张纸巾贴墙，用气息吹使其不掉落，训练气息稳定输出",
+      "technique": "渐强渐弱：在一个长音上从弱到强再到弱，控制气息流量和声带闭合度的配合",
+      "song": "《听海》- 练习情绪递进和渐强处理的高潮段落",
+      "duration": "40min"
     },
     "drum": {
-      "rudiment": "交叉手练习：左手越过右手击打嗵鼓，练协调和准确度，慢速起步",
-      "groove": "fusion节拍：复合切分底鼓，嗵鼓melodic fill，110bpm练习5分钟",
-      "tempo": "80→120bpm",
-      "duration": "30min"
+      "rudiment": "脚法独立练习：双脚单跳RRLL在底鼓上，手做不同节奏，60bpm 5分钟",
+      "groove": "双底鼓groove：双脚8分交替底鼓，手8分踩镲+军鼓2、4，130bpm练习5分钟",
+      "tempo": "60→130bpm",
+      "duration": "35min"
     }
   }
 };
