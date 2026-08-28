@@ -1,229 +1,71 @@
-/**
- * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-08-27
- * 由 scripts/generate-daily.mjs 自动生成
- * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
- */
 window.DAILY_BRIEFING = {
-  "date": "2026-08-27",
-  "generatedAt": "2026-08-27 08:00 自动生成",
-  "health": {
-    "title": "健康养生",
-    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
-    "items": [
-      {
-        "title": "运动后恢复与营养补充",
-        "content": "运动后30分钟是营养补充黄金窗口期。力量训练后应补充蛋白质（每公斤体重0.3克，如鸡蛋、鸡胸肉、蛋白粉）+ 快速碳水（香蕉、白米饭）。有氧运动后以补充碳水为主。运动后拉伸10-15分钟防止肌肉僵硬，使用泡沫轴放松筋膜效果更佳。保证7-8小时睡眠是肌肉恢复的关键，睡眠不足会显著降低训练效果。",
-        "source": "运动营养学指南"
-      },
-      {
-        "title": "初秋护肺：银耳百合莲子羹",
-        "content": "立秋后空气湿度下降，肺部最易受伤。银耳富含植物胶质，能滋阴润肺；百合清心安神、润肺止咳；莲子补脾止泻。三者同煮成羹，每日一小碗，连续食用两周，可有效缓解秋燥引起的干咳、咽干。做法：银耳泡发撕碎，与百合、莲子小火慢炖40分钟，加少许冰糖调味。",
-        "source": "中国中医药报"
-      },
-      {
-        "title": "腰椎间盘突出日常护理要点",
-        "content": "久坐办公人群腰椎压力持续累积，建议每45分钟起身活动一次，做「靠墙站立」3分钟：后脑勺、肩胛骨、臀部、脚后跟四点贴墙。睡姿推荐侧卧微屈膝，枕头高度保持脊柱水平。避免弯腰搬重物，应屈膝下蹲后再搬起。坚持每日做「五点支撑」15次，可有效增强腰背肌群力量。",
-        "source": "骨科临床护理手册"
-      }
+  date: "2026-08-28",
+  generatedAt: "2026-08-28 08:30 由TRAE自动化生成",
+  health: {
+    title: "健康饮食",
+    icon: "leaf",
+    color: "var(--module-1)",
+    diet: "经期后以温补气血为主，忌玉米红薯豆类燕麦。早餐红枣桂圆粳米粥补血安神，下午黄芪红枣枸杞茶补气升阳，晚餐冬瓜排骨汤消水肿。银耳羹补充胶原蛋白，不寒不燥适合脾虚体质。",
+    items: [
+      { title: "红枣桂圆粥", content: "红枣含铁防贫血，桂圆安神补血，与粳米同煮适合经期后面色苍白、手脚冰凉。体质燥热者减少桂圆用量。", source: "博禾医生" },
+      { title: "冬瓜消水肿", content: "冬瓜利尿消肿，搭配排骨煲汤，经期后体内水分代谢慢时食用，避免高盐加工食品加重水肿。", source: "健康指南" },
+      { title: "黄芪红枣枸杞茶", content: "黄芪补气固表，红枣养血，枸杞滋肾，三味泡茶适合经期后乏力、气色差，提升元气不上火。", source: "养生推荐" },
+      { title: "银耳羹", content: "银耳富含植物胶质，补充胶原蛋白，滋润肌肤，性平不刺激，脾胃虚弱者也可安心食用。", source: "食疗方" }
     ]
   },
-  "language": {
-    "title": "语言学习",
-    "items": [
-      {
-        "title": "多邻国每日打卡",
-        "content": "利用 Duolingo 保持每日语言学习习惯。建议同时学习两门语言（如英语+日语），利用「联赛」机制保持动力。每个单元完成后做 Notes 笔记，整理新词汇和语法点。配合 Duolingo Stories 练习阅读理解和听力。每日目标设为 50 XP 以上，连续打卡30天可形成稳定的学习习惯。",
-        "link": "https://www.duolingo.com",
-        "linkText": "Duolingo 多邻国"
-      },
-      {
-        "title": "英语 TED 跟读训练",
-        "content": "今日推荐跟读：TED Talk「The power of believing that you can improve」by Carol Dweck。重点学习 growth mindset（成长型思维）的表达方式。跟读方法：第一遍听全文理解大意，第二遍逐句暂停跟读并录音，第三遍对照原文纠正发音，重点练习连读和语调。建议每日投入20分钟，坚持21天形成习惯。",
-        "link": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
-        "linkText": "观看 TED 演讲"
-      },
-      {
-        "title": "英语 AI 对话练习",
-        "content": "利用 ChatGPT 或 Claude 进行英语口语场景模拟。推荐 Prompt：「Let's have a 5-minute conversation about [topic], please correct my grammar and suggest better expressions.」今日场景主题：在科技会议上做自我介绍并讨论 AI 行业趋势。练习目标：掌握 10 个以上科技领域高频词汇，能够流利表达个人观点。",
-        "link": "https://chat.openai.com",
-        "linkText": "开始 AI 对话练习"
-      },
-      {
-        "title": "粤语情景学习",
-        "content": "今日学习场景：茶楼点餐。核心句型：「唔该，帮我落单」「呢个几钱呀」「要一壶普洱」。重点词汇：虾饺、烧卖、肠粉、凤爪。建议配合 B 站粤语教学视频跟读，注意声调变化（粤语九声六调）。每周掌握一个生活场景，三个月可应对日常交流。",
-        "link": "https://www.bilibili.com/video/BV1px411S7bD",
-        "linkText": "B站粤语教程"
-      }
-    ],
-    "dailyWords": [
-      {
-        "word": "adequate",
-        "meaning": "充足的，适当的",
-        "phonetic": "/ˈædɪkwət/",
-        "example": "We have adequate resources to complete the project."
-      },
-      {
-        "word": "comprehensive",
-        "meaning": "全面的，综合的",
-        "phonetic": "/ˌkɑːmprɪˈhensɪv/",
-        "example": "The report provides a comprehensive analysis."
-      },
-      {
-        "word": "diligent",
-        "meaning": "勤奋的",
-        "phonetic": "/ˈdɪlɪdʒənt/",
-        "example": "She is a diligent student who always does her homework."
-      },
-      {
-        "word": "eloquent",
-        "meaning": "雄辩的，有口才的",
-        "phonetic": "/ˈeləkwənt/",
-        "example": "He gave an eloquent speech at the conference."
-      },
-      {
-        "word": "feasible",
-        "meaning": "可行的",
-        "phonetic": "/ˈfiːzəbl/",
-        "example": "We need to assess whether the plan is feasible."
-      }
-    ],
-    "dailySentences": {
-      "en": {
-        "text": "Sorry for the delay. The traffic was heavier than expected.",
-        "translation": "抱歉迟到了，交通比预期拥堵。",
-        "focus": "道歉表达：sorry for / heavier than expected"
-      },
-      "yue": {
-        "text": "唔好意思迟大到，塞车严重过预期。",
-        "jyutping": "m4 hou2 ji3 si3 ci4 daai6 dou3, sak1 ce1 jim4 zung6 gwo3 jyu6 kei4.",
-        "translation": "不好意思迟到，堵车比预期严重。"
-      },
-      "ko": {
-        "text": "늦어서 죄송합니다. 교통체증이 예상보다 심했어요.",
-        "roman": "neujeoseo joesonghamnida. gyotongchejeung-i yesangboda simhaet-eoyo.",
-        "translation": "抱歉迟到了，交通拥堵比预想的严重。"
-      }
-    }
-  },
-  "professional": {
-    "title": "专业成长",
-    "knowledgePoints": [
-      {
-        "title": "AI Agent 架构设计模式",
-        "content": "Agent 核心循环：感知(Perception) → 规划(Planning) → 行动(Action) → 观察(Observation)。关键设计模式：ReAct（推理-行动交替）、Plan-and-Execute（先规划后执行）、Reflexion（自我反思修正）。工具调用方面，MCP (Model Context Protocol) 正成为标准协议。多 Agent 协作框架如 AutoGen、CrewAI 支持角色分工和任务编排，适合复杂工作流自动化。",
-        "link": "https://langchain-ai.github.io/langgraph/"
-      },
-      {
-        "title": "Transformer 架构核心原理",
-        "content": "Transformer 的核心在于 Self-Attention 机制，通过 Q(Query)、K(Key)、V(Value) 三个矩阵将输入序列映射，计算注意力权重 softmax(QK^T/√dk)V，使模型能够关注序列中不同位置的依赖关系。Multi-Head Attention 通过并行多个注意力头捕获不同子空间的特征。Position Encoding 弥补了缺失的位置信息。理解 Transformer 是掌握 GPT、BERT 等大模型的基础。",
-        "link": "https://arxiv.org/abs/1706.03762"
-      },
-      {
-        "title": "LoRA 微调技术详解",
-        "content": "LoRA (Low-Rank Adaptation) 通过在预训练权重旁注入可训练的低秩矩阵 A 和 B，其中 W' = W + BA，仅训练 A 和 B（秩 r 远小于原始维度），可将训练参数量降低 90% 以上。适用于在消费级 GPU 上微调大语言模型。关键超参数：秩 r（推荐8-64）、alpha（缩放因子，通常设为 r 的2倍）、dropout（0.05-0.1）。",
-        "link": "https://arxiv.org/abs/2106.09685"
-      },
-      {
-        "title": "RAG 检索增强生成最佳实践",
-        "content": "RAG 系统的核心流程：文档分块(Chunking) → 向量化(Embedding) → 存入向量数据库 → 检索(Retrieval) → 拼接上下文生成(Generation)。最佳实践：分块大小 512-1024 tokens 并保留 overlap；使用混合检索（向量 + BM25 关键词）；引入重排序模型（Reranker）提升相关性；设置相似度阈值过滤低质量结果。推荐技术栈：LangChain + Chroma + BGE Embedding。",
-        "link": "https://python.langchain.com/docs/use_cases/question_answering/"
-      },
-      {
-        "title": "扩散模型 (Diffusion Model) 原理",
-        "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
-        "link": "https://arxiv.org/abs/2006.11239"
-      }
-    ],
-    "industryNews": [
-      {
-        "title": "AutoGPT开源Agent框架重大更新：支持多Agent协作",
-        "content": "AutoGPT发布v0.5版本，新增多Agent协作模式，允许多个专业化Agent分工完成复杂任务。框架内置了规划、记忆、工具调用三大核心模块，支持自定义Agent角色和能力。配合Forge评测基准，开发者可量化Agent的任务完成率与工具调用准确率，推动Agent从Demo走向生产可用。",
-        "source": "GitHub Trending",
-        "link": "https://github.com/Significant-Gravitas/AutoGPT"
-      },
-      {
-        "title": "LangChain推出LangGraph：构建可靠的有状态Agent工作流",
-        "content": "LangGraph将Agent抽象为有向图，节点表示计算单元（LLM调用/工具调用），边表示状态流转，支持循环、分支、人工介入（human-in-the-loop）。相比传统Chain线性执行，LangGraph可构建需要反复修正、多步推理的复杂Agent，已广泛用于客服、数据分析、代码审查等场景。持久化检查点机制使Agent可中断恢复。",
-        "source": "LangChain 官方博客",
-        "link": "https://langchain-ai.github.io/langgraph/"
-      },
-      {
-        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
-        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
-        "source": "CrewAI 文档",
-        "link": "https://docs.crewai.com/"
-      }
+  language: {
+    title: "语言学习",
+    icon: "book",
+    color: "var(--module-2)",
+    items: [
+      { title: "英语·TED影子跟读法", content: "选TED-Ed短片（3分钟内，发音清晰），第一遍盲听，第二遍开英文字幕标生词，第三遍影子跟读模仿语调停顿。坚持几周听觉辨识力显著提升。", link: "https://www.langflix.io/zh-Hant/blog/shadowing-guide", linkText: "去学习" },
+      { title: "英语·每日5词·旅游专项", content: "今日词汇：itinerary行程、boarding pass登机牌、accommodation住宿、reservation预订、customs海关。用影子跟读法朗读例句3遍。", link: "https://www.ted.com/talks", linkText: "去TED" },
+      { title: "粤语·情景对话·点餐场景", content: "「我想点餐」ngo5 soeng2 dim2 caan1、「有咩推荐？」jau5 me1 teoi1 gin3、「埋单」maai4 daan1。分场景整理10组高频问答，一人分饰两角模拟对话。", link: "https://liuxue.xdf.cn/blog/blog_7950120.shtml", linkText: "去练习" },
+      { title: "韩语·字母复习+日常用语", content: "复习元音ㅏ(a) ㅓ(eo) ㅗ(o) ㅜ(u) ㅡ(eu)，辅音ㄱ(g) ㄴ(n) ㄷ(d)。日常用语：안녕하세요(您好)、감사합니다(谢谢)。", link: "https://www.polyu.edu.hk/clc/docdrive/genai/Cantonese_e.pdf", linkText: "去复习" }
     ]
   },
-  "investment": {
-    "title": "投资理财",
-    "marketTrend": "A股市场近期受政策利好提振，市场情绪逐步修复。半导体、AI算力板块表现活跃，受益于国产替代加速和全球AI产业景气上行。消费板块估值处于历史低位，但复苏节奏仍需观察。建议投资者保持耐心，利用市场波动逢低布局优质标的。债券市场方面，货币政策维持宽松基调，利率债配置价值仍在，但需警惕年末利率波动风险。黄金价格高位震荡，地缘风险支撑长期配置逻辑不变。",
-    "suggestions": [
-      {
-        "title": "新能车产业链：左侧布局机会",
-        "content": "新能源汽车产业链经过深度调整，部分环节估值已具备吸引力。关注方向：电池龙头（宁德时代、比亚迪）成本优势和全球化布局；智能化方向（激光雷达、域控制器）渗透率快速提升；充电桩、储能等基础设施。注意行业仍在洗牌期，尾部企业有出清风险，建议通过ETF或龙头个股参与，控制仓位不超过15%。",
-        "link": "https://www.eastmoney.com/"
-      },
-      {
-        "title": "红利低波策略：稳健配置首选",
-        "content": "在低利率环境下，股息率4%以上的红利低波组合具显著配置价值。建议关注煤炭、银行、公用事业板块中连续5年分红稳定、ROE>10%的标的。可通过红利ETF（515080）一键配置，每月定投平滑成本。注意分散行业集中度，单一行业占比不超过30%。",
-        "link": "https://www.eastmoney.com/"
-      },
-      {
-        "title": "AI 科技主题：关注算力与应用双线",
-        "content": "AI 产业链可分为算力层（GPU、光模块、液冷）、模型层（大模型公司）、应用层（办公、教育、医疗AI应用）。当前算力层估值已较高，建议关注应用层落地标的，特别是已有商业化收入的企业。可通过科创50ETF（588000）或人工智能ETF（515980）参与，仓位建议不超过总资产20%。",
-        "link": "https://xueqiu.com/"
-      }
+  professional: {
+    title: "专业赋能",
+    icon: "bolt",
+    color: "var(--accent)",
+    knowledgePoints: [
+      { title: "GPU显存与HBM", content: "GPU使用HBM高带宽显存（A100/H100），容量数十至百GB，带宽达2-3TB/s，用于存储模型权重、KV Cache和激活值。", link: "https://github.com/HzcIrving/SOTAFollow/blob/main/%E9%9D%A2%E7%AD%8B/LLM/LLM%E9%9D%A2%E8%AF%95%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E7%82%B9.md" },
+      { title: "数据并行DP", content: "多GPU同时训练不同数据批次，前向反向计算后聚合梯度。适合模型可放入单卡的情况，是分布式训练的基础范式。", link: "https://blog.csdn.net/weixin_60896526/article/details/153578455" },
+      { title: "张量并行TP", content: "将矩阵乘法沿某一维度拆分到多张卡并行计算，通信密集，通常在同一节点内使用NVLink高速互联。", link: "https://blog.csdn.net/weixin_43444989/article/details/161028202" },
+      { title: "流水线并行PP", content: "将模型层切成几段分别放到不同节点，适合跨节点部署，对带宽要求较低，但会产生气泡（bubble）延迟。", link: "https://blog.csdn.net/weixin_43444989/article/details/161028202" },
+      { title: "GRPO组相对策略优化", content: "GRPO用同一问题的多组回答均值作为基线，替代PPO的value网络，减少显存占用，DeepSeek-R1-Zero用它激发强推理行为。", link: "https://danielrjiang.github.io/files/publications/llm_rl_tutorial.pdf" }
     ],
-    "researchLinks": [
-      {
-        "title": "东方财富网 - 实时行情与研报",
-        "link": "https://www.eastmoney.com/"
-      },
-      {
-        "title": "雪球 - 投资者社区",
-        "link": "https://xueqiu.com/"
-      },
-      {
-        "title": "巨潮资讯网 - 上市公司公告",
-        "link": "http://www.cninfo.com.cn/"
-      }
+    industryNews: [
+      { title: "GRPO激发推理能力无需监督步骤", content: "DeepSeek-R1-Zero使用GRPO进行强化学习后训练，无需监督微调步骤即可激发强推理行为，验证了纯RL对齐的潜力。", source: "RL Tutorial", link: "https://danielrjiang.github.io/files/publications/llm_rl_tutorial.pdf" },
+      { title: "GIFT框架融合GRPO与DPO", content: "新框架GIFT将GRPO的在线多响应生成与DPO的隐式奖励结合，通过联合归一化消除隐式奖励的难解项，提升对齐效率。", source: "arXiv", link: "https://arxiv.org/html/2510.23868v2" },
+      { title: "AWPO显式推理奖励强化LLM工具使用", content: "AWPO通过显式推理奖励整合强化LLM工具使用能力，为Agent场景下的RL对齐提供新思路，论文发布于2026年8月。", source: "CSDN", link: "https://blog.csdn.net/tingyunye/article/details/157174564" }
     ]
   },
-  "selfmedia": {
-    "title": "自媒体热点",
-    "items": [
-      {
-        "title": "「早起战神」Flag挑战 + 晨间Vlog",
-        "content": "抖音「早起战神」话题8月播放量破30亿，年轻人用极端自律内容对抗焦虑。小蓝创作建议：拍「5:30早起战神」系列Vlog，记录从挣扎起床到完成晨跑/晨读的完整过程。用Rap歌词做内心OS配音，生动照片捕捉睡眼惺忪的真实状态。标签：#早起战神 #晨间Vlog #自律挑战 #Flag打卡",
-        "source": "抖音自律话题榜"
-      },
-      {
-        "title": "CityRun城市漫跑 + Rap BGM歌单",
-        "content": "「CityRun」替代CityWalk成为8月新趋势，小红书话题曝光3亿+，强调用跑步重新认识城市。小蓝创作建议：立「每周3次CityRun Flag」，跑不同路线并拍摄沿途街景，配原创Rap BGM或跟唱热门说唱。每跑完一条路线出一期「说唱城市漫游」视频。标签：#CityRun #城市漫跑 #跑步打卡 #说唱BGM",
-        "source": "小红书运动趋势"
-      },
-      {
-        "title": "「沉淀期」健身反差对比 + 说唱叙事",
-        "content": "「沉淀期」成为健身圈热词，抖音相关话题播放20亿+，核心是用长时间跨度展示蜕变。小蓝创作建议：做「90天沉淀期」系列，每周同一天拍同款姿势照片，最终做快闪对比视频。用Rap叙事风格讲述「从想放弃到坚持下来」的心路历程。标签：#沉淀期 #健身蜕变 #反差对比 #Rap叙事",
-        "source": "抖音健身热榜"
-      }
+  investment: {
+    title: "投资理财",
+    icon: "wallet",
+    color: "var(--module-4)",
+    marketTrend: "8月A股从7月科技回调中逐步修复，市场风格从成长独涨转向均衡分化。政策预期升温支撑风险偏好，但外部扰动与业绩验证仍存不确定性，结构机会优于趋势机会。新发基金中稳健型产品占比超40%。",
+    suggestions: [
+      { title: "哑铃型均衡配置", content: "红利底仓打底+科技成长（AI产业链、国产算力、半导体）逢低布局，摒弃极端押注，适合稳健型投资者。", link: "https://guba.eastmoney.com/news,jjdt,1762216777.html" },
+      { title: "债券票息策略为主", content: "基本面弱复苏+流动性呵护支撑债市，配置中短久期利率债及高等级信用债，关注降准降息预期带来的交易窗口。", link: "https://www.fund001.com/webimages/upload2012/2026/07/31/155335334_524_385ada5d-5c38-3cdf-9815-19383f01de00.pdf" },
+      { title: "定投宽基指数", content: "科创50、中证500等宽基指数近2年定投回测收益可观，建议月收入1.5万者可每月定额2000-3000元定投，长期摊薄成本。", link: "http://m.toutiao.com/group/7677789885205447210/" }
+    ],
+    researchLinks: [
+      { title: "交银投顾2026年8月配置建议", link: "https://www.fund001.com/webimages/upload2012/2026/07/31/155335334_524_385ada5d-5c38-3cdf-9815-19383f01de00.pdf" },
+      { title: "8月基金投资策略：均衡修复哑铃配置", link: "https://guba.eastmoney.com/news,jjdt,1762216777.html" },
+      { title: "稳健型基金占据发行C位", link: "https://stcn.com/article/detail/4060688.html" }
     ]
   },
-  "music": {
-    "title": "今日音乐练习",
-    "vocal": {
-      "warmup": "哈欠式开喉 3分钟：模拟打哈欠感受软腭抬起、喉咙打开的状态，保持该状态发声",
-      "technique": "滑音练习：用「哦」音从低到高再滑回，全程保持打开状态，感受声音的圆润度",
-      "song": "《遇见》- 练习中低音区的温暖音色和句尾的收束处理",
-      "duration": "30min"
-    },
-    "drum": {
-      "rudiment": "综合复习：单跳+双跳+复合跳+装饰音串联，120bpm连续5分钟不中断",
-      "groove": "即兴groove：放任意风格伴奏，跟随即兴变化fill和密度，练听力和反应",
-      "tempo": "自由",
-      "duration": "30min"
-    }
+  selfmedia: {
+    title: "自媒体热点",
+    icon: "flame",
+    color: "var(--danger)",
+    items: [
+      { title: "七夕反套路过法", content: "乞巧节女性力量主题成为小红书热点，悦己+闺蜜情谊+二次创作内容戳中用户情绪点，适合立Flag+生动照片风格切入。", source: "新媒体小橘" },
+      { title: "秋季外套大测评", content: "抖音热搜榜秋季外套测评热度高涨，胶片感日常穿搭+真实测评易出爆款，可结合独居女孩日常场景拍摄。", source: "抖音热搜" },
+      { title: "朱志鑫新歌i手势舞挑战", content: "手势舞挑战持续火爆，跟拍热门BGM+个人风格改编（如运动打卡场景）是快速涨粉的低门槛选题。", source: "抖音挑战榜" },
+      { title: "小红书未来薯地计划扩容", content: "九大少儿频道入驻小红书，平台内容生态持续丰富，知识型+生活方式内容流量扶持明显。", source: "澎湃新闻" }
+    ]
   }
 };
