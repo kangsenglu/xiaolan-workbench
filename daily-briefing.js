@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-08-29
+ * 日期: 2026-08-30
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-08-29",
-  "generatedAt": "2026-08-29 08:00 自动生成",
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-30 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
+    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
     "items": [
-      {
-        "title": "腰椎间盘突出日常护理要点",
-        "content": "久坐办公人群腰椎压力持续累积，建议每45分钟起身活动一次，做「靠墙站立」3分钟：后脑勺、肩胛骨、臀部、脚后跟四点贴墙。睡姿推荐侧卧微屈膝，枕头高度保持脊柱水平。避免弯腰搬重物，应屈膝下蹲后再搬起。坚持每日做「五点支撑」15次，可有效增强腰背肌群力量。",
-        "source": "骨科临床护理手册"
-      },
       {
         "title": "颈椎操：十点十分操",
         "content": "站立挺胸，双臂向两侧伸直，手掌朝上，如同钟表指向10:10的位置，保持该姿势30秒后放下，重复5次。此动作可有效拉伸颈椎两侧肌肉，缓解长期低头造成的颈肩僵硬。配合「米字操」（头部缓慢书写米字）效果更佳。每日早晚各做一组，坚持一个月可见明显改善。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "春季养肝：作息与饮食调理",
         "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
         "source": "中医养生学刊"
+      },
+      {
+        "title": "夏季防暑降温实用指南",
+        "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
+        "source": "健康中国行动"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "英语 AI 对话练习",
-        "content": "利用 ChatGPT 或 Claude 进行英语口语场景模拟。推荐 Prompt：「Let's have a 5-minute conversation about [topic], please correct my grammar and suggest better expressions.」今日场景主题：在科技会议上做自我介绍并讨论 AI 行业趋势。练习目标：掌握 10 个以上科技领域高频词汇，能够流利表达个人观点。",
-        "link": "https://chat.openai.com",
-        "linkText": "开始 AI 对话练习"
-      },
       {
         "title": "粤语情景学习",
         "content": "今日学习场景：茶楼点餐。核心句型：「唔该，帮我落单」「呢个几钱呀」「要一壶普洱」。重点词汇：虾饺、烧卖、肠粉、凤爪。建议配合 B 站粤语教学视频跟读，注意声调变化（粤语九声六调）。每周掌握一个生活场景，三个月可应对日常交流。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
         "link": "https://www.grammarly.com",
         "linkText": "Grammarly 语法检查"
+      },
+      {
+        "title": "日语 N3 语法精讲",
+        "content": "今日学习语法点：「〜ばよかった」（早知道...就好了）、「〜つもりだ」（打算做某事）、「〜ようになる」（变得能够...）。配合例句记忆并在日常日记中尝试使用。推荐使用 NHK Web News 进行阅读练习，标注不认识的词汇和语法点。每周完成3篇新闻精读，三个月可达到 N3 阅读水平。",
+        "link": "https://www3.nhk.or.jp/news/easy/",
+        "linkText": "NHK 简易日语新闻"
       }
     ],
     "dailyWords": [
       {
-        "word": "meticulous",
-        "meaning": "一丝不苟的",
-        "phonetic": "/məˈtɪkjələs/",
-        "example": "He is meticulous about every detail of his work."
+        "word": "innovate",
+        "meaning": "创新，改革",
+        "phonetic": "/ˈɪnəveɪt/",
+        "example": "Companies must innovate to stay competitive."
       },
       {
-        "word": "notion",
-        "meaning": "概念，观念",
-        "phonetic": "/ˈnoʊʃn/",
-        "example": "I have a vague notion of how it works."
+        "word": "leverage",
+        "meaning": "利用，杠杆作用",
+        "phonetic": "/ˈlevərɪdʒ/",
+        "example": "We should leverage our strengths to win."
       },
       {
-        "word": "obsolete",
-        "meaning": "过时的，废弃的",
-        "phonetic": "/ˌɑːbsəˈliːt/",
-        "example": "This technology will soon become obsolete."
+        "word": "negotiate",
+        "meaning": "谈判，协商",
+        "phonetic": "/nɪˈɡoʊʃieɪt/",
+        "example": "They negotiated a better deal with the supplier."
       },
       {
-        "word": "preliminary",
-        "meaning": "初步的",
-        "phonetic": "/prɪˈlɪmɪneri/",
-        "example": "The preliminary results look very promising."
+        "word": "revenue",
+        "meaning": "收入，营收",
+        "phonetic": "/ˈrevənuː/",
+        "example": "The company's revenue grew by 20% last year."
       },
       {
-        "word": "subsequent",
-        "meaning": "随后的，后来的",
-        "phonetic": "/ˈsʌbsɪkwənt/",
-        "example": "Subsequent events proved our theory correct."
+        "word": "stakeholder",
+        "meaning": "利益相关者",
+        "phonetic": "/ˈsteɪkhoʊldər/",
+        "example": "We need to consider all stakeholders in this decision."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "Could you recommend a local dish I must try?",
-        "translation": "能推荐一道我必尝的当地菜吗？",
-        "focus": "旅行点餐：local dish"
+        "text": "The weather forecast says it will rain tomorrow, so bring an umbrella.",
+        "translation": "天气预报说明天会下雨，记得带伞。",
+        "focus": "天气表达：weather forecast"
       },
       "yue": {
-        "text": "有冇咩必食嘅地道菜式推荐啊？",
-        "jyutping": "jau5 mou5 me1 bit6 sik6 ge3 dei6 dou6 coi3 sik1 teoi1 gin3 aa3?",
-        "translation": "有没有什么必吃的地道菜式推荐？"
+        "text": "听日天气预报话会落雨，记得带遮啊。",
+        "jyutping": "ting1 jat6 tin1 hei3 jyu3 bou6 waa6 wui5 lok6 jyu5, gei3 dak1 daai3 ze1 aa3.",
+        "translation": "明天天气预报说会下雨，记得带伞。"
       },
       "ko": {
-        "text": "꼭 먹어봐야 할 현지 음식을 추천해 주세요.",
-        "roman": "kkok meogeobwaya hal hyeonji eumsig-eul chucheonhae juseyo.",
-        "translation": "请推荐一定要尝尝的当地美食。"
+        "text": "내일 비가 온다고 하니 우산을 챙기세요.",
+        "roman": "nae-il biga ondago hani usan-eul chaeng-giseyo.",
+        "translation": "说明天会下雨，请带好雨伞。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "LoRA 微调技术详解",
-        "content": "LoRA (Low-Rank Adaptation) 通过在预训练权重旁注入可训练的低秩矩阵 A 和 B，其中 W' = W + BA，仅训练 A 和 B（秩 r 远小于原始维度），可将训练参数量降低 90% 以上。适用于在消费级 GPU 上微调大语言模型。关键超参数：秩 r（推荐8-64）、alpha（缩放因子，通常设为 r 的2倍）、dropout（0.05-0.1）。",
-        "link": "https://arxiv.org/abs/2106.09685"
-      },
       {
         "title": "RAG 检索增强生成最佳实践",
         "content": "RAG 系统的核心流程：文档分块(Chunking) → 向量化(Embedding) → 存入向量数据库 → 检索(Retrieval) → 拼接上下文生成(Generation)。最佳实践：分块大小 512-1024 tokens 并保留 overlap；使用混合检索（向量 + BM25 关键词）；引入重排序模型（Reranker）提升相关性；设置相似度阈值过滤低质量结果。推荐技术栈：LangChain + Chroma + BGE Embedding。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "大模型推理优化：KV Cache 与量化",
         "content": "KV Cache 在自回归生成时缓存已计算的 Key/Value 矩阵，避免重复计算，是推理加速的关键。量化技术将 FP16 权重降至 INT8/INT4，减少显存占用和访存带宽压力。GPTQ 和 AWQ 是当前主流的权重量化算法。vLLM 的 PagedAttention 技术通过分页管理 KV Cache 显存，将吞吐量提升 2-4 倍，是生产部署的首选推理引擎。",
         "link": "https://arxiv.org/abs/2306.05685"
+      },
+      {
+        "title": "多模态大模型架构：CLIP 与 LLaVA",
+        "content": "CLIP 通过对比学习将图像和文本映射到同一向量空间，是视觉-语言理解的基石。LLaVA 将视觉编码器（CLIP ViT）的输出作为「视觉 token」注入大语言模型，实现图文对话能力。关键设计：Projection Layer 将视觉特征对齐到语言模型的嵌入空间。多模态训练分两阶段：先训练 Projection 对齐特征，再联合微调提升指令跟随能力。",
+        "link": "https://arxiv.org/abs/2304.08485"
       }
     ],
     "industryNews": [
-      {
-        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
-        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
-        "source": "CrewAI 文档",
-        "link": "https://docs.crewai.com/"
-      },
       {
         "title": "Microsoft AutoGen v0.4：多Agent对话框架支持分布式执行",
         "content": "AutoGen v0.4采用Actor模型重构，支持Agent跨进程、跨机器分布式部署，可水平扩展处理高并发任务。核心特性：异步消息传递、事件驱动架构、可插拔的模型客户端与工具运行时。新增AgentChat高层API，简化多Agent对话编排。与Semantic Kernel深度集成，方便企业接入Azure OpenAI生态。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "RLHF（人类反馈强化学习）三阶段：1) SFT监督微调；2) 训练奖励模型（Reward Model）拟合偏好排序；3) 用PPO优化策略模型最大化奖励。工程要点：偏好数据需覆盖多样场景与边界case；奖励模型易过拟合需控制容量；PPO训练不稳定，建议配合KL散度约束防止策略漂移过大。开源方案推荐TRL库。",
         "source": "HuggingFace Blog",
         "link": "https://huggingface.co/blog/rlhf"
+      },
+      {
+        "title": "DPO直接偏好优化：RLHF的简化替代方案",
+        "content": "DPO（Direct Preference Optimization）跳过显式奖励模型和RL训练，直接从偏好对数据通过二元交叉熵损失优化策略模型，公式简洁、训练稳定、工程成本低。实践显示DPO在指令跟随、安全对齐任务上效果接近甚至超过RLHF，且调参更简单。后续改进如IPO、KTO、ORPO进一步解决DPO的过拟合与分布偏移问题。",
+        "source": "arXiv",
+        "link": "https://arxiv.org/abs/2305.18290"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "港股市场估值优势明显，恒生指数市盈率处于全球主要市场最低水平。南向资金持续流入，重点布局互联网科技、高股息和医药生物板块。美联储降息预期升温，有利于港股流动性改善。A/H股溢价指数处于高位，港股相对A股折价显著，配置性价比突出。建议通过港股通或QDII基金参与，关注腾讯、美团、中海油等龙头标的。",
+    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
     "suggestions": [
-      {
-        "title": "AI 科技主题：关注算力与应用双线",
-        "content": "AI 产业链可分为算力层（GPU、光模块、液冷）、模型层（大模型公司）、应用层（办公、教育、医疗AI应用）。当前算力层估值已较高，建议关注应用层落地标的，特别是已有商业化收入的企业。可通过科创50ETF（588000）或人工智能ETF（515980）参与，仓位建议不超过总资产20%。",
-        "link": "https://xueqiu.com/"
-      },
       {
         "title": "黄金配置：对冲地缘风险的压舱石",
         "content": "全球地缘政治不确定性持续升温，黄金作为避险资产配置价值凸显。建议通过黄金ETF（518880）或积存金方式配置，占投资组合5%-10%。当前金价处于历史高位区间，不建议一次性买入，推荐每月定额定投，利用价格波动摊薄成本。长期看，去美元化趋势支撑金价中枢上移。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "指数定投：适合工薪族的懒人投资法",
         "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
         "link": "https://fund.eastmoney.com/"
+      },
+      {
+        "title": "可转债投资：进可攻退可守",
+        "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
+        "link": "https://www.jisilu.cn/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "「沉淀期」健身反差对比 + 说唱叙事",
-        "content": "「沉淀期」成为健身圈热词，抖音相关话题播放20亿+，核心是用长时间跨度展示蜕变。小蓝创作建议：做「90天沉淀期」系列，每周同一天拍同款姿势照片，最终做快闪对比视频。用Rap叙事风格讲述「从想放弃到坚持下来」的心路历程。标签：#沉淀期 #健身蜕变 #反差对比 #Rap叙事",
-        "source": "抖音健身热榜"
-      },
-      {
         "title": "随手拍氛围感 + 说唱歌词当文案",
         "content": "小红书「氛围感随手拍」持续热门，8月新趋势是将说唱歌词作为照片文案，图文互动率翻倍。小蓝创作建议：拍健身房/街头/咖啡馆的氛围感照片，配热门Rap歌词当文案，如「我正在努力，你没看到而已」。立「每天一张氛围感照片Flag」，积累14天做合集。标签：#氛围感 #随手拍 #说唱文案 #拍照打卡",
         "source": "小红书摄影趋势"
@@ -208,21 +203,26 @@ window.DAILY_BRIEFING = {
         "title": "「一句话Flag」挑战 + Rap hook创作",
         "content": "抖音「一句话Flag」挑战8月爆发，用一句有力的话立下Flag并坚持记录，头部视频点赞百万+。小蓝创作建议：将Flag写成Rap hook形式，如「每天五点起，把世界踩在脚底」，每天拍践行Flag的15秒视频，用这句hook做固定开场。标签：#一句话Flag #Rap创作 #挑战打卡 #hook",
         "source": "抖音挑战热榜"
+      },
+      {
+        "title": "组局健身 + 说唱接力Vlog",
+        "content": "「组局」文化从社交延伸到健身，小红书「健身搭子」话题8月浏览量破5亿。小蓝创作建议：发起「说唱健身局」，约朋友一起健身并拍Vlog，每人用freestyle说唱介绍自己的训练项目。立「每周组局一次Flag」，既满足社交又产出内容。标签：#组局健身 #健身搭子 #说唱接力 #Vlog",
+        "source": "小红书社交健身榜"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "哼鸣练习 5分钟：闭口发ng音，从舒适音区开始上下滑音，感受鼻腔和头腔共鸣",
-      "technique": "横膈膜发力：仰卧姿势，腹部放一本书，发ha音感受腹部起伏，每秒2次连续30秒",
-      "song": "《滚滚红尘》- 练习前奏低音区的胸声共鸣和情感表达",
-      "duration": "35min"
+      "warmup": "打嘟噜（舌颤音）3分钟：舌尖轻抵上齿龈，用气流震动舌尖发出rrr声，配合音阶上行",
+      "technique": "元音统一：用a-e-i-o-u五个元音在同一音高上连贯转换，保持喉位稳定不乱动",
+      "song": "《如愿》- 重点练习主歌到副歌的换声区过渡，避免声音断裂",
+      "duration": "30min"
     },
     "drum": {
-      "rudiment": "双跳练习 Double Stroke Roll：RRLL 60bpm → 80bpm → 100bpm，每速度2分钟，注意第二击用手腕弹起",
-      "groove": "放克节拍：底鼓1、1.5、3拍，军鼓2、4拍，踩镲16分音符，90bpm练习5分钟",
-      "tempo": "60→100bpm",
+      "rudiment": "复合跳 Paradiddle：RLRR LRLL 70bpm → 90bpm，每速度3分钟，强调重音清晰",
+      "groove": "shuffle律动：踩镲三连音shuffle，底鼓1、3拍，军鼓2、4拍，80bpm练习6分钟",
+      "tempo": "70→100bpm",
       "duration": "30min"
     }
   }
