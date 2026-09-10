@@ -1,68 +1,229 @@
+/**
+ * 小蓝UP UP · WorkBuddy 每日简报
+ * 日期: 2026-09-10
+ * 由 scripts/generate-daily.mjs 自动生成
+ * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
+ */
 window.DAILY_BRIEFING = {
-  date: "2026-09-10",
-  generatedAt: "2026-09-10 09:00 由TRAE自动化生成",
-  health: {
-    title: "健康饮食",
-    icon: "leaf",
-    color: "var(--module-1)",
-    diet: "今日温补脾胃、消水肿搭配。晨起黄芪红枣枸杞茶补气养血，午间山药小米粥养胃（避开玉米红薯豆类燕麦），下午冬瓜荷叶茶利水消肿，晚间银耳红枣羹补胶原。停经体质以温补为主，忌生冷寒凉。",
-    items: [
-      { title: "黄芪红枣枸杞茶", content: "黄芪10g、红枣5颗去核、枸杞一小把，沸水冲泡焖10分钟。补气养血，适合脾胃虚弱、气血不足体质，晨起饮用最佳。", source: "博禾医生" },
-      { title: "冬瓜荷叶茶", content: "冬瓜皮30g、干荷叶5g煮水15分钟，利水消肿不伤脾胃，适合下午饮用，缓解经前或日常浮肿。", source: "民福康" },
-      { title: "银耳红枣羹", content: "银耳半朵泡发撕碎、红枣3颗、冰糖适量，小火慢炖40分钟出胶。补充胶原蛋白润肤，晚间温服养胃。", source: "什么值得买" }
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-10 08:00 自动生成",
+  "health": {
+    "title": "健康养生",
+    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
+    "items": [
+      {
+        "title": "春季养肝：作息与饮食调理",
+        "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
+        "source": "中医养生学刊"
+      },
+      {
+        "title": "夏季防暑降温实用指南",
+        "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
+        "source": "健康中国行动"
+      },
+      {
+        "title": "冬季足浴养生法",
+        "content": "每晚睡前用40度左右温水泡脚15-20分钟，水位没过脚踝。可加入生姜（驱寒）、艾草（温经）、花椒（除湿）增强效果。泡脚后擦干双脚，按摩涌泉穴100下引火归元，改善失眠和手脚冰凉。注意：糖尿病足患者水温不宜超过38度，心血管疾病患者泡脚时间不超过15分钟。",
+        "source": "传统中医保健"
+      }
     ]
   },
-  language: {
-    title: "语言学习",
-    icon: "book",
-    color: "var(--module-2)",
-    items: [
-      { title: "TED影子跟读：每日一句跟读法", content: "选TED-Ed短动画或6分钟经典演讲，每句暂停跟读3遍模仿语调节奏，再完整跟读。今日5词：resilience、paradigm、nuance、catalyst、empathy。", link: "https://funfluen.com/learn/guides/learn-english-with-ted-talks/", linkText: "去学习" },
-      { title: "粤语情景对话：餐饮点单实战", content: "六大高频场景之美食餐饮：先积累点单专属词汇，再角色扮演模拟对话。今日练：'唔该，畀一份叉烧饭'（麻烦，给一份叉烧饭）。", link: "http://m.163.com/dy/article/L15UUQAB0556M676.html", linkText: "去学习" },
-      { title: "韩语入门：辅音复习+日常问候", content: "每日20分钟拼读练习，复习ㄱㄴㄷㄹ辅音，学习问候语：안녕하세요（你好）、감사합니다（谢谢）、죄송합니다（抱歉）。", link: "https://higher.smartedu.cn/course/62d8ac12ce6ac77184c60049", linkText: "去学习" }
-    ]
-  },
-  professional: {
-    title: "专业赋能",
-    icon: "bolt",
-    color: "var(--accent)",
-    knowledgePoints: [
-      { title: "GPU分布式并行策略", content: "DP数据并行最简单但显存浪费大；TP张量并行按矩阵拆分，通信密集适合节点内；PP流水线并行按层切分跨节点；ZeRO/FSDP将优化器状态、梯度、参数分片，显存效率最高。", link: "https://blog.csdn.net/weixin_43444989/article/details/161028202" },
-      { title: "LLM训练三阶段全链路", content: "Pretrain大规模无监督学语言能力→SFT指令微调学对话格式→RLHF/PPO人类偏好对齐价值观。三阶段数据质量和配比决定模型上限。", link: "https://blog.csdn.net/qq_38146189/article/details/149155696" },
-      { title: "RL对齐算法演进：PPO→DPO→GRPO", content: "PPO需Critic网络显存大；DPO直接用偏好数据优化无需reward model；GRPO去掉Critic用组内相对优势，显存省训练快，DeepSeek-R1采用。", link: "https://blog.csdn.net/qq_60735796/article/details/161807622" },
-      { title: "RLVR vs RLHF核心区别", content: "RLHF用人类偏好数据训练reward model判断好坏；RLVR用程序自动验证答案对错（数学题可验算）。2026年主流模型均转向RLVR降低人工标注成本。", link: "https://jishuzhan.net/article/2038835286057684993" },
-      { title: "分布式训练Checkpoint管理", content: "FSDP/TP将模型分片到多卡，checkpoint需分rank保存而非集中到单卡写入，避免IO瓶颈。NeMo Megatron-Bridge提供可扩展的checkpoint方案。", link: "https://www.nvidia.com/en-us/on-demand/session/gtc26-dlit82259/" }
+  "language": {
+    "title": "语言学习",
+    "items": [
+      {
+        "title": "韩语入门基础",
+        "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
+        "link": "https://talktomeinkorean.com/curriculum/",
+        "linkText": "TTMIK 韩语课程"
+      },
+      {
+        "title": "英语商务邮件写作",
+        "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
+        "link": "https://www.grammarly.com",
+        "linkText": "Grammarly 语法检查"
+      },
+      {
+        "title": "日语 N3 语法精讲",
+        "content": "今日学习语法点：「〜ばよかった」（早知道...就好了）、「〜つもりだ」（打算做某事）、「〜ようになる」（变得能够...）。配合例句记忆并在日常日记中尝试使用。推荐使用 NHK Web News 进行阅读练习，标注不认识的词汇和语法点。每周完成3篇新闻精读，三个月可达到 N3 阅读水平。",
+        "link": "https://www3.nhk.or.jp/news/easy/",
+        "linkText": "NHK 简易日语新闻"
+      },
+      {
+        "title": "英语播客听力训练",
+        "content": "推荐播客：The Daily (NYT) 适合中高级学习者，每集20-25分钟话题丰富；Luke's English Podcast 适合中级，语速适中且讲解幽默。听力方法：第一遍正常速度听大意，第二遍0.8倍速逐句精听并记录生词，第三遍对照文字稿朗读跟读。建议通勤时利用碎片时间，每日累计听力不少于30分钟。",
+        "link": "https://www.nytimes.com/column/the-daily",
+        "linkText": "收听 The Daily"
+      }
     ],
-    industryNews: [
-      { title: "DRPO：用平滑正则替代PPO硬掩码", content: "论文提出Divergence Regularized Policy Optimization，将PPO的trust-region硬掩码替换为平滑的二次正则项，在偏离边界时仍提供修正梯度信号，训练更稳定。", source: "arXiv 2606.09821", link: "https://arxiv.org/pdf/2606.09821" },
-      { title: "GRAIL：Token级优势重加权", content: "传统RL将序列级advantage均匀广播到所有token，稀释梯度信号。GRAIL提出token-wise优势重加权，让有效推理步骤获得更强梯度，减少filler词干扰。", source: "arXiv 2606.04889", link: "https://arxiv.org/html/2606.04889v1" },
-      { title: "651篇论文全景：大模型RL技术深度研报", content: "AI Insight发布强化学习全景研报，覆盖EPO熵正则化、GDPO多奖励解耦、Beyond 80/20评估等前沿方向，2026年RL趋势从单一奖励走向多奖励精细化。", source: "AI Insight", link: "https://www.ai-insight.org/reports/rl-landscape" }
-    ]
-  },
-  investment: {
-    title: "投资理财",
-    icon: "wallet",
-    color: "var(--module-4)",
-    marketTrend: "9月A股延续震荡，沪指3900点附近，量能维持高位但中期主线未明。8月急跌后缩量修复，保险资负新规引导资金风格再平衡，价值周期方向领涨。稳健型宜均衡配置，逢低定投摊低成本。",
-    suggestions: [
-      { title: "核心+卫星配置策略", content: "核心仓位70%配红利低波或中证A500宽基做底仓，卫星仓位30%轻仓参与科技成长结构性行情，市场情绪低迷时通过定投逐步摊低成本。", link: "https://cj.sina.cn/articles/view/1726551832/66e917180270229nq" },
-      { title: "基金定投：按估值定额定投", content: "参照指数估值建立定投模型，低估多投高估少投。存款20万建议留6个月生活费应急，其余分12个月定投宽基指数，月投2000-3000元。", link: "http://m.toutiao.com/group/7679084973302809128/" },
-      { title: "低风险配置：货基+短债", content: "月收入1.5万，建议30%配货币基金或短债基金做流动性管理，年化2-3%稳健收益，剩余按定投节奏配置权益资产，不追涨杀跌。", link: "https://caifuhao.eastmoney.com/news/20260826135303081259390" }
+    "dailyWords": [
+      {
+        "word": "innovate",
+        "meaning": "创新，改革",
+        "phonetic": "/ˈɪnəveɪt/",
+        "example": "Companies must innovate to stay competitive."
+      },
+      {
+        "word": "leverage",
+        "meaning": "利用，杠杆作用",
+        "phonetic": "/ˈlevərɪdʒ/",
+        "example": "We should leverage our strengths to win."
+      },
+      {
+        "word": "negotiate",
+        "meaning": "谈判，协商",
+        "phonetic": "/nɪˈɡoʊʃieɪt/",
+        "example": "They negotiated a better deal with the supplier."
+      },
+      {
+        "word": "revenue",
+        "meaning": "收入，营收",
+        "phonetic": "/ˈrevənuː/",
+        "example": "The company's revenue grew by 20% last year."
+      },
+      {
+        "word": "stakeholder",
+        "meaning": "利益相关者",
+        "phonetic": "/ˈsteɪkhoʊldər/",
+        "example": "We need to consider all stakeholders in this decision."
+      }
     ],
-    researchLinks: [
-      { title: "交银投顾配置建议 2026.9：静待政策窗口明朗", link: "https://www.fund001.com/webimages/upload2012/2026/09/01/135918621_524_26b5b1de-0b99-3b6c-9b45-91131e859a93.pdf" },
-      { title: "中证报：风暴过后机构转守为攻，把握超跌机遇", link: "https://epaper.cs.com.cn/zgzqb/images/2026-08/17/J06/zqXB0617.pdf" },
-      { title: "8月A股震荡行情稳健配置指南", link: "https://caifuhao.eastmoney.com/news/20260826135303081259390" }
+    "dailySentences": {
+      "en": {
+        "text": "The presentation went really well. The clients seemed impressed.",
+        "translation": "演示进行得很顺利，客户看起来很满意。",
+        "focus": "工作汇报：presentation / impressed"
+      },
+      "yue": {
+        "text": "个presentation做得好顺，个客好似好满意。",
+        "jyutping": "go3 presentation zou6 dak1 hou2 seon6, go3 haak3 hou4 ci5 hou2 mun5 ji3.",
+        "translation": "演示做得很顺，客户好像很满意。"
+      },
+      "ko": {
+        "text": "발표가 아주 잘 됐어요. 고객들이 만족해 보였어요.",
+        "roman": "balpyo-ga aju jal dwaet-eoyo. gogaegdeul-i manjokhae boyeot-eoyo.",
+        "translation": "发表进行得很顺利，客户们看起来很满意。"
+      }
+    }
+  },
+  "professional": {
+    "title": "专业成长",
+    "knowledgePoints": [
+      {
+        "title": "扩散模型 (Diffusion Model) 原理",
+        "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
+        "link": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "title": "Prompt Engineering 高级技巧",
+        "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
+        "link": "https://platform.openai.com/docs/guides/prompt-engineering"
+      },
+      {
+        "title": "大模型推理优化：KV Cache 与量化",
+        "content": "KV Cache 在自回归生成时缓存已计算的 Key/Value 矩阵，避免重复计算，是推理加速的关键。量化技术将 FP16 权重降至 INT8/INT4，减少显存占用和访存带宽压力。GPTQ 和 AWQ 是当前主流的权重量化算法。vLLM 的 PagedAttention 技术通过分页管理 KV Cache 显存，将吞吐量提升 2-4 倍，是生产部署的首选推理引擎。",
+        "link": "https://arxiv.org/abs/2306.05685"
+      },
+      {
+        "title": "多模态大模型架构：CLIP 与 LLaVA",
+        "content": "CLIP 通过对比学习将图像和文本映射到同一向量空间，是视觉-语言理解的基石。LLaVA 将视觉编码器（CLIP ViT）的输出作为「视觉 token」注入大语言模型，实现图文对话能力。关键设计：Projection Layer 将视觉特征对齐到语言模型的嵌入空间。多模态训练分两阶段：先训练 Projection 对齐特征，再联合微调提升指令跟随能力。",
+        "link": "https://arxiv.org/abs/2304.08485"
+      },
+      {
+        "title": "强化学习对齐：RLHF 与 DPO",
+        "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
+        "link": "https://arxiv.org/abs/2305.18290"
+      }
+    ],
+    "industryNews": [
+      {
+        "title": "AutoGPT开源Agent框架重大更新：支持多Agent协作",
+        "content": "AutoGPT发布v0.5版本，新增多Agent协作模式，允许多个专业化Agent分工完成复杂任务。框架内置了规划、记忆、工具调用三大核心模块，支持自定义Agent角色和能力。配合Forge评测基准，开发者可量化Agent的任务完成率与工具调用准确率，推动Agent从Demo走向生产可用。",
+        "source": "GitHub Trending",
+        "link": "https://github.com/Significant-Gravitas/AutoGPT"
+      },
+      {
+        "title": "LangChain推出LangGraph：构建可靠的有状态Agent工作流",
+        "content": "LangGraph将Agent抽象为有向图，节点表示计算单元（LLM调用/工具调用），边表示状态流转，支持循环、分支、人工介入（human-in-the-loop）。相比传统Chain线性执行，LangGraph可构建需要反复修正、多步推理的复杂Agent，已广泛用于客服、数据分析、代码审查等场景。持久化检查点机制使Agent可中断恢复。",
+        "source": "LangChain 官方博客",
+        "link": "https://langchain-ai.github.io/langgraph/"
+      },
+      {
+        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
+        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
+        "source": "CrewAI 文档",
+        "link": "https://docs.crewai.com/"
+      }
     ]
   },
-  selfmedia: {
-    title: "自媒体热点",
-    icon: "flame",
-    color: "var(--danger)",
-    items: [
-      { title: "开学季运动健身打卡热潮", content: "抖音生活服务数据：开学前一周运动健身团购消费同比增86%，健身房增长181%。独居女孩可结合经期阶段调整强度，拍胶片感运动打卡Vlog跟拍热点。", source: "中金在线" },
-      { title: "杀糕局：陌生人社交甜品新玩法", content: "小红书打卡笔记超10万篇、抖音话题播放量破2亿。十来人AA制分食网红蛋糕，人均100-300元。可拍独居女孩周末探店Vlog蹭热度。", source: "界面新闻" },
-      { title: "AI仙界视频爆款：AIGC创作风向标", content: "33秒AI视频单条获赞315万，网友当电子壁纸反复观看。AI生成仙侠场景成为新流量密码，可结合立Flag+Rap风格做AI辅助创作。", source: "新榜" }
+  "investment": {
+    "title": "投资理财",
+    "marketTrend": "A股市场近期受政策利好提振，市场情绪逐步修复。半导体、AI算力板块表现活跃，受益于国产替代加速和全球AI产业景气上行。消费板块估值处于历史低位，但复苏节奏仍需观察。建议投资者保持耐心，利用市场波动逢低布局优质标的。债券市场方面，货币政策维持宽松基调，利率债配置价值仍在，但需警惕年末利率波动风险。黄金价格高位震荡，地缘风险支撑长期配置逻辑不变。",
+    "suggestions": [
+      {
+        "title": "指数定投：适合工薪族的懒人投资法",
+        "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
+        "link": "https://fund.eastmoney.com/"
+      },
+      {
+        "title": "可转债投资：进可攻退可守",
+        "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
+        "link": "https://www.jisilu.cn/"
+      },
+      {
+        "title": "港股通配置：低估值市场的机会",
+        "content": "港股当前估值处于全球洼地，恒生指数市盈率不到9倍。南向资金持续流入，重点可关注：互联网龙头（腾讯、美团）、高股息央企（中海油、中国移动）、创新药（百济神州、信达生物）。通过港股通或QDII基金参与，注意汇率风险。建议港股配置占总权益资产15%-25%，分散A股单一市场风险。",
+        "link": "https://www.hkex.com.hk/"
+      }
+    ],
+    "researchLinks": [
+      {
+        "title": "东方财富网 - 实时行情与研报",
+        "link": "https://www.eastmoney.com/"
+      },
+      {
+        "title": "雪球 - 投资者社区",
+        "link": "https://xueqiu.com/"
+      },
+      {
+        "title": "巨潮资讯网 - 上市公司公告",
+        "link": "http://www.cninfo.com.cn/"
+      }
     ]
+  },
+  "selfmedia": {
+    "title": "自媒体热点",
+    "items": [
+      {
+        "title": "ColorWalk秋色版：每日一色Flag + 色彩Rap",
+        "content": "ColorWalk持续火爆半年不凉，小红书话题浏览量超4.63亿、抖音播放4.69亿，秋季色彩更丰富玩法再升级。小蓝创作建议：立「秋日ColorWalk Flag」——每天选一个秋色（金黄枫叶/深红落日/灰蓝晨雾），一路找该颜色拍照。视频版用色彩切换卡点配原创Rap，每色一句歌词描述秋日心境。标签：#ColorWalk #秋日色彩 #每日一色 #Rap卡点",
+        "source": "小红书ColorWalk热榜"
+      },
+      {
+        "title": "AI健身教练实战体验 + 说唱技术吐槽",
+        "content": "2026年ACSM全球健身趋势报告将「AI加持高效运动」列为年度五大趋势，AI教练通过摄像头实时分析动作姿态。小蓝创作建议：体验一周AI健身教练，用Rap风格对比「AI说 vs 我身体说」的差异——AI说深蹲到位但膝盖在叫。拍生动的AI屏幕+真人对比照片，用freestyle总结体验。标签：#AI健身 #智能运动 #说唱吐槽 #健身科技",
+        "source": "2026全球健身趋势报告"
+      },
+      {
+        "title": "中秋家宴运动平衡 + Rap吐槽大餐",
+        "content": "9月中秋家宴场景成为抖音挑战热点，红花郎全国挑战赛正式上线，品牌+民俗+短视频结合。小蓝创作建议：立「中秋吃练平衡Flag」——大餐前完成一次力量训练，餐后完成一次CityRun消食跑。用Rap吐槽形式记录「吃了三个月饼后的忏悔跑」，拍家宴与运动对比的生动照片。标签：#中秋挑战 #吃练平衡 #Rap忏悔 #家宴打卡",
+        "source": "抖音中秋挑战赛"
+      }
+    ]
+  },
+  "music": {
+    "title": "今日音乐练习",
+    "vocal": {
+      "warmup": "全身抖动 2分钟：站立全身放松抖动，从手指到肩膀到躯干，释放全身紧张",
+      "technique": "情感表达：闭眼想象歌词画面，用说话的方式先朗诵歌词再唱，对比情感差异",
+      "song": "《漂洋过海来看你》- 练习叙事性演唱的情感层次和语气变化",
+      "duration": "35min"
+    },
+    "drum": {
+      "rudiment": "交叉手练习：左手越过右手击打嗵鼓，练协调和准确度，慢速起步",
+      "groove": "fusion节拍：复合切分底鼓，嗵鼓melodic fill，110bpm练习5分钟",
+      "tempo": "80→120bpm",
+      "duration": "30min"
+    }
   }
 };
