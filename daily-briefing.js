@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-09-27
+ * 日期: 2026-09-28
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-09-27",
-  "generatedAt": "2026-09-27 08:00 自动生成",
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
+    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
     "items": [
-      {
-        "title": "初秋护肺：银耳百合莲子羹",
-        "content": "立秋后空气湿度下降，肺部最易受伤。银耳富含植物胶质，能滋阴润肺；百合清心安神、润肺止咳；莲子补脾止泻。三者同煮成羹，每日一小碗，连续食用两周，可有效缓解秋燥引起的干咳、咽干。做法：银耳泡发撕碎，与百合、莲子小火慢炖40分钟，加少许冰糖调味。",
-        "source": "中国中医药报"
-      },
       {
         "title": "腰椎间盘突出日常护理要点",
         "content": "久坐办公人群腰椎压力持续累积，建议每45分钟起身活动一次，做「靠墙站立」3分钟：后脑勺、肩胛骨、臀部、脚后跟四点贴墙。睡姿推荐侧卧微屈膝，枕头高度保持脊柱水平。避免弯腰搬重物，应屈膝下蹲后再搬起。坚持每日做「五点支撑」15次，可有效增强腰背肌群力量。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "颈椎操：十点十分操",
         "content": "站立挺胸，双臂向两侧伸直，手掌朝上，如同钟表指向10:10的位置，保持该姿势30秒后放下，重复5次。此动作可有效拉伸颈椎两侧肌肉，缓解长期低头造成的颈肩僵硬。配合「米字操」（头部缓慢书写米字）效果更佳。每日早晚各做一组，坚持一个月可见明显改善。",
         "source": "康复医学杂志"
+      },
+      {
+        "title": "春季养肝：作息与饮食调理",
+        "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
+        "source": "中医养生学刊"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "英语 TED 跟读训练",
-        "content": "今日推荐跟读：TED Talk「The power of believing that you can improve」by Carol Dweck。重点学习 growth mindset（成长型思维）的表达方式。跟读方法：第一遍听全文理解大意，第二遍逐句暂停跟读并录音，第三遍对照原文纠正发音，重点练习连读和语调。建议每日投入20分钟，坚持21天形成习惯。",
-        "link": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
-        "linkText": "观看 TED 演讲"
-      },
       {
         "title": "英语 AI 对话练习",
         "content": "利用 ChatGPT 或 Claude 进行英语口语场景模拟。推荐 Prompt：「Let's have a 5-minute conversation about [topic], please correct my grammar and suggest better expressions.」今日场景主题：在科技会议上做自我介绍并讨论 AI 行业趋势。练习目标：掌握 10 个以上科技领域高频词汇，能够流利表达个人观点。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
         "link": "https://talktomeinkorean.com/curriculum/",
         "linkText": "TTMIK 韩语课程"
+      },
+      {
+        "title": "英语商务邮件写作",
+        "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
+        "link": "https://www.grammarly.com",
+        "linkText": "Grammarly 语法检查"
       }
     ],
     "dailyWords": [
       {
-        "word": "hypothesis",
-        "meaning": "假设",
-        "phonetic": "/haɪˈpɑːθəsɪs/",
-        "example": "The experiment confirmed our initial hypothesis."
+        "word": "peer review",
+        "meaning": "同行评审",
+        "phonetic": "/pɪr rɪˈvjuː/",
+        "example": "The paper passed rigorous peer review before publication."
       },
       {
-        "word": "methodology",
-        "meaning": "方法论",
-        "phonetic": "/ˌmeθəˈdɑːlədʒi/",
-        "example": "The research methodology was carefully designed."
+        "word": "abstract",
+        "meaning": "摘要",
+        "phonetic": "/ˈæbstrækt/",
+        "example": "The abstract summarizes the key findings of the study."
       },
       {
-        "word": "empirical",
-        "meaning": "经验的，实证的",
-        "phonetic": "/ɪmˈpɪrɪkl/",
-        "example": "The conclusion is supported by empirical evidence."
+        "word": "variable",
+        "meaning": "变量",
+        "phonetic": "/ˈveriəbl/",
+        "example": "We controlled for several variables in the experiment."
       },
       {
-        "word": "thesis",
-        "meaning": "论文，论点",
-        "phonetic": "/ˈθiːsɪs/",
-        "example": "She defended her thesis brilliantly at the defense."
+        "word": "correlation",
+        "meaning": "相关性",
+        "phonetic": "/ˌkɔːrəˈleɪʃn/",
+        "example": "There is a strong correlation between the two factors."
       },
       {
-        "word": "citation",
-        "meaning": "引用，引文",
-        "phonetic": "/saɪˈteɪʃn/",
-        "example": "Make sure to include proper citations in your paper."
+        "word": "paradigm",
+        "meaning": "范式",
+        "phonetic": "/ˈpærədaɪm/",
+        "example": "This discovery represents a paradigm shift in the field."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "I need to book a flight to Tokyo for next Wednesday.",
-        "translation": "我需要订一张下周三飞东京的机票。",
-        "focus": "旅行订票：book a flight"
+        "text": "Sorry for the delay. The traffic was heavier than expected.",
+        "translation": "抱歉迟到了，交通比预期拥堵。",
+        "focus": "道歉表达：sorry for / heavier than expected"
       },
       "yue": {
-        "text": "我要book张下个礼拜三飞东京嘅机票。",
-        "jyutping": "ngo5 jiu3 book zoeng1 haa5 go3 lai5 baai3 saam1 fei1 dung1 ging1 ge3 gei2 piu3.",
-        "translation": "我要订一张下个星期三飞东京的机票。"
+        "text": "唔好意思迟大到，塞车严重过预期。",
+        "jyutping": "m4 hou2 ji3 si3 ci4 daai6 dou3, sak1 ce1 jim4 zung6 gwo3 jyu6 kei4.",
+        "translation": "不好意思迟到，堵车比预期严重。"
       },
       "ko": {
-        "text": "다음 주 수요일 도쿄행 항공권을 예약해야 합니다.",
-        "roman": "daeum ju suyo-il dongkyo-haeng hanggonggwon-eul yeyakhaeya hamnida.",
-        "translation": "需要预订下周三飞往东京的机票。"
+        "text": "늦어서 죄송합니다. 교통체증이 예상보다 심했어요.",
+        "roman": "neujeoseo joesonghamnida. gyotongchejeung-i yesangboda simhaet-eoyo.",
+        "translation": "抱歉迟到了，交通拥堵比预想的严重。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "Transformer 架构核心原理",
-        "content": "Transformer 的核心在于 Self-Attention 机制，通过 Q(Query)、K(Key)、V(Value) 三个矩阵将输入序列映射，计算注意力权重 softmax(QK^T/√dk)V，使模型能够关注序列中不同位置的依赖关系。Multi-Head Attention 通过并行多个注意力头捕获不同子空间的特征。Position Encoding 弥补了缺失的位置信息。理解 Transformer 是掌握 GPT、BERT 等大模型的基础。",
-        "link": "https://arxiv.org/abs/1706.03762"
-      },
       {
         "title": "LoRA 微调技术详解",
         "content": "LoRA (Low-Rank Adaptation) 通过在预训练权重旁注入可训练的低秩矩阵 A 和 B，其中 W' = W + BA，仅训练 A 和 B（秩 r 远小于原始维度），可将训练参数量降低 90% 以上。适用于在消费级 GPU 上微调大语言模型。关键超参数：秩 r（推荐8-64）、alpha（缩放因子，通常设为 r 的2倍）、dropout（0.05-0.1）。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "Prompt Engineering 高级技巧",
         "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
         "link": "https://platform.openai.com/docs/guides/prompt-engineering"
+      },
+      {
+        "title": "大模型推理优化：KV Cache 与量化",
+        "content": "KV Cache 在自回归生成时缓存已计算的 Key/Value 矩阵，避免重复计算，是推理加速的关键。量化技术将 FP16 权重降至 INT8/INT4，减少显存占用和访存带宽压力。GPTQ 和 AWQ 是当前主流的权重量化算法。vLLM 的 PagedAttention 技术通过分页管理 KV Cache 显存，将吞吐量提升 2-4 倍，是生产部署的首选推理引擎。",
+        "link": "https://arxiv.org/abs/2306.05685"
       }
     ],
     "industryNews": [
-      {
-        "title": "Microsoft AutoGen v0.4：多Agent对话框架支持分布式执行",
-        "content": "AutoGen v0.4采用Actor模型重构，支持Agent跨进程、跨机器分布式部署，可水平扩展处理高并发任务。核心特性：异步消息传递、事件驱动架构、可插拔的模型客户端与工具运行时。新增AgentChat高层API，简化多Agent对话编排。与Semantic Kernel深度集成，方便企业接入Azure OpenAI生态。",
-        "source": "Microsoft Research",
-        "link": "https://microsoft.github.io/autogen/"
-      },
       {
         "title": "RLHF训练实践：从偏好数据到对齐模型的完整流程",
         "content": "RLHF（人类反馈强化学习）三阶段：1) SFT监督微调；2) 训练奖励模型（Reward Model）拟合偏好排序；3) 用PPO优化策略模型最大化奖励。工程要点：偏好数据需覆盖多样场景与边界case；奖励模型易过拟合需控制容量；PPO训练不稳定，建议配合KL散度约束防止策略漂移过大。开源方案推荐TRL库。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "DPO（Direct Preference Optimization）跳过显式奖励模型和RL训练，直接从偏好对数据通过二元交叉熵损失优化策略模型，公式简洁、训练稳定、工程成本低。实践显示DPO在指令跟随、安全对齐任务上效果接近甚至超过RLHF，且调参更简单。后续改进如IPO、KTO、ORPO进一步解决DPO的过拟合与分布偏移问题。",
         "source": "arXiv",
         "link": "https://arxiv.org/abs/2305.18290"
+      },
+      {
+        "title": "Function Calling能力训练：让大模型精准调用工具",
+        "content": "Function Calling（函数调用）是Agent执行任务的基础能力。训练方法：构建「用户输入-工具选择-参数填充-结果整合」的指令数据集，通过SFT让模型学习工具调用格式与时机；再用RL/DPO优化调用准确率。GPT-4o、Claude 3.5、Qwen2.5等模型支持并行函数调用与流式输出。评测基准BFCL持续更新。",
+        "source": "OpenAI Cookbook",
+        "link": "https://cookbook.openai.com/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
+    "marketTrend": "黄金市场创历史新高后进入震荡整理阶段。全球央行持续增持黄金储备，去美元化趋势为金价提供长期支撑。实际利率下行、地缘政治风险、通胀预期三重因素共振，黄金中期上行逻辑不变。建议投资者将黄金作为组合的「压舱石」，配置比例5%-10%，通过黄金ETF或积存金方式参与，避免追高，采用定投方式平滑成本。",
     "suggestions": [
-      {
-        "title": "红利低波策略：稳健配置首选",
-        "content": "在低利率环境下，股息率4%以上的红利低波组合具显著配置价值。建议关注煤炭、银行、公用事业板块中连续5年分红稳定、ROE>10%的标的。可通过红利ETF（515080）一键配置，每月定投平滑成本。注意分散行业集中度，单一行业占比不超过30%。",
-        "link": "https://www.eastmoney.com/"
-      },
       {
         "title": "AI 科技主题：关注算力与应用双线",
         "content": "AI 产业链可分为算力层（GPU、光模块、液冷）、模型层（大模型公司）、应用层（办公、教育、医疗AI应用）。当前算力层估值已较高，建议关注应用层落地标的，特别是已有商业化收入的企业。可通过科创50ETF（588000）或人工智能ETF（515980）参与，仓位建议不超过总资产20%。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "黄金配置：对冲地缘风险的压舱石",
         "content": "全球地缘政治不确定性持续升温，黄金作为避险资产配置价值凸显。建议通过黄金ETF（518880）或积存金方式配置，占投资组合5%-10%。当前金价处于历史高位区间，不建议一次性买入，推荐每月定额定投，利用价格波动摊薄成本。长期看，去美元化趋势支撑金价中枢上移。",
         "link": "https://www.sge.com.cn/"
+      },
+      {
+        "title": "指数定投：适合工薪族的懒人投资法",
+        "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
+        "link": "https://fund.eastmoney.com/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "开学季重返自律 + 晨间说唱Vlog",
-        "content": "9月开学季带动自律内容回潮，「早起战神」类话题在抖音持续高热，年轻人用极端自律对抗焦虑。小蓝创作建议：拍「开学季重返学生状态」系列——即使毕业了也5:30起床，像学生一样晨跑+晨读。用Rap内心OS配音记录挣扎过程，拍晨光中的生动照片。立「9月早起21天Flag」。标签：#开学季 #早起战神 #晨间Vlog #说唱OS",
-        "source": "抖音自律话题榜"
-      },
-      {
         "title": "组局健身说唱接力 + 生动多人照",
         "content": "「健身搭子」话题在小红书浏览量持续攀升破5亿，组局文化从社交延伸到健身。小蓝创作建议：发起「说唱健身局」秋季版——约3-5位朋友一起户外健身，每人用freestyle介绍自己的训练项目。拍多人运动合照（力量感Pose），用说唱接力形式剪辑。立「每周组局一次Flag」。标签：#组局健身 #健身搭子 #说唱接力 #多人Vlog",
         "source": "小红书社交健身榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "反精致运动日记秋版 + 真实汗水Rap",
         "content": "「反精致」成为小红书持续热门潮流，刻意展示不完美反而获得高互动，相关话题阅读量10亿+。小蓝创作建议：拍「秋日反精致健身日记」——不化妆、不修图、不找角度，记录初秋运动中最真实的汗水状态。用直白自嘲Rap配音，如「秋风没吹走我的肚腩但至少我在吹风」。标签：#反精致 #真实记录 #自嘲Rap #健身日记",
         "source": "小红书内容趋势"
+      },
+      {
+        "title": "CityRun秋日漫跑：跑过换季街道 + Rap",
+        "content": "「CityRun」持续替代CityWalk成为运动社交新方式，强调用跑步重新认识城市。小蓝创作建议：立「秋日CityRun Flag」——每周跑不同路线感受城市换季，从绿到金黄的街道变化。每跑完一条路线出一期「说唱城市漫游」，配原创Rap BGM或跟唱热门说唱。拍跑途秋景生动照片。标签：#CityRun #秋日漫跑 #说唱漫游 #跑步打卡",
+        "source": "小红书运动趋势"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "吹纸片练习 3分钟：拿一张纸巾贴墙，用气息吹使其不掉落，训练气息稳定输出",
-      "technique": "渐强渐弱：在一个长音上从弱到强再到弱，控制气息流量和声带闭合度的配合",
-      "song": "《听海》- 练习情绪递进和渐强处理的高潮段落",
-      "duration": "40min"
+      "warmup": "哈欠式开喉 3分钟：模拟打哈欠感受软腭抬起、喉咙打开的状态，保持该状态发声",
+      "technique": "滑音练习：用「哦」音从低到高再滑回，全程保持打开状态，感受声音的圆润度",
+      "song": "《遇见》- 练习中低音区的温暖音色和句尾的收束处理",
+      "duration": "30min"
     },
     "drum": {
-      "rudiment": "脚法独立练习：双脚单跳RRLL在底鼓上，手做不同节奏，60bpm 5分钟",
-      "groove": "双底鼓groove：双脚8分交替底鼓，手8分踩镲+军鼓2、4，130bpm练习5分钟",
-      "tempo": "60→130bpm",
-      "duration": "35min"
+      "rudiment": "综合复习：单跳+双跳+复合跳+装饰音串联，120bpm连续5分钟不中断",
+      "groove": "即兴groove：放任意风格伴奏，跟随即兴变化fill和密度，练听力和反应",
+      "tempo": "自由",
+      "duration": "30min"
     }
   }
 };
