@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-10-10
+ * 日期: 2026-10-11
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-10-10",
-  "generatedAt": "2026-10-10 08:00 自动生成",
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
+    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
     "items": [
-      {
-        "title": "春季养肝：作息与饮食调理",
-        "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
-        "source": "中医养生学刊"
-      },
       {
         "title": "夏季防暑降温实用指南",
         "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "冬季足浴养生法",
         "content": "每晚睡前用40度左右温水泡脚15-20分钟，水位没过脚踝。可加入生姜（驱寒）、艾草（温经）、花椒（除湿）增强效果。泡脚后擦干双脚，按摩涌泉穴100下引火归元，改善失眠和手脚冰凉。注意：糖尿病足患者水温不宜超过38度，心血管疾病患者泡脚时间不超过15分钟。",
         "source": "传统中医保健"
+      },
+      {
+        "title": "办公室护眼五步法",
+        "content": "长时间面对屏幕易致视疲劳和干眼症。推荐「20-20-20法则」：每用眼20分钟，看20英尺(6米)外的物体20秒。配合眼周按摩（攒竹、睛明、四白、太阳穴各按30秒）、热敷双眼（温热毛巾敷2分钟）、眨眼训练（用力闭眼5秒再睁眼5秒，重复10次）、远近视焦点切换训练，五步法每日2组，有效缓解眼疲劳。",
+        "source": "眼科健康资讯"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "韩语入门基础",
-        "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
-        "link": "https://talktomeinkorean.com/curriculum/",
-        "linkText": "TTMIK 韩语课程"
-      },
       {
         "title": "英语商务邮件写作",
         "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "推荐播客：The Daily (NYT) 适合中高级学习者，每集20-25分钟话题丰富；Luke's English Podcast 适合中级，语速适中且讲解幽默。听力方法：第一遍正常速度听大意，第二遍0.8倍速逐句精听并记录生词，第三遍对照文字稿朗读跟读。建议通勤时利用碎片时间，每日累计听力不少于30分钟。",
         "link": "https://www.nytimes.com/column/the-daily",
         "linkText": "收听 The Daily"
+      },
+      {
+        "title": "粤语影视沉浸学习",
+        "content": "通过港剧沉浸式学习粤语。推荐入门剧：《男亲女爱》（职场对白丰富）、《溏心风暴》（家庭日常用语）。学习方法：第一遍中文字幕看剧情，第二遍粤配中字逐句暂停跟读，第三遍纯粤语音轨测试理解。重点记录高频口语表达如「搞掂」「唔该」「犀利」。每周精看1集，三个月粤语听力显著提升。",
+        "link": "https://www.bilibili.com",
+        "linkText": "B站搜索港剧资源"
       }
     ],
     "dailyWords": [
       {
-        "word": "adequate",
-        "meaning": "充足的，适当的",
-        "phonetic": "/ˈædɪkwət/",
-        "example": "We have adequate resources to complete the project."
+        "word": "genuine",
+        "meaning": "真正的，真诚的",
+        "phonetic": "/ˈdʒenjuɪn/",
+        "example": "Her concern for others is genuine and heartfelt."
       },
       {
-        "word": "comprehensive",
-        "meaning": "全面的，综合的",
-        "phonetic": "/ˌkɑːmprɪˈhensɪv/",
-        "example": "The report provides a comprehensive analysis."
+        "word": "hierarchy",
+        "meaning": "层级，等级制度",
+        "phonetic": "/ˈhaɪərɑːrki/",
+        "example": "The company has a flat management hierarchy."
       },
       {
-        "word": "diligent",
-        "meaning": "勤奋的",
-        "phonetic": "/ˈdɪlɪdʒənt/",
-        "example": "She is a diligent student who always does her homework."
+        "word": "implement",
+        "meaning": "实施，贯彻",
+        "phonetic": "/ˈɪmplɪment/",
+        "example": "We will implement the new policy next quarter."
       },
       {
-        "word": "eloquent",
-        "meaning": "雄辩的，有口才的",
-        "phonetic": "/ˈeləkwənt/",
-        "example": "He gave an eloquent speech at the conference."
+        "word": "jeopardize",
+        "meaning": "危及，损害",
+        "phonetic": "/ˈdʒepərdaɪz/",
+        "example": "Don't jeopardize your career for short-term gains."
       },
       {
-        "word": "feasible",
-        "meaning": "可行的",
-        "phonetic": "/ˈfiːzəbl/",
-        "example": "We need to assess whether the plan is feasible."
+        "word": "lucid",
+        "meaning": "清晰的，明了的",
+        "phonetic": "/ˈluːsɪd/",
+        "example": "The professor gave a lucid explanation of the theory."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "I'm feeling a bit under the weather today. I'll take a sick leave.",
-        "translation": "我今天不太舒服，想请个病假。",
-        "focus": "健康表达：under the weather / sick leave"
+        "text": "Let's split the bill. I'll pay for my share.",
+        "translation": "我们AA制吧，我付我那份。",
+        "focus": "结账表达：split the bill"
       },
       "yue": {
-        "text": "我今日有啲唔舒服，想请病假。",
-        "jyutping": "ngo5 gam1 jat6 jau5 di1 m4 syu2 fuk6, soeng2 cing2 beng6 gaa3.",
-        "translation": "我今天有点不舒服，想请病假。"
+        "text": "我哋AA啦，我俾返自己嗰份。",
+        "jyutping": "ngo5 dei6 A A laa1, ngo5 bei2 faan1 zi6 gei2 go2 fan6.",
+        "translation": "我们AA吧，我付自己那份。"
       },
       "ko": {
-        "text": "오늘 몸이 좀 안 좋아서 병가를 내려고요.",
-        "roman": "oneul mom-i jom an joaseo byeongga-reul naeryeogoyo.",
-        "translation": "今天身体有点不舒服，想请病假。"
+        "text": "더치페이 할까요? 제 몫은 제가 낼게요.",
+        "roman": "deochipei halkkayo? je mog-eun jega naelgeyo.",
+        "translation": "我们AA制吗？我那份我来付。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "扩散模型 (Diffusion Model) 原理",
-        "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
-        "link": "https://arxiv.org/abs/2006.11239"
-      },
       {
         "title": "Prompt Engineering 高级技巧",
         "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "强化学习对齐：RLHF 与 DPO",
         "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
         "link": "https://arxiv.org/abs/2305.18290"
+      },
+      {
+        "title": "向量数据库选型与性能对比",
+        "content": "主流向量数据库对比：Milvus（分布式架构，亿级数据，适合生产环境）、Chroma（轻量易用，适合原型开发）、Qdrant（Rust 实现，高性能过滤）、Pinecone（全托管云服务）。选型维度：数据规模、查询延迟要求、是否需要混合检索、运维成本。Embedding 模型选择同样关键：BGE-zh 适合中文，OpenAI text-embedding-3 综合性能强。",
+        "link": "https://milvus.io/docs/comparison.md"
       }
     ],
     "industryNews": [
-      {
-        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
-        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
-        "source": "CrewAI 文档",
-        "link": "https://docs.crewai.com/"
-      },
       {
         "title": "Microsoft AutoGen v0.4：多Agent对话框架支持分布式执行",
         "content": "AutoGen v0.4采用Actor模型重构，支持Agent跨进程、跨机器分布式部署，可水平扩展处理高并发任务。核心特性：异步消息传递、事件驱动架构、可插拔的模型客户端与工具运行时。新增AgentChat高层API，简化多Agent对话编排。与Semantic Kernel深度集成，方便企业接入Azure OpenAI生态。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "RLHF（人类反馈强化学习）三阶段：1) SFT监督微调；2) 训练奖励模型（Reward Model）拟合偏好排序；3) 用PPO优化策略模型最大化奖励。工程要点：偏好数据需覆盖多样场景与边界case；奖励模型易过拟合需控制容量；PPO训练不稳定，建议配合KL散度约束防止策略漂移过大。开源方案推荐TRL库。",
         "source": "HuggingFace Blog",
         "link": "https://huggingface.co/blog/rlhf"
+      },
+      {
+        "title": "DPO直接偏好优化：RLHF的简化替代方案",
+        "content": "DPO（Direct Preference Optimization）跳过显式奖励模型和RL训练，直接从偏好对数据通过二元交叉熵损失优化策略模型，公式简洁、训练稳定、工程成本低。实践显示DPO在指令跟随、安全对齐任务上效果接近甚至超过RLHF，且调参更简单。后续改进如IPO、KTO、ORPO进一步解决DPO的过拟合与分布偏移问题。",
+        "source": "arXiv",
+        "link": "https://arxiv.org/abs/2305.18290"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "港股市场估值优势明显，恒生指数市盈率处于全球主要市场最低水平。南向资金持续流入，重点布局互联网科技、高股息和医药生物板块。美联储降息预期升温，有利于港股流动性改善。A/H股溢价指数处于高位，港股相对A股折价显著，配置性价比突出。建议通过港股通或QDII基金参与，关注腾讯、美团、中海油等龙头标的。",
+    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
     "suggestions": [
-      {
-        "title": "指数定投：适合工薪族的懒人投资法",
-        "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
-        "link": "https://fund.eastmoney.com/"
-      },
       {
         "title": "可转债投资：进可攻退可守",
         "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "港股通配置：低估值市场的机会",
         "content": "港股当前估值处于全球洼地，恒生指数市盈率不到9倍。南向资金持续流入，重点可关注：互联网龙头（腾讯、美团）、高股息央企（中海油、中国移动）、创新药（百济神州、信达生物）。通过港股通或QDII基金参与，注意汇率风险。建议港股配置占总权益资产15%-25%，分散A股单一市场风险。",
         "link": "https://www.hkex.com.hk/"
+      },
+      {
+        "title": "REITs 配置：稳定现金流的新选择",
+        "content": "公募 REITs 为投资者提供参与不动产投资的新渠道，分红收益率普遍在5%-7%。建议关注产业园、仓储物流、保障房等底层资产现金流稳定的品种。选择时重点考察：底层资产出租率、租户集中度、剩余租期、管理团队能力。建议配置2-3只不同类型REITs分散风险，作为组合中类固收替代品种，占比5%-10%。",
+        "link": "https://reits.eastmoney.com/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "中秋家宴运动平衡 + Rap吐槽大餐",
-        "content": "9月中秋家宴场景成为抖音挑战热点，红花郎全国挑战赛正式上线，品牌+民俗+短视频结合。小蓝创作建议：立「中秋吃练平衡Flag」——大餐前完成一次力量训练，餐后完成一次CityRun消食跑。用Rap吐槽形式记录「吃了三个月饼后的忏悔跑」，拍家宴与运动对比的生动照片。标签：#中秋挑战 #吃练平衡 #Rap忏悔 #家宴打卡",
-        "source": "抖音中秋挑战赛"
-      },
-      {
         "title": "开学季重返自律 + 晨间说唱Vlog",
         "content": "9月开学季带动自律内容回潮，「早起战神」类话题在抖音持续高热，年轻人用极端自律对抗焦虑。小蓝创作建议：拍「开学季重返学生状态」系列——即使毕业了也5:30起床，像学生一样晨跑+晨读。用Rap内心OS配音记录挣扎过程，拍晨光中的生动照片。立「9月早起21天Flag」。标签：#开学季 #早起战神 #晨间Vlog #说唱OS",
         "source": "抖音自律话题榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "组局健身说唱接力 + 生动多人照",
         "content": "「健身搭子」话题在小红书浏览量持续攀升破5亿，组局文化从社交延伸到健身。小蓝创作建议：发起「说唱健身局」秋季版——约3-5位朋友一起户外健身，每人用freestyle介绍自己的训练项目。拍多人运动合照（力量感Pose），用说唱接力形式剪辑。立「每周组局一次Flag」。标签：#组局健身 #健身搭子 #说唱接力 #多人Vlog",
         "source": "小红书社交健身榜"
+      },
+      {
+        "title": "反精致运动日记秋版 + 真实汗水Rap",
+        "content": "「反精致」成为小红书持续热门潮流，刻意展示不完美反而获得高互动，相关话题阅读量10亿+。小蓝创作建议：拍「秋日反精致健身日记」——不化妆、不修图、不找角度，记录初秋运动中最真实的汗水状态。用直白自嘲Rap配音，如「秋风没吹走我的肚腩但至少我在吹风」。标签：#反精致 #真实记录 #自嘲Rap #健身日记",
+        "source": "小红书内容趋势"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "肩部绕环 3分钟：双肩前后绕环各10次，放松肩颈连接处肌肉，避免耸肩唱歌",
-      "technique": "共鸣焦点：发「嗯」音寻找鼻腔共鸣焦点，再切换到「啊」音保持焦点位置不变",
-      "song": "《传奇》- 练习整首歌的共鸣统一和音色一致性",
+      "warmup": "舌头操 3分钟：舌头尽量伸出缩回10次，左右舔嘴角各10次，放松舌根增加灵活度",
+      "technique": "连音练习：用「拉里鲁」音节在五度音阶上做连音，每个音平滑连接无痕迹",
+      "song": "《明天会更好》- 练习合唱部分的和声音准和连音线条",
       "duration": "30min"
     },
     "drum": {
-      "rudiment": "Fill训练：1小节groove + 1小节fill，fill用单跳由密到疏过渡，4个位置练",
-      "groove": "rock节拍 + fill衔接：80bpm，每4小节做1小节fill过渡，重点练衔接不减速",
-      "tempo": "80→110bpm",
-      "duration": "30min"
+      "rudiment": "重音移位练习：单跳基础上重音在1、2、3、4不同位置，每个组合练2分钟",
+      "groove": "Moeller技巧groove：用甩鞭动作做三连音重音，放松手腕，90bpm练习6分钟",
+      "tempo": "70→100bpm",
+      "duration": "35min"
     }
   }
 };
