@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-10-20
+ * 日期: 2026-10-21
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-10-20",
-  "generatedAt": "2026-10-20 08:00 自动生成",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
+    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
     "items": [
-      {
-        "title": "春季养肝：作息与饮食调理",
-        "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
-        "source": "中医养生学刊"
-      },
       {
         "title": "夏季防暑降温实用指南",
         "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "冬季足浴养生法",
         "content": "每晚睡前用40度左右温水泡脚15-20分钟，水位没过脚踝。可加入生姜（驱寒）、艾草（温经）、花椒（除湿）增强效果。泡脚后擦干双脚，按摩涌泉穴100下引火归元，改善失眠和手脚冰凉。注意：糖尿病足患者水温不宜超过38度，心血管疾病患者泡脚时间不超过15分钟。",
         "source": "传统中医保健"
+      },
+      {
+        "title": "办公室护眼五步法",
+        "content": "长时间面对屏幕易致视疲劳和干眼症。推荐「20-20-20法则」：每用眼20分钟，看20英尺(6米)外的物体20秒。配合眼周按摩（攒竹、睛明、四白、太阳穴各按30秒）、热敷双眼（温热毛巾敷2分钟）、眨眼训练（用力闭眼5秒再睁眼5秒，重复10次）、远近视焦点切换训练，五步法每日2组，有效缓解眼疲劳。",
+        "source": "眼科健康资讯"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "韩语入门基础",
-        "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
-        "link": "https://talktomeinkorean.com/curriculum/",
-        "linkText": "TTMIK 韩语课程"
-      },
       {
         "title": "英语商务邮件写作",
         "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "推荐播客：The Daily (NYT) 适合中高级学习者，每集20-25分钟话题丰富；Luke's English Podcast 适合中级，语速适中且讲解幽默。听力方法：第一遍正常速度听大意，第二遍0.8倍速逐句精听并记录生词，第三遍对照文字稿朗读跟读。建议通勤时利用碎片时间，每日累计听力不少于30分钟。",
         "link": "https://www.nytimes.com/column/the-daily",
         "linkText": "收听 The Daily"
+      },
+      {
+        "title": "粤语影视沉浸学习",
+        "content": "通过港剧沉浸式学习粤语。推荐入门剧：《男亲女爱》（职场对白丰富）、《溏心风暴》（家庭日常用语）。学习方法：第一遍中文字幕看剧情，第二遍粤配中字逐句暂停跟读，第三遍纯粤语音轨测试理解。重点记录高频口语表达如「搞掂」「唔该」「犀利」。每周精看1集，三个月粤语听力显著提升。",
+        "link": "https://www.bilibili.com",
+        "linkText": "B站搜索港剧资源"
       }
     ],
     "dailyWords": [
       {
-        "word": "peer review",
-        "meaning": "同行评审",
-        "phonetic": "/pɪr rɪˈvjuː/",
-        "example": "The paper passed rigorous peer review before publication."
+        "word": "adequate",
+        "meaning": "充足的，适当的",
+        "phonetic": "/ˈædɪkwət/",
+        "example": "We have adequate resources to complete the project."
       },
       {
-        "word": "abstract",
-        "meaning": "摘要",
-        "phonetic": "/ˈæbstrækt/",
-        "example": "The abstract summarizes the key findings of the study."
+        "word": "comprehensive",
+        "meaning": "全面的，综合的",
+        "phonetic": "/ˌkɑːmprɪˈhensɪv/",
+        "example": "The report provides a comprehensive analysis."
       },
       {
-        "word": "variable",
-        "meaning": "变量",
-        "phonetic": "/ˈveriəbl/",
-        "example": "We controlled for several variables in the experiment."
+        "word": "diligent",
+        "meaning": "勤奋的",
+        "phonetic": "/ˈdɪlɪdʒənt/",
+        "example": "She is a diligent student who always does her homework."
       },
       {
-        "word": "correlation",
-        "meaning": "相关性",
-        "phonetic": "/ˌkɔːrəˈleɪʃn/",
-        "example": "There is a strong correlation between the two factors."
+        "word": "eloquent",
+        "meaning": "雄辩的，有口才的",
+        "phonetic": "/ˈeləkwənt/",
+        "example": "He gave an eloquent speech at the conference."
       },
       {
-        "word": "paradigm",
-        "meaning": "范式",
-        "phonetic": "/ˈpærədaɪm/",
-        "example": "This discovery represents a paradigm shift in the field."
+        "word": "feasible",
+        "meaning": "可行的",
+        "phonetic": "/ˈfiːzəbl/",
+        "example": "We need to assess whether the plan is feasible."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "Let's wrap up this discussion and send out the minutes by email.",
-        "translation": "我们结束这次讨论，通过邮件发送会议纪要吧。",
-        "focus": "商务收尾：wrap up / minutes"
+        "text": "This coffee shop has the best latte I've ever tasted.",
+        "translation": "这家咖啡店有我喝过最好的拿铁。",
+        "focus": "评价表达：the best ... I've ever"
       },
       "yue": {
-        "text": "我哋倾掂呢个议题，跟住email份会议纪录俾大家啦。",
-        "jyutping": "ngo5 dei6 king1 dam6 ni1 go3 ji6 tai4, gan1 zyu6 email fan2 wui6 ji5 gun3 bei2 daai6 gaa1 laa1.",
-        "translation": "我们谈妥这个议题，然后email会议记录给大家。"
+        "text": "呢间咖啡店嘅拿铁系我饮过最好饮嘅。",
+        "jyutping": "ni1 gaan1 gaa1 fe1 dim2 ge3 naa4 tit3 hai6 ngo5 jam2 gwo3 zeoi3 hou2 jam2 ge3.",
+        "translation": "这间咖啡店的拿铁是我喝过最好喝的。"
       },
       "ko": {
-        "text": "이번 논의를 마무리하고 이메일로 회의록을 보내 드리겠습니다.",
-        "roman": "ibeon non-ui-reul mamurihago imeillo hoe-uirog-eul bonae deuriget-seumnida.",
-        "translation": "我们结束这次讨论，会用邮件发送会议记录。"
+        "text": "이 카페의 라떼는 제가 먹어 본 것 중 최고예요.",
+        "roman": "i kape-ui ratte-neun jega meogeo bon geot jung choegoyeyo.",
+        "translation": "这家咖啡店的拿铁是我吃过中最好的。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "扩散模型 (Diffusion Model) 原理",
-        "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
-        "link": "https://arxiv.org/abs/2006.11239"
-      },
       {
         "title": "Prompt Engineering 高级技巧",
         "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "强化学习对齐：RLHF 与 DPO",
         "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
         "link": "https://arxiv.org/abs/2305.18290"
+      },
+      {
+        "title": "向量数据库选型与性能对比",
+        "content": "主流向量数据库对比：Milvus（分布式架构，亿级数据，适合生产环境）、Chroma（轻量易用，适合原型开发）、Qdrant（Rust 实现，高性能过滤）、Pinecone（全托管云服务）。选型维度：数据规模、查询延迟要求、是否需要混合检索、运维成本。Embedding 模型选择同样关键：BGE-zh 适合中文，OpenAI text-embedding-3 综合性能强。",
+        "link": "https://milvus.io/docs/comparison.md"
       }
     ],
     "industryNews": [
-      {
-        "title": "Agent评测体系：SWE-bench与AgentBench推动能力基准化",
-        "content": "SWE-bench基于真实GitHub Issue评测Agent自主修复代码能力，要求Agent理解仓库、定位文件、生成补丁并通过测试，是目前最接近真实研发的Agent基准。AgentBench覆盖操作系统、数据库、知识图谱、家务、卡片游戏等多场景评估Agent综合能力。评测驱动迭代，主流Agent框架均以这些基准作为能力背书，推动Agent从玩具走向实用。",
-        "source": "SWE-bench 官网",
-        "link": "https://www.swebench.com/"
-      },
       {
         "title": "AI辅助编程工具对比：Cursor vs GitHub Copilot vs Codeium",
         "content": "最新测评显示，Cursor在多文件理解和重构方面领先，Copilot在代码补全速度上占优，Codeium在免费方案中性价比最高。AI辅助研发已从代码补全进化到架构设计、测试生成、文档自动化全流程。企业落地关键在于结合私有代码库做检索增强，避免通用模型生成不符合内部规范的代码。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "AutoGPT发布v0.5版本，新增多Agent协作模式，允许多个专业化Agent分工完成复杂任务。框架内置了规划、记忆、工具调用三大核心模块，支持自定义Agent角色和能力。配合Forge评测基准，开发者可量化Agent的任务完成率与工具调用准确率，推动Agent从Demo走向生产可用。",
         "source": "GitHub Trending",
         "link": "https://github.com/Significant-Gravitas/AutoGPT"
+      },
+      {
+        "title": "LangChain推出LangGraph：构建可靠的有状态Agent工作流",
+        "content": "LangGraph将Agent抽象为有向图，节点表示计算单元（LLM调用/工具调用），边表示状态流转，支持循环、分支、人工介入（human-in-the-loop）。相比传统Chain线性执行，LangGraph可构建需要反复修正、多步推理的复杂Agent，已广泛用于客服、数据分析、代码审查等场景。持久化检查点机制使Agent可中断恢复。",
+        "source": "LangChain 官方博客",
+        "link": "https://langchain-ai.github.io/langgraph/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "REITs市场持续扩容，已上市产品涵盖产业园、仓储物流、保障房、消费基础设施等多个领域。部分REITs产品分红收益率达5%-7%，显著高于十年期国债收益率。作为介于股票和债券之间的新品种，REITs具有抗通胀、现金流稳定的特点，适合追求稳定收益的长期投资者。建议关注底层资产质量优良、分派率较高的产品，分散配置2-3只不同类型REITs。",
+    "marketTrend": "当前A股市场整体估值处于历史中低位区间，沪深300市盈率约11.5倍，低于近十年均值。新「国九条」政策持续发力，资本市场改革深化，IPO节奏收紧利好存量市场。银行理财方面，存款利率经历多轮下调后，大额存单年化收益已降至2%以下，资金搬家趋势明显，低波稳健型理财产品和红利策略受青睐。债券市场方面，长端利率低位运行，信用债利差收窄，建议关注中短债基金配置价值。整体策略建议：保持权益资产定投节奏，关注高股息、AI科技、出口链三条主线，控制仓位不追高。",
     "suggestions": [
-      {
-        "title": "指数定投：适合工薪族的懒人投资法",
-        "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
-        "link": "https://fund.eastmoney.com/"
-      },
       {
         "title": "可转债投资：进可攻退可守",
         "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "港股通配置：低估值市场的机会",
         "content": "港股当前估值处于全球洼地，恒生指数市盈率不到9倍。南向资金持续流入，重点可关注：互联网龙头（腾讯、美团）、高股息央企（中海油、中国移动）、创新药（百济神州、信达生物）。通过港股通或QDII基金参与，注意汇率风险。建议港股配置占总权益资产15%-25%，分散A股单一市场风险。",
         "link": "https://www.hkex.com.hk/"
+      },
+      {
+        "title": "REITs 配置：稳定现金流的新选择",
+        "content": "公募 REITs 为投资者提供参与不动产投资的新渠道，分红收益率普遍在5%-7%。建议关注产业园、仓储物流、保障房等底层资产现金流稳定的品种。选择时重点考察：底层资产出租率、租户集中度、剩余租期、管理团队能力。建议配置2-3只不同类型REITs分散风险，作为组合中类固收替代品种，占比5%-10%。",
+        "link": "https://reits.eastmoney.com/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "闭环挑战秋日篇：从立Flag到金秋达成全记录",
-        "content": "「闭环挑战」成为双平台新热点，要求完整记录从立Flag到最终达成的全过程，完播率极高。小蓝创作建议：选一个秋季可量化Flag（如「30天跑完100公里」），从Day 1秋分到Day 30秋末每天记录。最终做成3分钟Rap叙事长视频，用hook贯穿全片，展示从立Flag到金秋达成的完整闭环。标签：#闭环挑战 #Flag达成 #完整记录 #Rap叙事",
-        "source": "抖音+小红书内容趋势"
-      },
-      {
         "title": "9月25万步挑战 + Rap节奏跑",
         "content": "小红书和抖音9月兴起「月度步数挑战」，网友公开立25万步月度Flag引发跟风，社区竞争氛围浓厚。小蓝创作建议：立「9月25万步Flag」，每天约8000步，用Rap节奏跑做BGM记录每日步数递增。拍每万步里程碑的生动照片（不同地点打卡），周末做步数Rap总结。标签：#9月步数挑战 #25万步Flag #Rap节奏跑 #走路打卡",
         "source": "小红书+抖音运动热榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "ColorWalk秋色版：每日一色Flag + 色彩Rap",
         "content": "ColorWalk持续火爆半年不凉，小红书话题浏览量超4.63亿、抖音播放4.69亿，秋季色彩更丰富玩法再升级。小蓝创作建议：立「秋日ColorWalk Flag」——每天选一个秋色（金黄枫叶/深红落日/灰蓝晨雾），一路找该颜色拍照。视频版用色彩切换卡点配原创Rap，每色一句歌词描述秋日心境。标签：#ColorWalk #秋日色彩 #每日一色 #Rap卡点",
         "source": "小红书ColorWalk热榜"
+      },
+      {
+        "title": "AI健身教练实战体验 + 说唱技术吐槽",
+        "content": "2026年ACSM全球健身趋势报告将「AI加持高效运动」列为年度五大趋势，AI教练通过摄像头实时分析动作姿态。小蓝创作建议：体验一周AI健身教练，用Rap风格对比「AI说 vs 我身体说」的差异——AI说深蹲到位但膝盖在叫。拍生动的AI屏幕+真人对比照片，用freestyle总结体验。标签：#AI健身 #智能运动 #说唱吐槽 #健身科技",
+        "source": "2026全球健身趋势报告"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "气泡音唤醒 3分钟：放松喉部发低沉的气泡音，按摩声带，做发声前热身",
-      "technique": "弱声控制：用极小音量唱完整首歌，要求声音虽弱但位置高、气息稳",
-      "song": "《大鱼》- 练习弱声到强声的渐变处理和空灵音色",
-      "duration": "35min"
+      "warmup": "狗喘气练习 2分钟：像狗一样快速吐舌喘气，激活横膈膜，感受腹部快速弹跳",
+      "technique": "跳音练习：用ha音在do-mi-do-mi音阶上做跳音，每个音短促有力，腹部弹跳配合",
+      "song": "《红豆》- 练习主歌的跳音咬字和节奏感",
+      "duration": "30min"
     },
     "drum": {
-      "rudiment": "Drag（双装饰音）：rrL llR，先慢速分解再加速，注意装饰音轻、主音响",
-      "groove": "R&B节拍：底鼓16分切分，军鼓2、4拍带ghost note，踩镲半开，85bpm练习6分钟",
-      "tempo": "70→95bpm",
-      "duration": "30min"
+      "rudiment": "单跳提速训练：节拍器60bpm每30秒加5bpm，目标冲到140bpm不停顿",
+      "groove": "朋克摇滚节拍：底鼓1、3拍，军鼓2、4拍，踩镲8分，140bpm练习5分钟练耐力",
+      "tempo": "60→140bpm",
+      "duration": "35min"
     }
   }
 };
