@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-10-30
+ * 日期: 2026-10-31
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-10-30",
-  "generatedAt": "2026-10-30 08:00 自动生成",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
+    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
     "items": [
-      {
-        "title": "春季养肝：作息与饮食调理",
-        "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
-        "source": "中医养生学刊"
-      },
       {
         "title": "夏季防暑降温实用指南",
         "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "冬季足浴养生法",
         "content": "每晚睡前用40度左右温水泡脚15-20分钟，水位没过脚踝。可加入生姜（驱寒）、艾草（温经）、花椒（除湿）增强效果。泡脚后擦干双脚，按摩涌泉穴100下引火归元，改善失眠和手脚冰凉。注意：糖尿病足患者水温不宜超过38度，心血管疾病患者泡脚时间不超过15分钟。",
         "source": "传统中医保健"
+      },
+      {
+        "title": "办公室护眼五步法",
+        "content": "长时间面对屏幕易致视疲劳和干眼症。推荐「20-20-20法则」：每用眼20分钟，看20英尺(6米)外的物体20秒。配合眼周按摩（攒竹、睛明、四白、太阳穴各按30秒）、热敷双眼（温热毛巾敷2分钟）、眨眼训练（用力闭眼5秒再睁眼5秒，重复10次）、远近视焦点切换训练，五步法每日2组，有效缓解眼疲劳。",
+        "source": "眼科健康资讯"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "韩语入门基础",
-        "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
-        "link": "https://talktomeinkorean.com/curriculum/",
-        "linkText": "TTMIK 韩语课程"
-      },
       {
         "title": "英语商务邮件写作",
         "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "推荐播客：The Daily (NYT) 适合中高级学习者，每集20-25分钟话题丰富；Luke's English Podcast 适合中级，语速适中且讲解幽默。听力方法：第一遍正常速度听大意，第二遍0.8倍速逐句精听并记录生词，第三遍对照文字稿朗读跟读。建议通勤时利用碎片时间，每日累计听力不少于30分钟。",
         "link": "https://www.nytimes.com/column/the-daily",
         "linkText": "收听 The Daily"
+      },
+      {
+        "title": "粤语影视沉浸学习",
+        "content": "通过港剧沉浸式学习粤语。推荐入门剧：《男亲女爱》（职场对白丰富）、《溏心风暴》（家庭日常用语）。学习方法：第一遍中文字幕看剧情，第二遍粤配中字逐句暂停跟读，第三遍纯粤语音轨测试理解。重点记录高频口语表达如「搞掂」「唔该」「犀利」。每周精看1集，三个月粤语听力显著提升。",
+        "link": "https://www.bilibili.com",
+        "linkText": "B站搜索港剧资源"
       }
     ],
     "dailyWords": [
       {
-        "word": "hypothesis",
-        "meaning": "假设",
-        "phonetic": "/haɪˈpɑːθəsɪs/",
-        "example": "The experiment confirmed our initial hypothesis."
+        "word": "peer review",
+        "meaning": "同行评审",
+        "phonetic": "/pɪr rɪˈvjuː/",
+        "example": "The paper passed rigorous peer review before publication."
       },
       {
-        "word": "methodology",
-        "meaning": "方法论",
-        "phonetic": "/ˌmeθəˈdɑːlədʒi/",
-        "example": "The research methodology was carefully designed."
+        "word": "abstract",
+        "meaning": "摘要",
+        "phonetic": "/ˈæbstrækt/",
+        "example": "The abstract summarizes the key findings of the study."
       },
       {
-        "word": "empirical",
-        "meaning": "经验的，实证的",
-        "phonetic": "/ɪmˈpɪrɪkl/",
-        "example": "The conclusion is supported by empirical evidence."
+        "word": "variable",
+        "meaning": "变量",
+        "phonetic": "/ˈveriəbl/",
+        "example": "We controlled for several variables in the experiment."
       },
       {
-        "word": "thesis",
-        "meaning": "论文，论点",
-        "phonetic": "/ˈθiːsɪs/",
-        "example": "She defended her thesis brilliantly at the defense."
+        "word": "correlation",
+        "meaning": "相关性",
+        "phonetic": "/ˌkɔːrəˈleɪʃn/",
+        "example": "There is a strong correlation between the two factors."
       },
       {
-        "word": "citation",
-        "meaning": "引用，引文",
-        "phonetic": "/saɪˈteɪʃn/",
-        "example": "Make sure to include proper citations in your paper."
+        "word": "paradigm",
+        "meaning": "范式",
+        "phonetic": "/ˈpærədaɪm/",
+        "example": "This discovery represents a paradigm shift in the field."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "Sorry for the delay. The traffic was heavier than expected.",
-        "translation": "抱歉迟到了，交通比预期拥堵。",
-        "focus": "道歉表达：sorry for / heavier than expected"
+        "text": "I'd like to schedule a meeting to discuss the project timeline.",
+        "translation": "我想安排一个会议讨论项目时间线。",
+        "focus": "商务用语：schedule a meeting"
       },
       "yue": {
-        "text": "唔好意思迟大到，塞车严重过预期。",
-        "jyutping": "m4 hou2 ji3 si3 ci4 daai6 dou3, sak1 ce1 jim4 zung6 gwo3 jyu6 kei4.",
-        "translation": "不好意思迟到，堵车比预期严重。"
+        "text": "我想约个时间倾下个项目进度。",
+        "jyutping": "ngo5 soeng2 joek3 go3 si4 gaan3 king1 haa5 go3 go3 si6 moon2 zing3 dou6.",
+        "translation": "我想约个时间聊聊项目进度。"
       },
       "ko": {
-        "text": "늦어서 죄송합니다. 교통체증이 예상보다 심했어요.",
-        "roman": "neujeoseo joesonghamnida. gyotongchejeung-i yesangboda simhaet-eoyo.",
-        "translation": "抱歉迟到了，交通拥堵比预想的严重。"
+        "text": "회의 일정을 잡고 싶습니다.",
+        "roman": "hoe-ui iljeong-eul japgo sip-seumnida.",
+        "translation": "我想安排会议日程。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "扩散模型 (Diffusion Model) 原理",
-        "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
-        "link": "https://arxiv.org/abs/2006.11239"
-      },
       {
         "title": "Prompt Engineering 高级技巧",
         "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "强化学习对齐：RLHF 与 DPO",
         "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
         "link": "https://arxiv.org/abs/2305.18290"
+      },
+      {
+        "title": "向量数据库选型与性能对比",
+        "content": "主流向量数据库对比：Milvus（分布式架构，亿级数据，适合生产环境）、Chroma（轻量易用，适合原型开发）、Qdrant（Rust 实现，高性能过滤）、Pinecone（全托管云服务）。选型维度：数据规模、查询延迟要求、是否需要混合检索、运维成本。Embedding 模型选择同样关键：BGE-zh 适合中文，OpenAI text-embedding-3 综合性能强。",
+        "link": "https://milvus.io/docs/comparison.md"
       }
     ],
     "industryNews": [
-      {
-        "title": "AI辅助研发全流程工具链：从需求到部署的自动化",
-        "content": "现代AI研发工具链已覆盖全生命周期：需求阶段用AI生成PRD与用户故事；设计阶段生成架构图与API契约；编码阶段Cursor/Copilot辅助实现；测试阶段用AI生成单元测试与边界用例（Diffblue/Codium）；代码审查阶段用AI做PR Review（CodeRabbit）；部署阶段AI辅助CI/CD配置与故障诊断。端到端研发效率提升40%以上。",
-        "source": "ThoughtWorks技术雷达",
-        "link": "https://www.thoughtworks.com/radar"
-      },
       {
         "title": "大模型微调技术选型：LoRA/QLoRA/全参微调对比",
         "content": "LoRA通过低秩矩阵适配，显存占用低、训练快，适合多任务切换；QLoRA结合4bit量化，可在单张24G显卡微调70B模型，是消费级硬件首选；全参微调效果上限最高但成本极高，仅适合基础模型迭代。选型建议：原型验证用LoRA，资源受限用QLoRA，追求极致效果且数据充足用全参。配合PEFT库统一管理适配器。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "Agent记忆体系参考认知科学分层：短期记忆即对话上下文窗口，受token限制需做摘要压缩；长期记忆基于向量数据库存储事实与知识，支持语义检索；情景记忆记录Agent历次任务的执行轨迹与反馈，用于经验回放与策略改进。MemGPT、Mem0等开源方案提供分层记忆管理框架，是构建持续学习Agent的关键组件。",
         "source": "Mem0 官网",
         "link": "https://mem0.ai/"
+      },
+      {
+        "title": "MCP协议生态爆发：标准化工具调用连接AI与真实世界",
+        "content": "Model Context Protocol（MCP）由Anthropic提出，定义了模型与外部工具/数据源的标准化通信协议。MCP Server封装工具能力（如数据库查询、文件操作、API调用），MCP Client嵌入模型侧，实现「即插即用」的工具集成。已有500+官方与社区MCP Server，覆盖GitHub、Slack、数据库、浏览器等，Cursor/Claude/Windsurf原生支持。",
+        "source": "Anthropic 官方文档",
+        "link": "https://modelcontextprotocol.io/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "当前市场呈现结构性行情特征，科技成长与红利价值风格轮动加快。北向资金持续净流入，重点配置方向集中在新能源、高端制造和消费复苏主线。REITs市场扩容提速，保障性租赁住房、消费基础设施等新品种值得关注。可转债市场性价比凸显，部分标的到期收益率转正，具备「进可攻退可守」特征。建议均衡配置，避免单一风格暴露过大。",
+    "marketTrend": "港股市场估值优势明显，恒生指数市盈率处于全球主要市场最低水平。南向资金持续流入，重点布局互联网科技、高股息和医药生物板块。美联储降息预期升温，有利于港股流动性改善。A/H股溢价指数处于高位，港股相对A股折价显著，配置性价比突出。建议通过港股通或QDII基金参与，关注腾讯、美团、中海油等龙头标的。",
     "suggestions": [
-      {
-        "title": "指数定投：适合工薪族的懒人投资法",
-        "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
-        "link": "https://fund.eastmoney.com/"
-      },
       {
         "title": "可转债投资：进可攻退可守",
         "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "港股通配置：低估值市场的机会",
         "content": "港股当前估值处于全球洼地，恒生指数市盈率不到9倍。南向资金持续流入，重点可关注：互联网龙头（腾讯、美团）、高股息央企（中海油、中国移动）、创新药（百济神州、信达生物）。通过港股通或QDII基金参与，注意汇率风险。建议港股配置占总权益资产15%-25%，分散A股单一市场风险。",
         "link": "https://www.hkex.com.hk/"
+      },
+      {
+        "title": "REITs 配置：稳定现金流的新选择",
+        "content": "公募 REITs 为投资者提供参与不动产投资的新渠道，分红收益率普遍在5%-7%。建议关注产业园、仓储物流、保障房等底层资产现金流稳定的品种。选择时重点考察：底层资产出租率、租户集中度、剩余租期、管理团队能力。建议配置2-3只不同类型REITs分散风险，作为组合中类固收替代品种，占比5%-10%。",
+        "link": "https://reits.eastmoney.com/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "沉淀期90天蜕变收官 + Rap叙事长视频",
-        "content": "「沉淀期」成为健身圈年度热词，抖音相关话题播放20亿+，核心是用长时间跨度展示蜕变。小蓝创作建议：做「90天沉淀期秋日收官」系列——从夏天开始到秋天出结果，每周同天拍同款姿势照片。最终做快闪对比+3分钟Rap叙事长视频，用hook贯穿从夏到秋的蜕变历程。标签：#沉淀期 #健身蜕变 #反差对比 #Rap叙事",
-        "source": "抖音健身热榜"
-      },
-      {
         "title": "力量感拍照秋日版 + 说唱MV式Pose",
         "content": "「力量感拍照」成为小红书摄影持续新趋势，强调肌肉线条和运动中的力量美学，互动量高。小蓝创作建议：拍「秋日力量感」照片组——在金色落叶背景下拍运动Pose，动作参考说唱MV经典造型。配文用原创Rap态度宣言或热门说唱歌词。立「每周一组秋日力量感照片Flag」。标签：#力量感拍照 #秋日美学 #说唱Pose #运动摄影",
         "source": "小红书摄影热榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "一句话Flag秋日篇：把秋天唱进目标",
         "content": "抖音「一句话Flag」挑战持续爆发，用一句有力的话立下Flag并坚持记录，头部视频点赞百万+。小蓝创作建议：将Flag写成Rap hook形式，如「秋风起目标立，每天5公里不犹豫」。每天拍践行Flag的15秒视频，用这句hook做固定开场。积累30天做秋日Flag合辑。标签：#一句话Flag #Rap创作 #挑战打卡 #秋日Flag",
         "source": "抖音挑战热榜"
+      },
+      {
+        "title": "轻量体验运动：周末秋游 + Rap vlog",
+        "content": "小红书运动趋势报告指出「轻量体验」成为年轻人运动入门首选——不要求专业，先让自己动起来，周末近郊徒步+拍照+随口freestyle。小蓝创作建议：拍「周末轻量秋游」Vlog——近郊徒步+拍照+随口freestyle。不需要专业装备，重点是出门和记录。立「每周一次轻量秋游Flag」。标签：#轻量体验 #周末秋游 #RapVlog #轻运动",
+        "source": "小红书运动趋势报告"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "哈欠式开喉 3分钟：模拟打哈欠感受软腭抬起、喉咙打开的状态，保持该状态发声",
-      "technique": "滑音练习：用「哦」音从低到高再滑回，全程保持打开状态，感受声音的圆润度",
-      "song": "《遇见》- 练习中低音区的温暖音色和句尾的收束处理",
+      "warmup": "唇颤音练习 3分钟：放松嘴唇，用气流震动嘴唇发出brrr声，从低音滑到高音再滑回",
+      "technique": "气息控制：双手叉腰，深吸气感受腰部扩张，发sii声保持20秒，练习5组",
+      "song": "《月亮代表我的心》- 重点练习副歌部分的气息连贯和高音控制",
       "duration": "30min"
     },
     "drum": {
-      "rudiment": "综合复习：单跳+双跳+复合跳+装饰音串联，120bpm连续5分钟不中断",
-      "groove": "即兴groove：放任意风格伴奏，跟随即兴变化fill和密度，练听力和反应",
-      "tempo": "自由",
-      "duration": "30min"
+      "rudiment": "单跳练习 Single Stroke Roll：RLRL 60bpm → 80bpm → 100bpm，每个速度2分钟",
+      "groove": "基本摇滚节拍：底鼓1、3拍，军鼓2、4拍，踩镲8分音符，80bpm练习5分钟",
+      "tempo": "60→100bpm",
+      "duration": "25min"
     }
   }
 };
