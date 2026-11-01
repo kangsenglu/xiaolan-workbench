@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-10-31
+ * 日期: 2026-11-01
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-10-31",
-  "generatedAt": "2026-10-31 08:00 自动生成",
+  "date": "2026-11-01",
+  "generatedAt": "2026-11-01 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
+    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
     "items": [
-      {
-        "title": "夏季防暑降温实用指南",
-        "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
-        "source": "健康中国行动"
-      },
       {
         "title": "冬季足浴养生法",
         "content": "每晚睡前用40度左右温水泡脚15-20分钟，水位没过脚踝。可加入生姜（驱寒）、艾草（温经）、花椒（除湿）增强效果。泡脚后擦干双脚，按摩涌泉穴100下引火归元，改善失眠和手脚冰凉。注意：糖尿病足患者水温不宜超过38度，心血管疾病患者泡脚时间不超过15分钟。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "办公室护眼五步法",
         "content": "长时间面对屏幕易致视疲劳和干眼症。推荐「20-20-20法则」：每用眼20分钟，看20英尺(6米)外的物体20秒。配合眼周按摩（攒竹、睛明、四白、太阳穴各按30秒）、热敷双眼（温热毛巾敷2分钟）、眨眼训练（用力闭眼5秒再睁眼5秒，重复10次）、远近视焦点切换训练，五步法每日2组，有效缓解眼疲劳。",
         "source": "眼科健康资讯"
+      },
+      {
+        "title": "改善睡眠质量的科学方法",
+        "content": "优质睡眠是健康的基石。建议：1) 固定作息时间，周末偏差不超过1小时；2) 睡前1小时远离手机蓝光；3) 卧室温度18-22度最佳；4) 下午3点后避免咖啡因；5) 睡前可饮温牛奶或酸枣仁茶安神。若入睡困难超过30分钟，可尝试4-7-8呼吸法：吸气4秒、屏息7秒、呼气8秒，循环4次。",
+        "source": "睡眠医学研究"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "英语商务邮件写作",
-        "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
-        "link": "https://www.grammarly.com",
-        "linkText": "Grammarly 语法检查"
-      },
       {
         "title": "日语 N3 语法精讲",
         "content": "今日学习语法点：「〜ばよかった」（早知道...就好了）、「〜つもりだ」（打算做某事）、「〜ようになる」（变得能够...）。配合例句记忆并在日常日记中尝试使用。推荐使用 NHK Web News 进行阅读练习，标注不认识的词汇和语法点。每周完成3篇新闻精读，三个月可达到 N3 阅读水平。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "通过港剧沉浸式学习粤语。推荐入门剧：《男亲女爱》（职场对白丰富）、《溏心风暴》（家庭日常用语）。学习方法：第一遍中文字幕看剧情，第二遍粤配中字逐句暂停跟读，第三遍纯粤语音轨测试理解。重点记录高频口语表达如「搞掂」「唔该」「犀利」。每周精看1集，三个月粤语听力显著提升。",
         "link": "https://www.bilibili.com",
         "linkText": "B站搜索港剧资源"
+      },
+      {
+        "title": "英语影子跟读法 (Shadowing)",
+        "content": "Shadowing 是最高效的口语训练法之一：播放原声同时延迟1-2秒跟读，尽量模仿语音语调和节奏。推荐材料：BBC Learning English 6 Minute English、VOA Special News。从慢速材料开始，逐步过渡到正常语速。每日15分钟，重点训练连读（linking）、弱读（reduction）和语调（intonation）。录音对比原声找出差距。",
+        "link": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+        "linkText": "BBC 6 Minute English"
       }
     ],
     "dailyWords": [
       {
-        "word": "peer review",
-        "meaning": "同行评审",
-        "phonetic": "/pɪr rɪˈvjuː/",
-        "example": "The paper passed rigorous peer review before publication."
+        "word": "adequate",
+        "meaning": "充足的，适当的",
+        "phonetic": "/ˈædɪkwət/",
+        "example": "We have adequate resources to complete the project."
       },
       {
-        "word": "abstract",
-        "meaning": "摘要",
-        "phonetic": "/ˈæbstrækt/",
-        "example": "The abstract summarizes the key findings of the study."
+        "word": "comprehensive",
+        "meaning": "全面的，综合的",
+        "phonetic": "/ˌkɑːmprɪˈhensɪv/",
+        "example": "The report provides a comprehensive analysis."
       },
       {
-        "word": "variable",
-        "meaning": "变量",
-        "phonetic": "/ˈveriəbl/",
-        "example": "We controlled for several variables in the experiment."
+        "word": "diligent",
+        "meaning": "勤奋的",
+        "phonetic": "/ˈdɪlɪdʒənt/",
+        "example": "She is a diligent student who always does her homework."
       },
       {
-        "word": "correlation",
-        "meaning": "相关性",
-        "phonetic": "/ˌkɔːrəˈleɪʃn/",
-        "example": "There is a strong correlation between the two factors."
+        "word": "eloquent",
+        "meaning": "雄辩的，有口才的",
+        "phonetic": "/ˈeləkwənt/",
+        "example": "He gave an eloquent speech at the conference."
       },
       {
-        "word": "paradigm",
-        "meaning": "范式",
-        "phonetic": "/ˈpærədaɪm/",
-        "example": "This discovery represents a paradigm shift in the field."
+        "word": "feasible",
+        "meaning": "可行的",
+        "phonetic": "/ˈfiːzəbl/",
+        "example": "We need to assess whether the plan is feasible."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "I'd like to schedule a meeting to discuss the project timeline.",
-        "translation": "我想安排一个会议讨论项目时间线。",
-        "focus": "商务用语：schedule a meeting"
+        "text": "Could you recommend a local dish I must try?",
+        "translation": "能推荐一道我必尝的当地菜吗？",
+        "focus": "旅行点餐：local dish"
       },
       "yue": {
-        "text": "我想约个时间倾下个项目进度。",
-        "jyutping": "ngo5 soeng2 joek3 go3 si4 gaan3 king1 haa5 go3 go3 si6 moon2 zing3 dou6.",
-        "translation": "我想约个时间聊聊项目进度。"
+        "text": "有冇咩必食嘅地道菜式推荐啊？",
+        "jyutping": "jau5 mou5 me1 bit6 sik6 ge3 dei6 dou6 coi3 sik1 teoi1 gin3 aa3?",
+        "translation": "有没有什么必吃的地道菜式推荐？"
       },
       "ko": {
-        "text": "회의 일정을 잡고 싶습니다.",
-        "roman": "hoe-ui iljeong-eul japgo sip-seumnida.",
-        "translation": "我想安排会议日程。"
+        "text": "꼭 먹어봐야 할 현지 음식을 추천해 주세요.",
+        "roman": "kkok meogeobwaya hal hyeonji eumsig-eul chucheonhae juseyo.",
+        "translation": "请推荐一定要尝尝的当地美食。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "Prompt Engineering 高级技巧",
-        "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
-        "link": "https://platform.openai.com/docs/guides/prompt-engineering"
-      },
       {
         "title": "大模型推理优化：KV Cache 与量化",
         "content": "KV Cache 在自回归生成时缓存已计算的 Key/Value 矩阵，避免重复计算，是推理加速的关键。量化技术将 FP16 权重降至 INT8/INT4，减少显存占用和访存带宽压力。GPTQ 和 AWQ 是当前主流的权重量化算法。vLLM 的 PagedAttention 技术通过分页管理 KV Cache 显存，将吞吐量提升 2-4 倍，是生产部署的首选推理引擎。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "向量数据库选型与性能对比",
         "content": "主流向量数据库对比：Milvus（分布式架构，亿级数据，适合生产环境）、Chroma（轻量易用，适合原型开发）、Qdrant（Rust 实现，高性能过滤）、Pinecone（全托管云服务）。选型维度：数据规模、查询延迟要求、是否需要混合检索、运维成本。Embedding 模型选择同样关键：BGE-zh 适合中文，OpenAI text-embedding-3 综合性能强。",
         "link": "https://milvus.io/docs/comparison.md"
+      },
+      {
+        "title": "AI Agent 架构设计模式",
+        "content": "Agent 核心循环：感知(Perception) → 规划(Planning) → 行动(Action) → 观察(Observation)。关键设计模式：ReAct（推理-行动交替）、Plan-and-Execute（先规划后执行）、Reflexion（自我反思修正）。工具调用方面，MCP (Model Context Protocol) 正成为标准协议。多 Agent 协作框架如 AutoGen、CrewAI 支持角色分工和任务编排，适合复杂工作流自动化。",
+        "link": "https://langchain-ai.github.io/langgraph/"
       }
     ],
     "industryNews": [
-      {
-        "title": "大模型微调技术选型：LoRA/QLoRA/全参微调对比",
-        "content": "LoRA通过低秩矩阵适配，显存占用低、训练快，适合多任务切换；QLoRA结合4bit量化，可在单张24G显卡微调70B模型，是消费级硬件首选；全参微调效果上限最高但成本极高，仅适合基础模型迭代。选型建议：原型验证用LoRA，资源受限用QLoRA，追求极致效果且数据充足用全参。配合PEFT库统一管理适配器。",
-        "source": "HuggingFace PEFT",
-        "link": "https://huggingface.co/docs/peft/"
-      },
       {
         "title": "Agent记忆系统设计：短期、长期与情景记忆三层架构",
         "content": "Agent记忆体系参考认知科学分层：短期记忆即对话上下文窗口，受token限制需做摘要压缩；长期记忆基于向量数据库存储事实与知识，支持语义检索；情景记忆记录Agent历次任务的执行轨迹与反馈，用于经验回放与策略改进。MemGPT、Mem0等开源方案提供分层记忆管理框架，是构建持续学习Agent的关键组件。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "Model Context Protocol（MCP）由Anthropic提出，定义了模型与外部工具/数据源的标准化通信协议。MCP Server封装工具能力（如数据库查询、文件操作、API调用），MCP Client嵌入模型侧，实现「即插即用」的工具集成。已有500+官方与社区MCP Server，覆盖GitHub、Slack、数据库、浏览器等，Cursor/Claude/Windsurf原生支持。",
         "source": "Anthropic 官方文档",
         "link": "https://modelcontextprotocol.io/"
+      },
+      {
+        "title": "Agent评测体系：SWE-bench与AgentBench推动能力基准化",
+        "content": "SWE-bench基于真实GitHub Issue评测Agent自主修复代码能力，要求Agent理解仓库、定位文件、生成补丁并通过测试，是目前最接近真实研发的Agent基准。AgentBench覆盖操作系统、数据库、知识图谱、家务、卡片游戏等多场景评估Agent综合能力。评测驱动迭代，主流Agent框架均以这些基准作为能力背书，推动Agent从玩具走向实用。",
+        "source": "SWE-bench 官网",
+        "link": "https://www.swebench.com/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "港股市场估值优势明显，恒生指数市盈率处于全球主要市场最低水平。南向资金持续流入，重点布局互联网科技、高股息和医药生物板块。美联储降息预期升温，有利于港股流动性改善。A/H股溢价指数处于高位，港股相对A股折价显著，配置性价比突出。建议通过港股通或QDII基金参与，关注腾讯、美团、中海油等龙头标的。",
+    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
     "suggestions": [
-      {
-        "title": "可转债投资：进可攻退可守",
-        "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
-        "link": "https://www.jisilu.cn/"
-      },
       {
         "title": "港股通配置：低估值市场的机会",
         "content": "港股当前估值处于全球洼地，恒生指数市盈率不到9倍。南向资金持续流入，重点可关注：互联网龙头（腾讯、美团）、高股息央企（中海油、中国移动）、创新药（百济神州、信达生物）。通过港股通或QDII基金参与，注意汇率风险。建议港股配置占总权益资产15%-25%，分散A股单一市场风险。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "REITs 配置：稳定现金流的新选择",
         "content": "公募 REITs 为投资者提供参与不动产投资的新渠道，分红收益率普遍在5%-7%。建议关注产业园、仓储物流、保障房等底层资产现金流稳定的品种。选择时重点考察：底层资产出租率、租户集中度、剩余租期、管理团队能力。建议配置2-3只不同类型REITs分散风险，作为组合中类固收替代品种，占比5%-10%。",
         "link": "https://reits.eastmoney.com/"
+      },
+      {
+        "title": "消费复苏主线：关注估值修复机会",
+        "content": "消费板块经过长期调整，部分优质标的估值已处于历史低位。建议关注：白酒龙头（茅台、五粮液）估值回归合理区间；家电出海龙头（美的、海尔）受益于海外需求回暖；餐饮连锁（海底捞、瑞幸）同店销售改善。投资消费股核心看品牌力和渠道力，选择行业集中度提升趋势中的龙头。建仓建议分批进行，不急于一把梭。",
+        "link": "https://xueqiu.com/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "力量感拍照秋日版 + 说唱MV式Pose",
-        "content": "「力量感拍照」成为小红书摄影持续新趋势，强调肌肉线条和运动中的力量美学，互动量高。小蓝创作建议：拍「秋日力量感」照片组——在金色落叶背景下拍运动Pose，动作参考说唱MV经典造型。配文用原创Rap态度宣言或热门说唱歌词。立「每周一组秋日力量感照片Flag」。标签：#力量感拍照 #秋日美学 #说唱Pose #运动摄影",
-        "source": "小红书摄影热榜"
-      },
-      {
         "title": "一句话Flag秋日篇：把秋天唱进目标",
         "content": "抖音「一句话Flag」挑战持续爆发，用一句有力的话立下Flag并坚持记录，头部视频点赞百万+。小蓝创作建议：将Flag写成Rap hook形式，如「秋风起目标立，每天5公里不犹豫」。每天拍践行Flag的15秒视频，用这句hook做固定开场。积累30天做秋日Flag合辑。标签：#一句话Flag #Rap创作 #挑战打卡 #秋日Flag",
         "source": "抖音挑战热榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "轻量体验运动：周末秋游 + Rap vlog",
         "content": "小红书运动趋势报告指出「轻量体验」成为年轻人运动入门首选——不要求专业，先让自己动起来，周末近郊徒步+拍照+随口freestyle。小蓝创作建议：拍「周末轻量秋游」Vlog——近郊徒步+拍照+随口freestyle。不需要专业装备，重点是出门和记录。立「每周一次轻量秋游Flag」。标签：#轻量体验 #周末秋游 #RapVlog #轻运动",
         "source": "小红书运动趋势报告"
+      },
+      {
+        "title": "闭环挑战秋日篇：从立Flag到金秋达成全记录",
+        "content": "「闭环挑战」成为双平台新热点，要求完整记录从立Flag到最终达成的全过程，完播率极高。小蓝创作建议：选一个秋季可量化Flag（如「30天跑完100公里」），从Day 1秋分到Day 30秋末每天记录。最终做成3分钟Rap叙事长视频，用hook贯穿全片，展示从立Flag到金秋达成的完整闭环。标签：#闭环挑战 #Flag达成 #完整记录 #Rap叙事",
+        "source": "抖音+小红书内容趋势"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "唇颤音练习 3分钟：放松嘴唇，用气流震动嘴唇发出brrr声，从低音滑到高音再滑回",
-      "technique": "气息控制：双手叉腰，深吸气感受腰部扩张，发sii声保持20秒，练习5组",
-      "song": "《月亮代表我的心》- 重点练习副歌部分的气息连贯和高音控制",
-      "duration": "30min"
+      "warmup": "哼鸣练习 5分钟：闭口发ng音，从舒适音区开始上下滑音，感受鼻腔和头腔共鸣",
+      "technique": "横膈膜发力：仰卧姿势，腹部放一本书，发ha音感受腹部起伏，每秒2次连续30秒",
+      "song": "《滚滚红尘》- 练习前奏低音区的胸声共鸣和情感表达",
+      "duration": "35min"
     },
     "drum": {
-      "rudiment": "单跳练习 Single Stroke Roll：RLRL 60bpm → 80bpm → 100bpm，每个速度2分钟",
-      "groove": "基本摇滚节拍：底鼓1、3拍，军鼓2、4拍，踩镲8分音符，80bpm练习5分钟",
+      "rudiment": "双跳练习 Double Stroke Roll：RRLL 60bpm → 80bpm → 100bpm，每速度2分钟，注意第二击用手腕弹起",
+      "groove": "放克节拍：底鼓1、1.5、3拍，军鼓2、4拍，踩镲16分音符，90bpm练习5分钟",
       "tempo": "60→100bpm",
-      "duration": "25min"
+      "duration": "30min"
     }
   }
 };
