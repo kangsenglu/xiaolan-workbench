@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-11-05
+ * 日期: 2026-11-06
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-11-05",
-  "generatedAt": "2026-11-05 08:00 自动生成",
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
+    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
     "items": [
-      {
-        "title": "运动后恢复与营养补充",
-        "content": "运动后30分钟是营养补充黄金窗口期。力量训练后应补充蛋白质（每公斤体重0.3克，如鸡蛋、鸡胸肉、蛋白粉）+ 快速碳水（香蕉、白米饭）。有氧运动后以补充碳水为主。运动后拉伸10-15分钟防止肌肉僵硬，使用泡沫轴放松筋膜效果更佳。保证7-8小时睡眠是肌肉恢复的关键，睡眠不足会显著降低训练效果。",
-        "source": "运动营养学指南"
-      },
       {
         "title": "初秋护肺：银耳百合莲子羹",
         "content": "立秋后空气湿度下降，肺部最易受伤。银耳富含植物胶质，能滋阴润肺；百合清心安神、润肺止咳；莲子补脾止泻。三者同煮成羹，每日一小碗，连续食用两周，可有效缓解秋燥引起的干咳、咽干。做法：银耳泡发撕碎，与百合、莲子小火慢炖40分钟，加少许冰糖调味。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "腰椎间盘突出日常护理要点",
         "content": "久坐办公人群腰椎压力持续累积，建议每45分钟起身活动一次，做「靠墙站立」3分钟：后脑勺、肩胛骨、臀部、脚后跟四点贴墙。睡姿推荐侧卧微屈膝，枕头高度保持脊柱水平。避免弯腰搬重物，应屈膝下蹲后再搬起。坚持每日做「五点支撑」15次，可有效增强腰背肌群力量。",
         "source": "骨科临床护理手册"
+      },
+      {
+        "title": "颈椎操：十点十分操",
+        "content": "站立挺胸，双臂向两侧伸直，手掌朝上，如同钟表指向10:10的位置，保持该姿势30秒后放下，重复5次。此动作可有效拉伸颈椎两侧肌肉，缓解长期低头造成的颈肩僵硬。配合「米字操」（头部缓慢书写米字）效果更佳。每日早晚各做一组，坚持一个月可见明显改善。",
+        "source": "康复医学杂志"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "多邻国每日打卡",
-        "content": "利用 Duolingo 保持每日语言学习习惯。建议同时学习两门语言（如英语+日语），利用「联赛」机制保持动力。每个单元完成后做 Notes 笔记，整理新词汇和语法点。配合 Duolingo Stories 练习阅读理解和听力。每日目标设为 50 XP 以上，连续打卡30天可形成稳定的学习习惯。",
-        "link": "https://www.duolingo.com",
-        "linkText": "Duolingo 多邻国"
-      },
       {
         "title": "英语 TED 跟读训练",
         "content": "今日推荐跟读：TED Talk「The power of believing that you can improve」by Carol Dweck。重点学习 growth mindset（成长型思维）的表达方式。跟读方法：第一遍听全文理解大意，第二遍逐句暂停跟读并录音，第三遍对照原文纠正发音，重点练习连读和语调。建议每日投入20分钟，坚持21天形成习惯。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "今日学习场景：茶楼点餐。核心句型：「唔该，帮我落单」「呢个几钱呀」「要一壶普洱」。重点词汇：虾饺、烧卖、肠粉、凤爪。建议配合 B 站粤语教学视频跟读，注意声调变化（粤语九声六调）。每周掌握一个生活场景，三个月可应对日常交流。",
         "link": "https://www.bilibili.com/video/BV1px411S7bD",
         "linkText": "B站粤语教程"
+      },
+      {
+        "title": "韩语入门基础",
+        "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
+        "link": "https://talktomeinkorean.com/curriculum/",
+        "linkText": "TTMIK 韩语课程"
       }
     ],
     "dailyWords": [
       {
-        "word": "milestone",
-        "meaning": "里程碑",
-        "phonetic": "/ˈmaɪlstoʊn/",
-        "example": "Reaching one million users was a major milestone."
+        "word": "algorithm",
+        "meaning": "算法",
+        "phonetic": "/ˈælɡərɪðəm/",
+        "example": "The recommendation algorithm improves user engagement."
       },
       {
-        "word": "scalable",
-        "meaning": "可扩展的",
-        "phonetic": "/ˈskeɪləbl/",
-        "example": "Our business model is highly scalable."
+        "word": "deploy",
+        "meaning": "部署",
+        "phonetic": "/dɪˈplɔɪ/",
+        "example": "We plan to deploy the new version next Monday."
       },
       {
-        "word": "acquisition",
-        "meaning": "收购，获取",
-        "phonetic": "/ˌækwɪˈzɪʃn/",
-        "example": "The acquisition expanded our market share significantly."
+        "word": "iterate",
+        "meaning": "迭代",
+        "phonetic": "/ˈɪtəreɪt/",
+        "example": "We iterate quickly based on user feedback."
       },
       {
-        "word": "compliance",
-        "meaning": "合规，遵从",
-        "phonetic": "/kəmˈplaɪəns/",
-        "example": "All products must meet regulatory compliance standards."
+        "word": "robust",
+        "meaning": "健壮的，稳定的",
+        "phonetic": "/roʊˈbʌst/",
+        "example": "The system needs a robust error-handling mechanism."
       },
       {
-        "word": "synergy",
-        "meaning": "协同效应",
-        "phonetic": "/ˈsɪnərdʒi/",
-        "example": "The merger created strong synergy between the two teams."
+        "word": "optimize",
+        "meaning": "优化",
+        "phonetic": "/ˈɑːptɪmaɪz/",
+        "example": "We optimized the database queries for better performance."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "Let's wrap up this discussion and send out the minutes by email.",
-        "translation": "我们结束这次讨论，通过邮件发送会议纪要吧。",
-        "focus": "商务收尾：wrap up / minutes"
+        "text": "This coffee shop has the best latte I've ever tasted.",
+        "translation": "这家咖啡店有我喝过最好的拿铁。",
+        "focus": "评价表达：the best ... I've ever"
       },
       "yue": {
-        "text": "我哋倾掂呢个议题，跟住email份会议纪录俾大家啦。",
-        "jyutping": "ngo5 dei6 king1 dam6 ni1 go3 ji6 tai4, gan1 zyu6 email fan2 wui6 ji5 gun3 bei2 daai6 gaa1 laa1.",
-        "translation": "我们谈妥这个议题，然后email会议记录给大家。"
+        "text": "呢间咖啡店嘅拿铁系我饮过最好饮嘅。",
+        "jyutping": "ni1 gaan1 gaa1 fe1 dim2 ge3 naa4 tit3 hai6 ngo5 jam2 gwo3 zeoi3 hou2 jam2 ge3.",
+        "translation": "这间咖啡店的拿铁是我喝过最好喝的。"
       },
       "ko": {
-        "text": "이번 논의를 마무리하고 이메일로 회의록을 보내 드리겠습니다.",
-        "roman": "ibeon non-ui-reul mamurihago imeillo hoe-uirog-eul bonae deuriget-seumnida.",
-        "translation": "我们结束这次讨论，会用邮件发送会议记录。"
+        "text": "이 카페의 라떼는 제가 먹어 본 것 중 최고예요.",
+        "roman": "i kape-ui ratte-neun jega meogeo bon geot jung choegoyeyo.",
+        "translation": "这家咖啡店的拿铁是我吃过中最好的。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "AI Agent 架构设计模式",
-        "content": "Agent 核心循环：感知(Perception) → 规划(Planning) → 行动(Action) → 观察(Observation)。关键设计模式：ReAct（推理-行动交替）、Plan-and-Execute（先规划后执行）、Reflexion（自我反思修正）。工具调用方面，MCP (Model Context Protocol) 正成为标准协议。多 Agent 协作框架如 AutoGen、CrewAI 支持角色分工和任务编排，适合复杂工作流自动化。",
-        "link": "https://langchain-ai.github.io/langgraph/"
-      },
       {
         "title": "Transformer 架构核心原理",
         "content": "Transformer 的核心在于 Self-Attention 机制，通过 Q(Query)、K(Key)、V(Value) 三个矩阵将输入序列映射，计算注意力权重 softmax(QK^T/√dk)V，使模型能够关注序列中不同位置的依赖关系。Multi-Head Attention 通过并行多个注意力头捕获不同子空间的特征。Position Encoding 弥补了缺失的位置信息。理解 Transformer 是掌握 GPT、BERT 等大模型的基础。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "扩散模型 (Diffusion Model) 原理",
         "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
         "link": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "title": "Prompt Engineering 高级技巧",
+        "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
+        "link": "https://platform.openai.com/docs/guides/prompt-engineering"
       }
     ],
     "industryNews": [
-      {
-        "title": "AutoGPT开源Agent框架重大更新：支持多Agent协作",
-        "content": "AutoGPT发布v0.5版本，新增多Agent协作模式，允许多个专业化Agent分工完成复杂任务。框架内置了规划、记忆、工具调用三大核心模块，支持自定义Agent角色和能力。配合Forge评测基准，开发者可量化Agent的任务完成率与工具调用准确率，推动Agent从Demo走向生产可用。",
-        "source": "GitHub Trending",
-        "link": "https://github.com/Significant-Gravitas/AutoGPT"
-      },
       {
         "title": "LangChain推出LangGraph：构建可靠的有状态Agent工作流",
         "content": "LangGraph将Agent抽象为有向图，节点表示计算单元（LLM调用/工具调用），边表示状态流转，支持循环、分支、人工介入（human-in-the-loop）。相比传统Chain线性执行，LangGraph可构建需要反复修正、多步推理的复杂Agent，已广泛用于客服、数据分析、代码审查等场景。持久化检查点机制使Agent可中断恢复。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
         "source": "CrewAI 文档",
         "link": "https://docs.crewai.com/"
+      },
+      {
+        "title": "Microsoft AutoGen v0.4：多Agent对话框架支持分布式执行",
+        "content": "AutoGen v0.4采用Actor模型重构，支持Agent跨进程、跨机器分布式部署，可水平扩展处理高并发任务。核心特性：异步消息传递、事件驱动架构、可插拔的模型客户端与工具运行时。新增AgentChat高层API，简化多Agent对话编排。与Semantic Kernel深度集成，方便企业接入Azure OpenAI生态。",
+        "source": "Microsoft Research",
+        "link": "https://microsoft.github.io/autogen/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "A股市场近期受政策利好提振，市场情绪逐步修复。半导体、AI算力板块表现活跃，受益于国产替代加速和全球AI产业景气上行。消费板块估值处于历史低位，但复苏节奏仍需观察。建议投资者保持耐心，利用市场波动逢低布局优质标的。债券市场方面，货币政策维持宽松基调，利率债配置价值仍在，但需警惕年末利率波动风险。黄金价格高位震荡，地缘风险支撑长期配置逻辑不变。",
+    "marketTrend": "当前市场呈现结构性行情特征，科技成长与红利价值风格轮动加快。北向资金持续净流入，重点配置方向集中在新能源、高端制造和消费复苏主线。REITs市场扩容提速，保障性租赁住房、消费基础设施等新品种值得关注。可转债市场性价比凸显，部分标的到期收益率转正，具备「进可攻退可守」特征。建议均衡配置，避免单一风格暴露过大。",
     "suggestions": [
-      {
-        "title": "新能车产业链：左侧布局机会",
-        "content": "新能源汽车产业链经过深度调整，部分环节估值已具备吸引力。关注方向：电池龙头（宁德时代、比亚迪）成本优势和全球化布局；智能化方向（激光雷达、域控制器）渗透率快速提升；充电桩、储能等基础设施。注意行业仍在洗牌期，尾部企业有出清风险，建议通过ETF或龙头个股参与，控制仓位不超过15%。",
-        "link": "https://www.eastmoney.com/"
-      },
       {
         "title": "红利低波策略：稳健配置首选",
         "content": "在低利率环境下，股息率4%以上的红利低波组合具显著配置价值。建议关注煤炭、银行、公用事业板块中连续5年分红稳定、ROE>10%的标的。可通过红利ETF（515080）一键配置，每月定投平滑成本。注意分散行业集中度，单一行业占比不超过30%。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "AI 科技主题：关注算力与应用双线",
         "content": "AI 产业链可分为算力层（GPU、光模块、液冷）、模型层（大模型公司）、应用层（办公、教育、医疗AI应用）。当前算力层估值已较高，建议关注应用层落地标的，特别是已有商业化收入的企业。可通过科创50ETF（588000）或人工智能ETF（515980）参与，仓位建议不超过总资产20%。",
         "link": "https://xueqiu.com/"
+      },
+      {
+        "title": "黄金配置：对冲地缘风险的压舱石",
+        "content": "全球地缘政治不确定性持续升温，黄金作为避险资产配置价值凸显。建议通过黄金ETF（518880）或积存金方式配置，占投资组合5%-10%。当前金价处于历史高位区间，不建议一次性买入，推荐每月定额定投，利用价格波动摊薄成本。长期看，去美元化趋势支撑金价中枢上移。",
+        "link": "https://www.sge.com.cn/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "ColorWalk秋色版：每日一色Flag + 色彩Rap",
-        "content": "ColorWalk持续火爆半年不凉，小红书话题浏览量超4.63亿、抖音播放4.69亿，秋季色彩更丰富玩法再升级。小蓝创作建议：立「秋日ColorWalk Flag」——每天选一个秋色（金黄枫叶/深红落日/灰蓝晨雾），一路找该颜色拍照。视频版用色彩切换卡点配原创Rap，每色一句歌词描述秋日心境。标签：#ColorWalk #秋日色彩 #每日一色 #Rap卡点",
-        "source": "小红书ColorWalk热榜"
-      },
-      {
         "title": "AI健身教练实战体验 + 说唱技术吐槽",
         "content": "2026年ACSM全球健身趋势报告将「AI加持高效运动」列为年度五大趋势，AI教练通过摄像头实时分析动作姿态。小蓝创作建议：体验一周AI健身教练，用Rap风格对比「AI说 vs 我身体说」的差异——AI说深蹲到位但膝盖在叫。拍生动的AI屏幕+真人对比照片，用freestyle总结体验。标签：#AI健身 #智能运动 #说唱吐槽 #健身科技",
         "source": "2026全球健身趋势报告"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "中秋家宴运动平衡 + Rap吐槽大餐",
         "content": "9月中秋家宴场景成为抖音挑战热点，红花郎全国挑战赛正式上线，品牌+民俗+短视频结合。小蓝创作建议：立「中秋吃练平衡Flag」——大餐前完成一次力量训练，餐后完成一次CityRun消食跑。用Rap吐槽形式记录「吃了三个月饼后的忏悔跑」，拍家宴与运动对比的生动照片。标签：#中秋挑战 #吃练平衡 #Rap忏悔 #家宴打卡",
         "source": "抖音中秋挑战赛"
+      },
+      {
+        "title": "开学季重返自律 + 晨间说唱Vlog",
+        "content": "9月开学季带动自律内容回潮，「早起战神」类话题在抖音持续高热，年轻人用极端自律对抗焦虑。小蓝创作建议：拍「开学季重返学生状态」系列——即使毕业了也5:30起床，像学生一样晨跑+晨读。用Rap内心OS配音记录挣扎过程，拍晨光中的生动照片。立「9月早起21天Flag」。标签：#开学季 #早起战神 #晨间Vlog #说唱OS",
+        "source": "抖音自律话题榜"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "气泡音唤醒 3分钟：放松喉部发低沉的气泡音，按摩声带，做发声前热身",
-      "technique": "弱声控制：用极小音量唱完整首歌，要求声音虽弱但位置高、气息稳",
-      "song": "《大鱼》- 练习弱声到强声的渐变处理和空灵音色",
-      "duration": "35min"
+      "warmup": "狗喘气练习 2分钟：像狗一样快速吐舌喘气，激活横膈膜，感受腹部快速弹跳",
+      "technique": "跳音练习：用ha音在do-mi-do-mi音阶上做跳音，每个音短促有力，腹部弹跳配合",
+      "song": "《红豆》- 练习主歌的跳音咬字和节奏感",
+      "duration": "30min"
     },
     "drum": {
-      "rudiment": "Drag（双装饰音）：rrL llR，先慢速分解再加速，注意装饰音轻、主音响",
-      "groove": "R&B节拍：底鼓16分切分，军鼓2、4拍带ghost note，踩镲半开，85bpm练习6分钟",
-      "tempo": "70→95bpm",
-      "duration": "30min"
+      "rudiment": "单跳提速训练：节拍器60bpm每30秒加5bpm，目标冲到140bpm不停顿",
+      "groove": "朋克摇滚节拍：底鼓1、3拍，军鼓2、4拍，踩镲8分，140bpm练习5分钟练耐力",
+      "tempo": "60→140bpm",
+      "duration": "35min"
     }
   }
 };
