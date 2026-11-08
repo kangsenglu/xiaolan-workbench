@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-11-07
+ * 日期: 2026-11-08
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-11-07",
-  "generatedAt": "2026-11-07 08:00 自动生成",
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
+    "diet": "立秋后气候逐渐干燥，饮食宜以「滋阴润燥」为主。建议多食用银耳、百合、莲藕、秋梨等润肺生津之物，适当减少辛辣刺激食物。脾胃功能旺盛，可增加山药、茯苓、薏苡仁等健脾食材。晨起饮温蜂蜜水润肠养肺，午餐搭配冬瓜排骨汤清热利湿，晚餐宜清淡少油。",
     "items": [
-      {
-        "title": "腰椎间盘突出日常护理要点",
-        "content": "久坐办公人群腰椎压力持续累积，建议每45分钟起身活动一次，做「靠墙站立」3分钟：后脑勺、肩胛骨、臀部、脚后跟四点贴墙。睡姿推荐侧卧微屈膝，枕头高度保持脊柱水平。避免弯腰搬重物，应屈膝下蹲后再搬起。坚持每日做「五点支撑」15次，可有效增强腰背肌群力量。",
-        "source": "骨科临床护理手册"
-      },
       {
         "title": "颈椎操：十点十分操",
         "content": "站立挺胸，双臂向两侧伸直，手掌朝上，如同钟表指向10:10的位置，保持该姿势30秒后放下，重复5次。此动作可有效拉伸颈椎两侧肌肉，缓解长期低头造成的颈肩僵硬。配合「米字操」（头部缓慢书写米字）效果更佳。每日早晚各做一组，坚持一个月可见明显改善。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "春季养肝：作息与饮食调理",
         "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
         "source": "中医养生学刊"
+      },
+      {
+        "title": "夏季防暑降温实用指南",
+        "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
+        "source": "健康中国行动"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "英语 AI 对话练习",
-        "content": "利用 ChatGPT 或 Claude 进行英语口语场景模拟。推荐 Prompt：「Let's have a 5-minute conversation about [topic], please correct my grammar and suggest better expressions.」今日场景主题：在科技会议上做自我介绍并讨论 AI 行业趋势。练习目标：掌握 10 个以上科技领域高频词汇，能够流利表达个人观点。",
-        "link": "https://chat.openai.com",
-        "linkText": "开始 AI 对话练习"
-      },
       {
         "title": "粤语情景学习",
         "content": "今日学习场景：茶楼点餐。核心句型：「唔该，帮我落单」「呢个几钱呀」「要一壶普洱」。重点词汇：虾饺、烧卖、肠粉、凤爪。建议配合 B 站粤语教学视频跟读，注意声调变化（粤语九声六调）。每周掌握一个生活场景，三个月可应对日常交流。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "掌握商务邮件核心句型：开头「I hope this email finds you well」、请求「I would appreciate it if you could...」、跟进「I'm writing to follow up on...」、结尾「Looking forward to hearing from you」。注意避免中式英语，多用被动语态显得正式。推荐 Grammarly 检查语法，配合 Lang-8 获取母语者修改建议。",
         "link": "https://www.grammarly.com",
         "linkText": "Grammarly 语法检查"
+      },
+      {
+        "title": "日语 N3 语法精讲",
+        "content": "今日学习语法点：「〜ばよかった」（早知道...就好了）、「〜つもりだ」（打算做某事）、「〜ようになる」（变得能够...）。配合例句记忆并在日常日记中尝试使用。推荐使用 NHK Web News 进行阅读练习，标注不认识的词汇和语法点。每周完成3篇新闻精读，三个月可达到 N3 阅读水平。",
+        "link": "https://www3.nhk.or.jp/news/easy/",
+        "linkText": "NHK 简易日语新闻"
       }
     ],
     "dailyWords": [
       {
-        "word": "architecture",
-        "meaning": "架构",
-        "phonetic": "/ˈɑːrkɪtektʃər/",
-        "example": "The microservices architecture improved scalability."
+        "word": "groceries",
+        "meaning": "日用品，食品杂货",
+        "phonetic": "/ˈɡroʊsəriz/",
+        "example": "I need to buy groceries for the week."
       },
       {
-        "word": "authentication",
-        "meaning": "身份验证",
-        "phonetic": "/ɔːˌθentɪˈkeɪʃn/",
-        "example": "Two-factor authentication enhances account security."
+        "word": "appointment",
+        "meaning": "预约，约会",
+        "phonetic": "/əˈpɔɪntmənt/",
+        "example": "I have a dentist appointment at 3 PM."
       },
       {
-        "word": "throughput",
-        "meaning": "吞吐量",
-        "phonetic": "/ˈθruːpʊt/",
-        "example": "The new server doubled our processing throughput."
+        "word": "commute",
+        "meaning": "通勤",
+        "phonetic": "/kəˈmjuːt/",
+        "example": "My daily commute takes about 45 minutes."
       },
       {
-        "word": "latency",
-        "meaning": "延迟",
-        "phonetic": "/ˈleɪtnsi/",
-        "example": "We reduced API latency to under 50 milliseconds."
+        "word": "recipe",
+        "meaning": "食谱，配方",
+        "phonetic": "/ˈresəpi/",
+        "example": "This pasta recipe is simple and delicious."
       },
       {
-        "word": "repository",
-        "meaning": "仓库，代码库",
-        "phonetic": "/rɪˈpɑːzətɔːri/",
-        "example": "Push your code to the remote repository before leaving."
+        "word": "chore",
+        "meaning": "家务杂事",
+        "phonetic": "/tʃɔːr/",
+        "example": "Doing laundry is my least favorite chore."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "I'd like to check in. I have a reservation under the name Wang.",
-        "translation": "我想办理入住，我用王的名字预订了。",
-        "focus": "酒店入住：check in / reservation"
+        "text": "Could you speak a bit slower, please? I'm still learning.",
+        "translation": "能说慢一点吗？我还在学习中。",
+        "focus": "礼貌请求：Could you ... please"
       },
       "yue": {
-        "text": "我想登记入住，我用咗王生个名book房。",
-        "jyutping": "ngo5 soeng2 dang1 gei3 zap6 zeoi1, ngo5 jung6 zo2 wong4 saang1 go3 meng4 book fong2.",
-        "translation": "我想登记入住，我用了王先生的名字订房。"
+        "text": "可唔可以讲慢少少啊？我仲学紧。",
+        "jyutping": "ho2 m4 ho2 ji5 gong2 maan6 siu2 siu2 aa3? ngo5 zung6 hok6 gan2.",
+        "translation": "可以说慢一点吗？我还在学。"
       },
       "ko": {
-        "text": "체크인하고 싶습니다. 왕이라는 이름으로 예약했습니다.",
-        "roman": "chekeu-inhago sip-seumnida. wang-iraneun ireum-euro yeyakhaet-seumnida.",
-        "translation": "我想办理入住，用王这个名字预订了。"
+        "text": "조금 천천히 말씀해 주시겠어요? 아직 배우는 중이에요.",
+        "roman": "jogeum cheoncheonhi malsseumhae jusiget-eoyo? ajik baeu-neun jung-ieyo.",
+        "translation": "能稍微说慢点吗？我还在学习中。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "LoRA 微调技术详解",
-        "content": "LoRA (Low-Rank Adaptation) 通过在预训练权重旁注入可训练的低秩矩阵 A 和 B，其中 W' = W + BA，仅训练 A 和 B（秩 r 远小于原始维度），可将训练参数量降低 90% 以上。适用于在消费级 GPU 上微调大语言模型。关键超参数：秩 r（推荐8-64）、alpha（缩放因子，通常设为 r 的2倍）、dropout（0.05-0.1）。",
-        "link": "https://arxiv.org/abs/2106.09685"
-      },
       {
         "title": "RAG 检索增强生成最佳实践",
         "content": "RAG 系统的核心流程：文档分块(Chunking) → 向量化(Embedding) → 存入向量数据库 → 检索(Retrieval) → 拼接上下文生成(Generation)。最佳实践：分块大小 512-1024 tokens 并保留 overlap；使用混合检索（向量 + BM25 关键词）；引入重排序模型（Reranker）提升相关性；设置相似度阈值过滤低质量结果。推荐技术栈：LangChain + Chroma + BGE Embedding。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "大模型推理优化：KV Cache 与量化",
         "content": "KV Cache 在自回归生成时缓存已计算的 Key/Value 矩阵，避免重复计算，是推理加速的关键。量化技术将 FP16 权重降至 INT8/INT4，减少显存占用和访存带宽压力。GPTQ 和 AWQ 是当前主流的权重量化算法。vLLM 的 PagedAttention 技术通过分页管理 KV Cache 显存，将吞吐量提升 2-4 倍，是生产部署的首选推理引擎。",
         "link": "https://arxiv.org/abs/2306.05685"
+      },
+      {
+        "title": "多模态大模型架构：CLIP 与 LLaVA",
+        "content": "CLIP 通过对比学习将图像和文本映射到同一向量空间，是视觉-语言理解的基石。LLaVA 将视觉编码器（CLIP ViT）的输出作为「视觉 token」注入大语言模型，实现图文对话能力。关键设计：Projection Layer 将视觉特征对齐到语言模型的嵌入空间。多模态训练分两阶段：先训练 Projection 对齐特征，再联合微调提升指令跟随能力。",
+        "link": "https://arxiv.org/abs/2304.08485"
       }
     ],
     "industryNews": [
-      {
-        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
-        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
-        "source": "CrewAI 文档",
-        "link": "https://docs.crewai.com/"
-      },
       {
         "title": "Microsoft AutoGen v0.4：多Agent对话框架支持分布式执行",
         "content": "AutoGen v0.4采用Actor模型重构，支持Agent跨进程、跨机器分布式部署，可水平扩展处理高并发任务。核心特性：异步消息传递、事件驱动架构、可插拔的模型客户端与工具运行时。新增AgentChat高层API，简化多Agent对话编排。与Semantic Kernel深度集成，方便企业接入Azure OpenAI生态。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "RLHF（人类反馈强化学习）三阶段：1) SFT监督微调；2) 训练奖励模型（Reward Model）拟合偏好排序；3) 用PPO优化策略模型最大化奖励。工程要点：偏好数据需覆盖多样场景与边界case；奖励模型易过拟合需控制容量；PPO训练不稳定，建议配合KL散度约束防止策略漂移过大。开源方案推荐TRL库。",
         "source": "HuggingFace Blog",
         "link": "https://huggingface.co/blog/rlhf"
+      },
+      {
+        "title": "DPO直接偏好优化：RLHF的简化替代方案",
+        "content": "DPO（Direct Preference Optimization）跳过显式奖励模型和RL训练，直接从偏好对数据通过二元交叉熵损失优化策略模型，公式简洁、训练稳定、工程成本低。实践显示DPO在指令跟随、安全对齐任务上效果接近甚至超过RLHF，且调参更简单。后续改进如IPO、KTO、ORPO进一步解决DPO的过拟合与分布偏移问题。",
+        "source": "arXiv",
+        "link": "https://arxiv.org/abs/2305.18290"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "港股市场估值优势明显，恒生指数市盈率处于全球主要市场最低水平。南向资金持续流入，重点布局互联网科技、高股息和医药生物板块。美联储降息预期升温，有利于港股流动性改善。A/H股溢价指数处于高位，港股相对A股折价显著，配置性价比突出。建议通过港股通或QDII基金参与，关注腾讯、美团、中海油等龙头标的。",
+    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
     "suggestions": [
-      {
-        "title": "AI 科技主题：关注算力与应用双线",
-        "content": "AI 产业链可分为算力层（GPU、光模块、液冷）、模型层（大模型公司）、应用层（办公、教育、医疗AI应用）。当前算力层估值已较高，建议关注应用层落地标的，特别是已有商业化收入的企业。可通过科创50ETF（588000）或人工智能ETF（515980）参与，仓位建议不超过总资产20%。",
-        "link": "https://xueqiu.com/"
-      },
       {
         "title": "黄金配置：对冲地缘风险的压舱石",
         "content": "全球地缘政治不确定性持续升温，黄金作为避险资产配置价值凸显。建议通过黄金ETF（518880）或积存金方式配置，占投资组合5%-10%。当前金价处于历史高位区间，不建议一次性买入，推荐每月定额定投，利用价格波动摊薄成本。长期看，去美元化趋势支撑金价中枢上移。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "指数定投：适合工薪族的懒人投资法",
         "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
         "link": "https://fund.eastmoney.com/"
+      },
+      {
+        "title": "可转债投资：进可攻退可守",
+        "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
+        "link": "https://www.jisilu.cn/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "中秋家宴运动平衡 + Rap吐槽大餐",
-        "content": "9月中秋家宴场景成为抖音挑战热点，红花郎全国挑战赛正式上线，品牌+民俗+短视频结合。小蓝创作建议：立「中秋吃练平衡Flag」——大餐前完成一次力量训练，餐后完成一次CityRun消食跑。用Rap吐槽形式记录「吃了三个月饼后的忏悔跑」，拍家宴与运动对比的生动照片。标签：#中秋挑战 #吃练平衡 #Rap忏悔 #家宴打卡",
-        "source": "抖音中秋挑战赛"
-      },
-      {
         "title": "开学季重返自律 + 晨间说唱Vlog",
         "content": "9月开学季带动自律内容回潮，「早起战神」类话题在抖音持续高热，年轻人用极端自律对抗焦虑。小蓝创作建议：拍「开学季重返学生状态」系列——即使毕业了也5:30起床，像学生一样晨跑+晨读。用Rap内心OS配音记录挣扎过程，拍晨光中的生动照片。立「9月早起21天Flag」。标签：#开学季 #早起战神 #晨间Vlog #说唱OS",
         "source": "抖音自律话题榜"
@@ -208,21 +203,26 @@ window.DAILY_BRIEFING = {
         "title": "组局健身说唱接力 + 生动多人照",
         "content": "「健身搭子」话题在小红书浏览量持续攀升破5亿，组局文化从社交延伸到健身。小蓝创作建议：发起「说唱健身局」秋季版——约3-5位朋友一起户外健身，每人用freestyle介绍自己的训练项目。拍多人运动合照（力量感Pose），用说唱接力形式剪辑。立「每周组局一次Flag」。标签：#组局健身 #健身搭子 #说唱接力 #多人Vlog",
         "source": "小红书社交健身榜"
+      },
+      {
+        "title": "反精致运动日记秋版 + 真实汗水Rap",
+        "content": "「反精致」成为小红书持续热门潮流，刻意展示不完美反而获得高互动，相关话题阅读量10亿+。小蓝创作建议：拍「秋日反精致健身日记」——不化妆、不修图、不找角度，记录初秋运动中最真实的汗水状态。用直白自嘲Rap配音，如「秋风没吹走我的肚腩但至少我在吹风」。标签：#反精致 #真实记录 #自嘲Rap #健身日记",
+        "source": "小红书内容趋势"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "叹气放松 3分钟：深吸气后像叹气一样发「唉」声下行，放松喉部和肩颈",
-      "technique": "真假声转换：用「呜」音从真声区滑到假声区再滑回，感受换声点的平滑过渡",
-      "song": "《神话》- 练习真假声无缝切换和假声的穿透力",
-      "duration": "35min"
+      "warmup": "咀嚼练习 3分钟：夸张咀嚼动作放松下颌，配合哼鸣感受口腔空间打开",
+      "technique": "咬字清晰：朗读歌词，每个字咬字清晰但不过分用力，注意辅音的爆发和元音的延展",
+      "song": "《青花瓷》- 练习中国风歌曲的咬字韵味和装饰音处理",
+      "duration": "30min"
     },
     "drum": {
-      "rudiment": "三连音滚奏：RLRLRL三连音手感，60bpm → 90bpm，注意三连音的内在律动",
-      "groove": "blues shuffle 12/8：底鼓三连音律动，军鼓2、4拍，shuffle踩镲，75bpm练习6分钟",
-      "tempo": "60→90bpm",
+      "rudiment": "手脚协调：手RLRL单跳，脚底鼓踩8分音符，反拍叠加军鼓，70bpm 5分钟",
+      "groove": "线性groove：手脚不重合，HH-底鼓-军鼓-SN-底鼓序列循环，85bpm练习5分钟",
+      "tempo": "70→95bpm",
       "duration": "30min"
     }
   }
