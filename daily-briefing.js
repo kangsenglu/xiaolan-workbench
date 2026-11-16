@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-11-15
+ * 日期: 2026-11-16
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-11-15",
-  "generatedAt": "2026-11-15 08:00 自动生成",
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
+    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
     "items": [
-      {
-        "title": "运动后恢复与营养补充",
-        "content": "运动后30分钟是营养补充黄金窗口期。力量训练后应补充蛋白质（每公斤体重0.3克，如鸡蛋、鸡胸肉、蛋白粉）+ 快速碳水（香蕉、白米饭）。有氧运动后以补充碳水为主。运动后拉伸10-15分钟防止肌肉僵硬，使用泡沫轴放松筋膜效果更佳。保证7-8小时睡眠是肌肉恢复的关键，睡眠不足会显著降低训练效果。",
-        "source": "运动营养学指南"
-      },
       {
         "title": "初秋护肺：银耳百合莲子羹",
         "content": "立秋后空气湿度下降，肺部最易受伤。银耳富含植物胶质，能滋阴润肺；百合清心安神、润肺止咳；莲子补脾止泻。三者同煮成羹，每日一小碗，连续食用两周，可有效缓解秋燥引起的干咳、咽干。做法：银耳泡发撕碎，与百合、莲子小火慢炖40分钟，加少许冰糖调味。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "腰椎间盘突出日常护理要点",
         "content": "久坐办公人群腰椎压力持续累积，建议每45分钟起身活动一次，做「靠墙站立」3分钟：后脑勺、肩胛骨、臀部、脚后跟四点贴墙。睡姿推荐侧卧微屈膝，枕头高度保持脊柱水平。避免弯腰搬重物，应屈膝下蹲后再搬起。坚持每日做「五点支撑」15次，可有效增强腰背肌群力量。",
         "source": "骨科临床护理手册"
+      },
+      {
+        "title": "颈椎操：十点十分操",
+        "content": "站立挺胸，双臂向两侧伸直，手掌朝上，如同钟表指向10:10的位置，保持该姿势30秒后放下，重复5次。此动作可有效拉伸颈椎两侧肌肉，缓解长期低头造成的颈肩僵硬。配合「米字操」（头部缓慢书写米字）效果更佳。每日早晚各做一组，坚持一个月可见明显改善。",
+        "source": "康复医学杂志"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "多邻国每日打卡",
-        "content": "利用 Duolingo 保持每日语言学习习惯。建议同时学习两门语言（如英语+日语），利用「联赛」机制保持动力。每个单元完成后做 Notes 笔记，整理新词汇和语法点。配合 Duolingo Stories 练习阅读理解和听力。每日目标设为 50 XP 以上，连续打卡30天可形成稳定的学习习惯。",
-        "link": "https://www.duolingo.com",
-        "linkText": "Duolingo 多邻国"
-      },
       {
         "title": "英语 TED 跟读训练",
         "content": "今日推荐跟读：TED Talk「The power of believing that you can improve」by Carol Dweck。重点学习 growth mindset（成长型思维）的表达方式。跟读方法：第一遍听全文理解大意，第二遍逐句暂停跟读并录音，第三遍对照原文纠正发音，重点练习连读和语调。建议每日投入20分钟，坚持21天形成习惯。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "今日学习场景：茶楼点餐。核心句型：「唔该，帮我落单」「呢个几钱呀」「要一壶普洱」。重点词汇：虾饺、烧卖、肠粉、凤爪。建议配合 B 站粤语教学视频跟读，注意声调变化（粤语九声六调）。每周掌握一个生活场景，三个月可应对日常交流。",
         "link": "https://www.bilibili.com/video/BV1px411S7bD",
         "linkText": "B站粤语教程"
+      },
+      {
+        "title": "韩语入门基础",
+        "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
+        "link": "https://talktomeinkorean.com/curriculum/",
+        "linkText": "TTMIK 韩语课程"
       }
     ],
     "dailyWords": [
       {
-        "word": "innovate",
-        "meaning": "创新，改革",
-        "phonetic": "/ˈɪnəveɪt/",
-        "example": "Companies must innovate to stay competitive."
+        "word": "milestone",
+        "meaning": "里程碑",
+        "phonetic": "/ˈmaɪlstoʊn/",
+        "example": "Reaching one million users was a major milestone."
       },
       {
-        "word": "leverage",
-        "meaning": "利用，杠杆作用",
-        "phonetic": "/ˈlevərɪdʒ/",
-        "example": "We should leverage our strengths to win."
+        "word": "scalable",
+        "meaning": "可扩展的",
+        "phonetic": "/ˈskeɪləbl/",
+        "example": "Our business model is highly scalable."
       },
       {
-        "word": "negotiate",
-        "meaning": "谈判，协商",
-        "phonetic": "/nɪˈɡoʊʃieɪt/",
-        "example": "They negotiated a better deal with the supplier."
+        "word": "acquisition",
+        "meaning": "收购，获取",
+        "phonetic": "/ˌækwɪˈzɪʃn/",
+        "example": "The acquisition expanded our market share significantly."
       },
       {
-        "word": "revenue",
-        "meaning": "收入，营收",
-        "phonetic": "/ˈrevənuː/",
-        "example": "The company's revenue grew by 20% last year."
+        "word": "compliance",
+        "meaning": "合规，遵从",
+        "phonetic": "/kəmˈplaɪəns/",
+        "example": "All products must meet regulatory compliance standards."
       },
       {
-        "word": "stakeholder",
-        "meaning": "利益相关者",
-        "phonetic": "/ˈsteɪkhoʊldər/",
-        "example": "We need to consider all stakeholders in this decision."
+        "word": "synergy",
+        "meaning": "协同效应",
+        "phonetic": "/ˈsɪnərdʒi/",
+        "example": "The merger created strong synergy between the two teams."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "Sorry for the delay. The traffic was heavier than expected.",
-        "translation": "抱歉迟到了，交通比预期拥堵。",
-        "focus": "道歉表达：sorry for / heavier than expected"
+        "text": "I'd like to schedule a meeting to discuss the project timeline.",
+        "translation": "我想安排一个会议讨论项目时间线。",
+        "focus": "商务用语：schedule a meeting"
       },
       "yue": {
-        "text": "唔好意思迟大到，塞车严重过预期。",
-        "jyutping": "m4 hou2 ji3 si3 ci4 daai6 dou3, sak1 ce1 jim4 zung6 gwo3 jyu6 kei4.",
-        "translation": "不好意思迟到，堵车比预期严重。"
+        "text": "我想约个时间倾下个项目进度。",
+        "jyutping": "ngo5 soeng2 joek3 go3 si4 gaan3 king1 haa5 go3 go3 si6 moon2 zing3 dou6.",
+        "translation": "我想约个时间聊聊项目进度。"
       },
       "ko": {
-        "text": "늦어서 죄송합니다. 교통체증이 예상보다 심했어요.",
-        "roman": "neujeoseo joesonghamnida. gyotongchejeung-i yesangboda simhaet-eoyo.",
-        "translation": "抱歉迟到了，交通拥堵比预想的严重。"
+        "text": "회의 일정을 잡고 싶습니다.",
+        "roman": "hoe-ui iljeong-eul japgo sip-seumnida.",
+        "translation": "我想安排会议日程。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "AI Agent 架构设计模式",
-        "content": "Agent 核心循环：感知(Perception) → 规划(Planning) → 行动(Action) → 观察(Observation)。关键设计模式：ReAct（推理-行动交替）、Plan-and-Execute（先规划后执行）、Reflexion（自我反思修正）。工具调用方面，MCP (Model Context Protocol) 正成为标准协议。多 Agent 协作框架如 AutoGen、CrewAI 支持角色分工和任务编排，适合复杂工作流自动化。",
-        "link": "https://langchain-ai.github.io/langgraph/"
-      },
       {
         "title": "Transformer 架构核心原理",
         "content": "Transformer 的核心在于 Self-Attention 机制，通过 Q(Query)、K(Key)、V(Value) 三个矩阵将输入序列映射，计算注意力权重 softmax(QK^T/√dk)V，使模型能够关注序列中不同位置的依赖关系。Multi-Head Attention 通过并行多个注意力头捕获不同子空间的特征。Position Encoding 弥补了缺失的位置信息。理解 Transformer 是掌握 GPT、BERT 等大模型的基础。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "扩散模型 (Diffusion Model) 原理",
         "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
         "link": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "title": "Prompt Engineering 高级技巧",
+        "content": "高级 Prompt 技巧：1) Chain-of-Thought (CoT) 引导模型逐步推理；2) Few-shot Learning 提供示例引导输出格式；3) Self-Consistency 采样多条推理路径取多数结果；4) ReAct 框架结合推理与工具调用；5) Tree-of-Thoughts 探索多条思维路径。实践中推荐组合使用：系统提示定义角色 + Few-shot 示例 + CoT 引导 + 输出格式约束。",
+        "link": "https://platform.openai.com/docs/guides/prompt-engineering"
       }
     ],
     "industryNews": [
-      {
-        "title": "Agent记忆系统设计：短期、长期与情景记忆三层架构",
-        "content": "Agent记忆体系参考认知科学分层：短期记忆即对话上下文窗口，受token限制需做摘要压缩；长期记忆基于向量数据库存储事实与知识，支持语义检索；情景记忆记录Agent历次任务的执行轨迹与反馈，用于经验回放与策略改进。MemGPT、Mem0等开源方案提供分层记忆管理框架，是构建持续学习Agent的关键组件。",
-        "source": "Mem0 官网",
-        "link": "https://mem0.ai/"
-      },
       {
         "title": "MCP协议生态爆发：标准化工具调用连接AI与真实世界",
         "content": "Model Context Protocol（MCP）由Anthropic提出，定义了模型与外部工具/数据源的标准化通信协议。MCP Server封装工具能力（如数据库查询、文件操作、API调用），MCP Client嵌入模型侧，实现「即插即用」的工具集成。已有500+官方与社区MCP Server，覆盖GitHub、Slack、数据库、浏览器等，Cursor/Claude/Windsurf原生支持。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "SWE-bench基于真实GitHub Issue评测Agent自主修复代码能力，要求Agent理解仓库、定位文件、生成补丁并通过测试，是目前最接近真实研发的Agent基准。AgentBench覆盖操作系统、数据库、知识图谱、家务、卡片游戏等多场景评估Agent综合能力。评测驱动迭代，主流Agent框架均以这些基准作为能力背书，推动Agent从玩具走向实用。",
         "source": "SWE-bench 官网",
         "link": "https://www.swebench.com/"
+      },
+      {
+        "title": "AI辅助编程工具对比：Cursor vs GitHub Copilot vs Codeium",
+        "content": "最新测评显示，Cursor在多文件理解和重构方面领先，Copilot在代码补全速度上占优，Codeium在免费方案中性价比最高。AI辅助研发已从代码补全进化到架构设计、测试生成、文档自动化全流程。企业落地关键在于结合私有代码库做检索增强，避免通用模型生成不符合内部规范的代码。",
+        "source": "InfoQ",
+        "link": "https://www.infoq.cn"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "债券市场进入低收益率时代，10年期国债收益率低位运行。信用债方面，城投债化债政策持续推进，短期违约风险下降但长期仍需甄别。可转债兼具债底保护和股性弹性，是当前环境下攻守兼备的品种。建议普通投资者通过债券型基金参与，选择久期适中、信用资质优良的品种，避免过度追求收益而忽视风险。利率债方面，长期限品种波动加大，建议以中短久期为主。",
+    "marketTrend": "黄金市场创历史新高后进入震荡整理阶段。全球央行持续增持黄金储备，去美元化趋势为金价提供长期支撑。实际利率下行、地缘政治风险、通胀预期三重因素共振，黄金中期上行逻辑不变。建议投资者将黄金作为组合的「压舱石」，配置比例5%-10%，通过黄金ETF或积存金方式参与，避免追高，采用定投方式平滑成本。",
     "suggestions": [
-      {
-        "title": "新能车产业链：左侧布局机会",
-        "content": "新能源汽车产业链经过深度调整，部分环节估值已具备吸引力。关注方向：电池龙头（宁德时代、比亚迪）成本优势和全球化布局；智能化方向（激光雷达、域控制器）渗透率快速提升；充电桩、储能等基础设施。注意行业仍在洗牌期，尾部企业有出清风险，建议通过ETF或龙头个股参与，控制仓位不超过15%。",
-        "link": "https://www.eastmoney.com/"
-      },
       {
         "title": "红利低波策略：稳健配置首选",
         "content": "在低利率环境下，股息率4%以上的红利低波组合具显著配置价值。建议关注煤炭、银行、公用事业板块中连续5年分红稳定、ROE>10%的标的。可通过红利ETF（515080）一键配置，每月定投平滑成本。注意分散行业集中度，单一行业占比不超过30%。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "AI 科技主题：关注算力与应用双线",
         "content": "AI 产业链可分为算力层（GPU、光模块、液冷）、模型层（大模型公司）、应用层（办公、教育、医疗AI应用）。当前算力层估值已较高，建议关注应用层落地标的，特别是已有商业化收入的企业。可通过科创50ETF（588000）或人工智能ETF（515980）参与，仓位建议不超过总资产20%。",
         "link": "https://xueqiu.com/"
+      },
+      {
+        "title": "黄金配置：对冲地缘风险的压舱石",
+        "content": "全球地缘政治不确定性持续升温，黄金作为避险资产配置价值凸显。建议通过黄金ETF（518880）或积存金方式配置，占投资组合5%-10%。当前金价处于历史高位区间，不建议一次性买入，推荐每月定额定投，利用价格波动摊薄成本。长期看，去美元化趋势支撑金价中枢上移。",
+        "link": "https://www.sge.com.cn/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "一句话Flag秋日篇：把秋天唱进目标",
-        "content": "抖音「一句话Flag」挑战持续爆发，用一句有力的话立下Flag并坚持记录，头部视频点赞百万+。小蓝创作建议：将Flag写成Rap hook形式，如「秋风起目标立，每天5公里不犹豫」。每天拍践行Flag的15秒视频，用这句hook做固定开场。积累30天做秋日Flag合辑。标签：#一句话Flag #Rap创作 #挑战打卡 #秋日Flag",
-        "source": "抖音挑战热榜"
-      },
-      {
         "title": "轻量体验运动：周末秋游 + Rap vlog",
         "content": "小红书运动趋势报告指出「轻量体验」成为年轻人运动入门首选——不要求专业，先让自己动起来，周末近郊徒步+拍照+随口freestyle。小蓝创作建议：拍「周末轻量秋游」Vlog——近郊徒步+拍照+随口freestyle。不需要专业装备，重点是出门和记录。立「每周一次轻量秋游Flag」。标签：#轻量体验 #周末秋游 #RapVlog #轻运动",
         "source": "小红书运动趋势报告"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "闭环挑战秋日篇：从立Flag到金秋达成全记录",
         "content": "「闭环挑战」成为双平台新热点，要求完整记录从立Flag到最终达成的全过程，完播率极高。小蓝创作建议：选一个秋季可量化Flag（如「30天跑完100公里」），从Day 1秋分到Day 30秋末每天记录。最终做成3分钟Rap叙事长视频，用hook贯穿全片，展示从立Flag到金秋达成的完整闭环。标签：#闭环挑战 #Flag达成 #完整记录 #Rap叙事",
         "source": "抖音+小红书内容趋势"
+      },
+      {
+        "title": "9月25万步挑战 + Rap节奏跑",
+        "content": "小红书和抖音9月兴起「月度步数挑战」，网友公开立25万步月度Flag引发跟风，社区竞争氛围浓厚。小蓝创作建议：立「9月25万步Flag」，每天约8000步，用Rap节奏跑做BGM记录每日步数递增。拍每万步里程碑的生动照片（不同地点打卡），周末做步数Rap总结。标签：#9月步数挑战 #25万步Flag #Rap节奏跑 #走路打卡",
+        "source": "小红书+抖音运动热榜"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "哈欠式开喉 3分钟：模拟打哈欠感受软腭抬起、喉咙打开的状态，保持该状态发声",
-      "technique": "滑音练习：用「哦」音从低到高再滑回，全程保持打开状态，感受声音的圆润度",
-      "song": "《遇见》- 练习中低音区的温暖音色和句尾的收束处理",
+      "warmup": "唇颤音练习 3分钟：放松嘴唇，用气流震动嘴唇发出brrr声，从低音滑到高音再滑回",
+      "technique": "气息控制：双手叉腰，深吸气感受腰部扩张，发sii声保持20秒，练习5组",
+      "song": "《月亮代表我的心》- 重点练习副歌部分的气息连贯和高音控制",
       "duration": "30min"
     },
     "drum": {
-      "rudiment": "综合复习：单跳+双跳+复合跳+装饰音串联，120bpm连续5分钟不中断",
-      "groove": "即兴groove：放任意风格伴奏，跟随即兴变化fill和密度，练听力和反应",
-      "tempo": "自由",
-      "duration": "30min"
+      "rudiment": "单跳练习 Single Stroke Roll：RLRL 60bpm → 80bpm → 100bpm，每个速度2分钟",
+      "groove": "基本摇滚节拍：底鼓1、3拍，军鼓2、4拍，踩镲8分音符，80bpm练习5分钟",
+      "tempo": "60→100bpm",
+      "duration": "25min"
     }
   }
 };
