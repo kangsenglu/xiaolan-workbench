@@ -1,21 +1,16 @@
 /**
  * 小蓝UP UP · WorkBuddy 每日简报
- * 日期: 2026-11-18
+ * 日期: 2026-11-19
  * 由 scripts/generate-daily.mjs 自动生成
  * 请勿手动编辑，每日 08:00 (北京时间) 由 GitHub Actions 自动更新
  */
 window.DAILY_BRIEFING = {
-  "date": "2026-11-18",
-  "generatedAt": "2026-11-18 08:00 自动生成",
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19 08:00 自动生成",
   "health": {
     "title": "健康养生",
-    "diet": "秋分前后「秋燥」明显，重点在于润肺养阴。梨为秋季第一润果，冰糖炖雪梨止咳化痰；银耳百合羹滋阴润肤；莲藕排骨汤养胃生津。减少辣椒、花椒等辛散之品。可饮桂花茶、罗汉果茶润喉护嗓。适当增加芝麻、核桃等坚果，润肠通便兼补肝肾。",
+    "diet": "深秋转凉，燥邪与寒邪并重。饮食宜温润，山药枸杞粥健脾补肾，板栗烧鸡温补脾肾，白萝卜羊肉汤温中散寒。柿子、石榴等秋季水果可适量食用，但不宜空腹食柿子。可饮姜枣茶暖胃驱寒，睡前泡脚配合按摩涌泉穴引火归元。",
     "items": [
-      {
-        "title": "颈椎操：十点十分操",
-        "content": "站立挺胸，双臂向两侧伸直，手掌朝上，如同钟表指向10:10的位置，保持该姿势30秒后放下，重复5次。此动作可有效拉伸颈椎两侧肌肉，缓解长期低头造成的颈肩僵硬。配合「米字操」（头部缓慢书写米字）效果更佳。每日早晚各做一组，坚持一个月可见明显改善。",
-        "source": "康复医学杂志"
-      },
       {
         "title": "春季养肝：作息与饮食调理",
         "content": "春季对应肝脏，养肝核心在于「夜卧早起，广步于庭」。建议晚上11点前入睡（肝胆排毒时段），早晨6-7点起床晨间散步。饮食多食绿色蔬菜（菠菜、芹菜、西兰花）养肝，少饮酒减轻肝脏负担。情绪上保持舒畅，怒伤肝，可通过冥想、深呼吸疏解压力。每日按揉太冲穴3分钟有助疏肝理气。",
@@ -25,18 +20,17 @@ window.DAILY_BRIEFING = {
         "title": "夏季防暑降温实用指南",
         "content": "高温天气外出避开11:00-15:00时段，穿着浅色透气棉麻衣物。随身携带清凉油、藿香正气水以备急用。室内空调温度建议26-28度，与室外温差不超过8度，避免「空调病」。大量出汗后补充淡盐水而非纯水，防止电解质紊乱。出现头晕、恶心等中暑先兆时，立即转移至阴凉处并补充水分。",
         "source": "健康中国行动"
+      },
+      {
+        "title": "冬季足浴养生法",
+        "content": "每晚睡前用40度左右温水泡脚15-20分钟，水位没过脚踝。可加入生姜（驱寒）、艾草（温经）、花椒（除湿）增强效果。泡脚后擦干双脚，按摩涌泉穴100下引火归元，改善失眠和手脚冰凉。注意：糖尿病足患者水温不宜超过38度，心血管疾病患者泡脚时间不超过15分钟。",
+        "source": "传统中医保健"
       }
     ]
   },
   "language": {
     "title": "语言学习",
     "items": [
-      {
-        "title": "粤语情景学习",
-        "content": "今日学习场景：茶楼点餐。核心句型：「唔该，帮我落单」「呢个几钱呀」「要一壶普洱」。重点词汇：虾饺、烧卖、肠粉、凤爪。建议配合 B 站粤语教学视频跟读，注意声调变化（粤语九声六调）。每周掌握一个生活场景，三个月可应对日常交流。",
-        "link": "https://www.bilibili.com/video/BV1px411S7bD",
-        "linkText": "B站粤语教程"
-      },
       {
         "title": "韩语入门基础",
         "content": "今日学习韩语元音：ㅏ(a)、ㅓ(eo)、ㅗ(o)、ㅜ(u)。练习书写并朗读，配合单词记忆：아이(孩子)、어른(大人)、오이(黄瓜)、우유(牛奶)。推荐使用 Talk To Me In Korean (TTMIK) 课程，从 Level 1 开始系统学习。每日学习 2 个字母 + 5 个基础单词，两周完成韩文字母全部掌握。",
@@ -54,66 +48,67 @@ window.DAILY_BRIEFING = {
         "content": "今日学习语法点：「〜ばよかった」（早知道...就好了）、「〜つもりだ」（打算做某事）、「〜ようになる」（变得能够...）。配合例句记忆并在日常日记中尝试使用。推荐使用 NHK Web News 进行阅读练习，标注不认识的词汇和语法点。每周完成3篇新闻精读，三个月可达到 N3 阅读水平。",
         "link": "https://www3.nhk.or.jp/news/easy/",
         "linkText": "NHK 简易日语新闻"
+      },
+      {
+        "title": "英语播客听力训练",
+        "content": "推荐播客：The Daily (NYT) 适合中高级学习者，每集20-25分钟话题丰富；Luke's English Podcast 适合中级，语速适中且讲解幽默。听力方法：第一遍正常速度听大意，第二遍0.8倍速逐句精听并记录生词，第三遍对照文字稿朗读跟读。建议通勤时利用碎片时间，每日累计听力不少于30分钟。",
+        "link": "https://www.nytimes.com/column/the-daily",
+        "linkText": "收听 The Daily"
       }
     ],
     "dailyWords": [
       {
-        "word": "architecture",
-        "meaning": "架构",
-        "phonetic": "/ˈɑːrkɪtektʃər/",
-        "example": "The microservices architecture improved scalability."
+        "word": "groceries",
+        "meaning": "日用品，食品杂货",
+        "phonetic": "/ˈɡroʊsəriz/",
+        "example": "I need to buy groceries for the week."
       },
       {
-        "word": "authentication",
-        "meaning": "身份验证",
-        "phonetic": "/ɔːˌθentɪˈkeɪʃn/",
-        "example": "Two-factor authentication enhances account security."
+        "word": "appointment",
+        "meaning": "预约，约会",
+        "phonetic": "/əˈpɔɪntmənt/",
+        "example": "I have a dentist appointment at 3 PM."
       },
       {
-        "word": "throughput",
-        "meaning": "吞吐量",
-        "phonetic": "/ˈθruːpʊt/",
-        "example": "The new server doubled our processing throughput."
+        "word": "commute",
+        "meaning": "通勤",
+        "phonetic": "/kəˈmjuːt/",
+        "example": "My daily commute takes about 45 minutes."
       },
       {
-        "word": "latency",
-        "meaning": "延迟",
-        "phonetic": "/ˈleɪtnsi/",
-        "example": "We reduced API latency to under 50 milliseconds."
+        "word": "recipe",
+        "meaning": "食谱，配方",
+        "phonetic": "/ˈresəpi/",
+        "example": "This pasta recipe is simple and delicious."
       },
       {
-        "word": "repository",
-        "meaning": "仓库，代码库",
-        "phonetic": "/rɪˈpɑːzətɔːri/",
-        "example": "Push your code to the remote repository before leaving."
+        "word": "chore",
+        "meaning": "家务杂事",
+        "phonetic": "/tʃɔːr/",
+        "example": "Doing laundry is my least favorite chore."
       }
     ],
     "dailySentences": {
       "en": {
-        "text": "The weather forecast says it will rain tomorrow, so bring an umbrella.",
-        "translation": "天气预报说明天会下雨，记得带伞。",
-        "focus": "天气表达：weather forecast"
+        "text": "I'm allergic to seafood, so please avoid it in my order.",
+        "translation": "我对海鲜过敏，点餐时请避免。",
+        "focus": "饮食禁忌：allergic to"
       },
       "yue": {
-        "text": "听日天气预报话会落雨，记得带遮啊。",
-        "jyutping": "ting1 jat6 tin1 hei3 jyu3 bou6 waa6 wui5 lok6 jyu5, gei3 dak1 daai3 ze1 aa3.",
-        "translation": "明天天气预报说会下雨，记得带伞。"
+        "text": "我对海鲜敏感，落单嗰阵麻烦避开。",
+        "jyutping": "ngo5 deoi3 hoi2 sin1 man4 bei2, lok6 daan1 go2 zan6 ma4 faan4 bei2 hoi1.",
+        "translation": "我对海鲜过敏，下单时请避开。"
       },
       "ko": {
-        "text": "내일 비가 온다고 하니 우산을 챙기세요.",
-        "roman": "nae-il biga ondago hani usan-eul chaeng-giseyo.",
-        "translation": "说明天会下雨，请带好雨伞。"
+        "text": "해산물 알레르기가 있어서 주문할 때 피해 주세요.",
+        "roman": "haesanmul alleleugiga is-eoseo jumunhal tae pihae juseyo.",
+        "translation": "我有海鲜过敏，点餐时请避开。"
       }
     }
   },
   "professional": {
     "title": "专业成长",
     "knowledgePoints": [
-      {
-        "title": "RAG 检索增强生成最佳实践",
-        "content": "RAG 系统的核心流程：文档分块(Chunking) → 向量化(Embedding) → 存入向量数据库 → 检索(Retrieval) → 拼接上下文生成(Generation)。最佳实践：分块大小 512-1024 tokens 并保留 overlap；使用混合检索（向量 + BM25 关键词）；引入重排序模型（Reranker）提升相关性；设置相似度阈值过滤低质量结果。推荐技术栈：LangChain + Chroma + BGE Embedding。",
-        "link": "https://python.langchain.com/docs/use_cases/question_answering/"
-      },
       {
         "title": "扩散模型 (Diffusion Model) 原理",
         "content": "扩散模型通过前向加噪（逐步添加高斯噪声将数据变为纯噪声）和反向去噪（学习从噪声中逐步恢复数据）两个过程生成图像。核心公式涉及马尔可夫链和重参数化技巧。Stable Diffusion 在此基础上引入 Latent Space 压缩，大幅降低计算成本。关键组件：U-Net（去噪网络）、Scheduler（采样策略，如 DDIM、Euler a）、VAE（编解码器）。",
@@ -133,15 +128,14 @@ window.DAILY_BRIEFING = {
         "title": "多模态大模型架构：CLIP 与 LLaVA",
         "content": "CLIP 通过对比学习将图像和文本映射到同一向量空间，是视觉-语言理解的基石。LLaVA 将视觉编码器（CLIP ViT）的输出作为「视觉 token」注入大语言模型，实现图文对话能力。关键设计：Projection Layer 将视觉特征对齐到语言模型的嵌入空间。多模态训练分两阶段：先训练 Projection 对齐特征，再联合微调提升指令跟随能力。",
         "link": "https://arxiv.org/abs/2304.08485"
+      },
+      {
+        "title": "强化学习对齐：RLHF 与 DPO",
+        "content": "RLHF (Reinforcement Learning from Human Feedback) 分三步：训练奖励模型 → 用 PPO 优化策略模型。DPO (Direct Preference Optimization) 跳过奖励模型，直接从偏好数据优化策略，简化流程且效果相当。RLAIF 用 AI 替代人工标注偏好数据，降低成本。对齐的核心挑战是在有用性(helpfulness)、无害性(harmlessness)、诚实性(honesty)之间取得平衡。",
+        "link": "https://arxiv.org/abs/2305.18290"
       }
     ],
     "industryNews": [
-      {
-        "title": "AI辅助编程工具对比：Cursor vs GitHub Copilot vs Codeium",
-        "content": "最新测评显示，Cursor在多文件理解和重构方面领先，Copilot在代码补全速度上占优，Codeium在免费方案中性价比最高。AI辅助研发已从代码补全进化到架构设计、测试生成、文档自动化全流程。企业落地关键在于结合私有代码库做检索增强，避免通用模型生成不符合内部规范的代码。",
-        "source": "InfoQ",
-        "link": "https://www.infoq.cn"
-      },
       {
         "title": "AutoGPT开源Agent框架重大更新：支持多Agent协作",
         "content": "AutoGPT发布v0.5版本，新增多Agent协作模式，允许多个专业化Agent分工完成复杂任务。框架内置了规划、记忆、工具调用三大核心模块，支持自定义Agent角色和能力。配合Forge评测基准，开发者可量化Agent的任务完成率与工具调用准确率，推动Agent从Demo走向生产可用。",
@@ -153,18 +147,19 @@ window.DAILY_BRIEFING = {
         "content": "LangGraph将Agent抽象为有向图，节点表示计算单元（LLM调用/工具调用），边表示状态流转，支持循环、分支、人工介入（human-in-the-loop）。相比传统Chain线性执行，LangGraph可构建需要反复修正、多步推理的复杂Agent，已广泛用于客服、数据分析、代码审查等场景。持久化检查点机制使Agent可中断恢复。",
         "source": "LangChain 官方博客",
         "link": "https://langchain-ai.github.io/langgraph/"
+      },
+      {
+        "title": "CrewAI多Agent编排框架：角色分工驱动任务自动化",
+        "content": "CrewAI以「Crew（团队）+ Agent（角色）+ Task（任务）+ Process（流程）」为核心抽象，开发者可定义具有不同角色、目标、工具的Agent协同完成复杂项目。支持顺序和层级两种执行模式，层级模式下Manager Agent负责任务分配与结果汇总。适用于研究报告生成、自动化运营、多源数据整合等场景。",
+        "source": "CrewAI 文档",
+        "link": "https://docs.crewai.com/"
       }
     ]
   },
   "investment": {
     "title": "投资理财",
-    "marketTrend": "当前A股市场整体估值处于历史中低位区间，沪深300市盈率约11.5倍，低于近十年均值。新「国九条」政策持续发力，资本市场改革深化，IPO节奏收紧利好存量市场。银行理财方面，存款利率经历多轮下调后，大额存单年化收益已降至2%以下，资金搬家趋势明显，低波稳健型理财产品和红利策略受青睐。债券市场方面，长端利率低位运行，信用债利差收窄，建议关注中短债基金配置价值。整体策略建议：保持权益资产定投节奏，关注高股息、AI科技、出口链三条主线，控制仓位不追高。",
+    "marketTrend": "A股市场近期受政策利好提振，市场情绪逐步修复。半导体、AI算力板块表现活跃，受益于国产替代加速和全球AI产业景气上行。消费板块估值处于历史低位，但复苏节奏仍需观察。建议投资者保持耐心，利用市场波动逢低布局优质标的。债券市场方面，货币政策维持宽松基调，利率债配置价值仍在，但需警惕年末利率波动风险。黄金价格高位震荡，地缘风险支撑长期配置逻辑不变。",
     "suggestions": [
-      {
-        "title": "黄金配置：对冲地缘风险的压舱石",
-        "content": "全球地缘政治不确定性持续升温，黄金作为避险资产配置价值凸显。建议通过黄金ETF（518880）或积存金方式配置，占投资组合5%-10%。当前金价处于历史高位区间，不建议一次性买入，推荐每月定额定投，利用价格波动摊薄成本。长期看，去美元化趋势支撑金价中枢上移。",
-        "link": "https://www.sge.com.cn/"
-      },
       {
         "title": "指数定投：适合工薪族的懒人投资法",
         "content": "宽基指数定投是最适合普通投资者的策略。推荐沪深300+中证500组合，每月固定日期定额买入，不择时、不追涨杀跌。历史数据显示，任意时点开始定投沪深300，持有3年正收益概率超过85%。定投关键是坚持和纪律，设置自动扣款避免情绪干扰。市场大跌时是积累筹码的好时机，切勿停止定投。",
@@ -174,6 +169,11 @@ window.DAILY_BRIEFING = {
         "title": "可转债投资：进可攻退可守",
         "content": "可转债具有「下有债底保护、上有股性弹性」的特点，适合震荡市配置。选债标准：到期收益率>0（保底）、溢价率<30%（跟涨能力）、正股基本面良好。可构建10-20只可转债组合分散风险，或通过可转债ETF（511380）一键配置。注意规避高溢价率的「双高」转债，流动性差的小盘转债也需谨慎。",
         "link": "https://www.jisilu.cn/"
+      },
+      {
+        "title": "港股通配置：低估值市场的机会",
+        "content": "港股当前估值处于全球洼地，恒生指数市盈率不到9倍。南向资金持续流入，重点可关注：互联网龙头（腾讯、美团）、高股息央企（中海油、中国移动）、创新药（百济神州、信达生物）。通过港股通或QDII基金参与，注意汇率风险。建议港股配置占总权益资产15%-25%，分散A股单一市场风险。",
+        "link": "https://www.hkex.com.hk/"
       }
     ],
     "researchLinks": [
@@ -195,11 +195,6 @@ window.DAILY_BRIEFING = {
     "title": "自媒体热点",
     "items": [
       {
-        "title": "9月25万步挑战 + Rap节奏跑",
-        "content": "小红书和抖音9月兴起「月度步数挑战」，网友公开立25万步月度Flag引发跟风，社区竞争氛围浓厚。小蓝创作建议：立「9月25万步Flag」，每天约8000步，用Rap节奏跑做BGM记录每日步数递增。拍每万步里程碑的生动照片（不同地点打卡），周末做步数Rap总结。标签：#9月步数挑战 #25万步Flag #Rap节奏跑 #走路打卡",
-        "source": "小红书+抖音运动热榜"
-      },
-      {
         "title": "ColorWalk秋色版：每日一色Flag + 色彩Rap",
         "content": "ColorWalk持续火爆半年不凉，小红书话题浏览量超4.63亿、抖音播放4.69亿，秋季色彩更丰富玩法再升级。小蓝创作建议：立「秋日ColorWalk Flag」——每天选一个秋色（金黄枫叶/深红落日/灰蓝晨雾），一路找该颜色拍照。视频版用色彩切换卡点配原创Rap，每色一句歌词描述秋日心境。标签：#ColorWalk #秋日色彩 #每日一色 #Rap卡点",
         "source": "小红书ColorWalk热榜"
@@ -208,22 +203,27 @@ window.DAILY_BRIEFING = {
         "title": "AI健身教练实战体验 + 说唱技术吐槽",
         "content": "2026年ACSM全球健身趋势报告将「AI加持高效运动」列为年度五大趋势，AI教练通过摄像头实时分析动作姿态。小蓝创作建议：体验一周AI健身教练，用Rap风格对比「AI说 vs 我身体说」的差异——AI说深蹲到位但膝盖在叫。拍生动的AI屏幕+真人对比照片，用freestyle总结体验。标签：#AI健身 #智能运动 #说唱吐槽 #健身科技",
         "source": "2026全球健身趋势报告"
+      },
+      {
+        "title": "中秋家宴运动平衡 + Rap吐槽大餐",
+        "content": "9月中秋家宴场景成为抖音挑战热点，红花郎全国挑战赛正式上线，品牌+民俗+短视频结合。小蓝创作建议：立「中秋吃练平衡Flag」——大餐前完成一次力量训练，餐后完成一次CityRun消食跑。用Rap吐槽形式记录「吃了三个月饼后的忏悔跑」，拍家宴与运动对比的生动照片。标签：#中秋挑战 #吃练平衡 #Rap忏悔 #家宴打卡",
+        "source": "抖音中秋挑战赛"
       }
     ]
   },
   "music": {
     "title": "今日音乐练习",
     "vocal": {
-      "warmup": "打嘟噜（舌颤音）3分钟：舌尖轻抵上齿龈，用气流震动舌尖发出rrr声，配合音阶上行",
-      "technique": "元音统一：用a-e-i-o-u五个元音在同一音高上连贯转换，保持喉位稳定不乱动",
-      "song": "《如愿》- 重点练习主歌到副歌的换声区过渡，避免声音断裂",
-      "duration": "30min"
+      "warmup": "面部放松操 5分钟：揉搓面部肌肉、转动下巴、做夸张表情放松咬肌和下颌关节",
+      "technique": "高音拓展：用「母音变体」法，从高音u滑向i，感受声音「靠前」和「聚焦」",
+      "song": "《光年之外》- 练习副歌高音区的混声技巧和爆发力",
+      "duration": "40min"
     },
     "drum": {
-      "rudiment": "复合跳 Paradiddle：RLRR LRLL 70bpm → 90bpm，每速度3分钟，强调重音清晰",
-      "groove": "shuffle律动：踩镲三连音shuffle，底鼓1、3拍，军鼓2、4拍，80bpm练习6分钟",
-      "tempo": "70→100bpm",
-      "duration": "30min"
+      "rudiment": "五连音练习：RLRRL RLLRL，60bpm起步，重点练均匀度和重音移位",
+      "groove": "流行Ballad节拍：底鼓1、3拍，军鼓2、4拍，踩镲4分音符，70bpm配合click练习5分钟",
+      "tempo": "60→90bpm",
+      "duration": "25min"
     }
   }
 };
